@@ -156,32 +156,41 @@ span{
 .vistaPanoramica{
     width: 100%;
 }
-
-/*footer*/
-h1{
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.5em;
-    text-align: center;
-    padding: 20px;
-    color: black;  
+/*FOOTER*/
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px;
+  color: black;
 }
-.footer{
-    background-color: brown;
-    height:50vh;
-    width: 100vw;
-    text-align: center;
-    font-size: 1.2em;
+.footer {
+  width: 100vw;
+  background-color: brown;
+  font-size: 1rem;
+  height: auto;
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
 }
+.correo__mailto {
+  font-size: 1.2rem;
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  color: black;
+}
+.footer__comunicarse,
 .correo{
-    display: inline;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
 }
-.correo__mailto{
-   font-size: 1.5em;
-    font-family: 'Dancing Script', cursive;
-    font-weight: bold;
-    color: black;
-} 
+.footer__comunicarse {
+  padding: 20px;
+}
 /*GALERIA con BOOTSTRAP*/
 /*BARRA DE NAVEGACION*/
   
