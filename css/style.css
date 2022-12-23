@@ -193,6 +193,28 @@ h1{
 .border{
   background-color: rgb(180, 77, 77);
 }
+/*FOOTER con BOOTSTRAP*/
+footer{
+  background-color: brown;
+}
+footer>h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+}
+.bi{
+  color: black;
+}
+#correo > h2{
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5rem;
+}
+.correo__email{
+  font-family: "Dancing Script", cursive;
+  font-size: 1.2rem;
+  font-family: "Dancing Script", cursive;
+  text-decoration: none;
+}
+
 
 /*TRANSPORTE URBANO PASAJEROS*/
 

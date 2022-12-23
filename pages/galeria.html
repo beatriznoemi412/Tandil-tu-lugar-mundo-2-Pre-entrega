@@ -25,7 +25,7 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-around" id="navbarTogglerDemo01">
+      <div class="collapse navbar-collapse d-flex justify-content-center align-itemsw-center" id="navbarTogglerDemo01">
       <ul class="navbar-nav mr-auto text-center">
           <li role="presentation" class="nav-item active">
             <a class="nav-link text-light mb fw-bold"
@@ -167,9 +167,13 @@
       </section>
     </main>
  
-         <footer class="footer">
-        <h1>Tandil, tu Lugar en el Mundo</h1>
-        <ul class="footer__comunicarse">
+    <footer>
+      <div class="container-fluid">
+        <div id="row">
+        <div class="col-sm-12 d-flex justify-content-around align-content-center">
+        <h1 class="text-black fw-bold p-5">Tandil, tu Lugar en el Mundo</h1>
+        <div class="text-black d-flex flex-column justify-content-center align-items-center">
+        <ul class="p-3">
         <img src="../assets/img/location_on.png" alt="icono de location">
         <li>Municipio de Tandil. Belgrano 485. Tandil</li>
         <br>
@@ -180,11 +184,17 @@
         <li>Policía 911</li>
         <img src="../assets/img/phone_in_talk.png" alt="icono de telefono">
         </ul>
-        <h2>Ponete en contacto con nosotros</h2>
-        <div class="correo">
-        <a class="correo__mailto" href="mailto:tandiltulugarenelmundo@gmail.com"
-         title="Mandanos un email">Mandanos un email</img>
-        <img src="../assets/img/email.png" alt="icono de email"></a>
+        </div>
+        <div id="correo" class="d-flex  justify-conten-center align-items-center p-2">
+        <h2 class="text-black fw-bold p-5">Ponete en contacto con nosotros</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-open" viewBox="0 0 16 16">
+        <path d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l5.75 3.45L8 8.917l1.25.75L15 6.217V5.4a1 1 0 0 0-.53-.882l-6-3.2ZM15 7.383l-4.778 2.867L15 13.117V7.383Zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734ZM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765l6-3.2Z"/>
+        </svg><i class="bi bi-envelope-open"></i>
+        <a class="correo__email text-black fw-bold" href="mailto:tandiltulugarenelmundo@gmail.com"
+         title="Mandanos un email">Mandanos un email</a>
+        </div>
+        </div>
+        </div>
         </div>
     </footer>
     <script
