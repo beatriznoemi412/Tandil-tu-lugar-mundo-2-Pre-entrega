@@ -292,55 +292,36 @@ footer > h1 {
 
 /*TRANSPORTE URBANO PASAJEROS*/
 
-.contenedor {
-  position: relative;
+/*ACCORDION BOOTSTRAP EN TRANQPORTE URBANO*/
+.accordion{
+  background-color: transparent!important;
+  opacity: 0.8 !important;
 }
-.contenedor__viaje {
-  position: relative;
-  z-index: 1;
-  border: 2px solid #b25659;
-  height: 160px;
-  margin: 40px;
-  width: 20%;
-  left: 20%;
+.accordion-button:focus{
+  box-shadow: 0 0 0 0.25rem brown!important;
+  color: brown!important;
+  background-color: #c08383 !important;
+}
+.accordion-button:hover{
+  color:#c38587;
+}
+.accordion-button:active{
+  color: brown!important;
+  background: rgb(143, 79, 79)!important;
+}
+.accordion-button{
+  background-color: rgb(198, 119, 119) !important;
+  font-family: "Dancing Script", cursive !important;
+  font-size: 1.4rem !important;
+  color:black !important;
+
 }
 
-.contenedor__viaje__caja {
-  position: absolute;
-  z-index: 3;
-  border: 2px solid #b25659;
-  height: 160px;
-  width: 30%;
-  left: 450px;
-  top: 50px;
+.accordion-item{
+  background-color: rgb(195, 110, 110)!important;
+  border: none!important;
 }
 
-.contenedor__viaje__caja__otra {
-  position: absolute;
-  z-index: 4;
-  border: 2px solid #b25659;
-  width: 20%;
-  left: 660px;
-  top: 75px;
-  height: 160px;
-}
-.list {
-  margin: 60px;
-  font-size: 1.2em;
-  text-align: justify;
-  line-height: 2;
-  background: #b25659;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-iframe {
-  border: 1px solid black;
-  width: 100%;
-}
-h3 {
-  text-align: center;
-  margin-bottom: 15px;
-}
 /*TURISMO*/
 table {
   margin: 75px;
