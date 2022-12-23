@@ -1,8 +1,7 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:content-box;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
 }
 /*NAV*/
 .general {
@@ -83,7 +82,6 @@
 
 li {
   list-style-type: none;
-
 }
 a,
 .ciudad__listas__reseteo a:link,
@@ -93,7 +91,7 @@ a:active {
   color: white;
   font-size: 1.2rem;
   font-weight: bold;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 10px;
 }
 a:hover {
@@ -102,7 +100,7 @@ a:hover {
 .ciudad__nav__img {
   background-image: (url "../assets/img/TandilyDique.jpeg");
   width: 97vw;
-  opacity: .9;
+  opacity: 0.9;
   filter: alpha(opacity=80);
   zoom: 1;
   margin-left: 10px;
@@ -118,43 +116,41 @@ a:hover {
 }
 
 /*main*/
-section{
-    overflow: hidden;
+section {
+  overflow: hidden;
 }
-h2{
-    text-align: center;
-    font-size: 2em;
-    font-family: 'Dancing Script', cursive;
-    padding: 20px;
+h2 {
+  text-align: center;
+  font-size: 2em;
+  font-family: "Dancing Script", cursive;
+  padding: 20px;
 }
-.container{
-    width: 100vw;
-    text-align: center;
+.container {
+  width: 100vw;
+  text-align: center;
 }
-p{
-   margin:50px;
-   font-size: 1.1em;
-   text-align: justify;
+p {
+  margin: 50px;
+  font-size: 1.1em;
+  text-align: justify;
+}
+.enumera {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 50px;
+  line-height: 3;
+  background: rgb(167, 68, 68);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  text-align: justify;
+}
 
-} 
-.enumera{
-    font-size: 1.1em;
-    font-weight: bold;
-    margin: 50px;
-    line-height: 3;
-    background: rgb(167, 68, 68);
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    text-align: justify;
-} 
-
-  
-span{
-    font-weight: bolder;
-    font-size: 1em;
+span {
+  font-weight: bolder;
+  font-size: 1em;
 }
-.vistaPanoramica{
-    width: 100%;
+.vistaPanoramica {
+  width: 100%;
 }
 /*FOOTER*/
 h1 {
@@ -182,7 +178,7 @@ h1 {
   color: black;
 }
 .footer__comunicarse,
-.correo{
+.correo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,209 +189,248 @@ h1 {
 }
 /*GALERIA con BOOTSTRAP*/
 /*BARRA DE NAVEGACION*/
-  
-  .titulo__expand {
-    -webkit-animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
-      both;
-    animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+
+.titulo__expand {
+  -webkit-animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+@-webkit-keyframes titulo__expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
   }
-  @-webkit-keyframes titulo__expand {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
+  40% {
+    opacity: 0.6;
   }
-  @keyframes titulo__expand {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
+  100% {
+    opacity: 1;
   }
-  .foto{
-    background-image: (url "../assets/img/TandilyDique.jpeg");
-    width: 100vw;
-    height: 400px;
-    opacity: 0.7;
-    filter: alpha(opacity=80);
-    zoom: 1;
+}
+@keyframes titulo__expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
   }
-  .header, .navbar {
-    background-color: brown;
-  
+  40% {
+    opacity: 0.6;
   }
-  .te_cuento{
-    background-color: brown;
-    width: 100vw;
-    font-size: 2rem;
-    text-align: center;
-    font-family: "Dancing Script", cursive;
+  100% {
+    opacity: 1;
   }
-  body{
-    background-image: linear-gradient(
-      90deg,
-      #ce9092,
-      #c99c9d,
-      rgba(232, 203, 203, 0.742)
-    );
-    overflow-x: hidden;
+}
+.foto {
+  background-image: (url "../assets/img/TandilyDique.jpeg");
+  width: 100vw;
+  height: 400px;
+  opacity: 0.7;
+  filter: alpha(opacity=80);
+  zoom: 1;
+}
+.header,
+.navbar {
+  background-color: brown;
+}
+.navbar-nav {
+  font-size: 1.2rem;
+}
+a:hover {
+  border: none !important;
+  color: rgb(221, 185, 185) !important;
+}
+.te_cuento {
+  background-color: brown;
+  width: 100vw;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+body {
+  background-image: linear-gradient(
+    90deg,
+    #ce9092,
+    #c99c9d,
+    rgba(232, 203, 203, 0.742)
+  );
+  overflow-x: hidden;
 }
 .carousel-item {
   width: 600px !important;
   height: 400px !important;
   image-rendering: crisp-edges; /*la imagen escala con logaritmo que preserva contraste y bordes y no suaviza colores*/
 }
-.border{
+.border {
   background-color: rgb(180, 77, 77);
 }
 /*FOOTER con BOOTSTRAP*/
-footer{
+footer {
   background-color: brown;
 }
-footer>h1 {
+footer > h1 {
   font-family: "Dancing Script", cursive;
   font-size: 2rem;
 }
-.text-black{
-  font-size:2rem;
+.text-black {
+  font-size: 2rem;
 }
-.informe{
+.informe {
   font-size: 1rem;
 }
-.bi{
+.bi {
   color: black;
 }
-#correo > h2{
+#correo > h2 {
   font-family: "Dancing Script", cursive;
   font-size: 1.5rem;
 }
-.correo__email{
+.correo__email {
   font-family: "Dancing Script", cursive;
   font-size: 1.2rem;
   font-family: "Dancing Script", cursive;
   text-decoration: none;
 }
 
-
 /*TRANSPORTE URBANO PASAJEROS*/
 
 .contenedor {
-    position: relative;
-  }
-  .contenedor__viaje{
-    position: relative;
-    z-index: 1;
-    border: 2px solid #b25659;
-    height: 160px;
-    margin:40px;
-    width:20%;
-    left: 20%;
-  }
-  
-  .contenedor__viaje__caja {
-    position: absolute;
-    z-index: 3; 
-    border: 2px solid #b25659;
-    height: 160px;  
-    width: 30%;
-    left: 450px;
-    top: 50px;
-  }
-  
-  .contenedor__viaje__caja__otra {
-    position: absolute;
-    z-index: 4;
-    border: 2px solid #b25659;
-    width: 20%;
-    left: 660px;
-    top: 75px;
-    height: 160px;
-  }
-  .list{
-    margin: 60px;
-    font-size: 1.2em;
-    text-align: justify;
-    line-height: 2;
-    background: #b25659;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+  position: relative;
 }
-  iframe{
+.contenedor__viaje {
+  position: relative;
+  z-index: 1;
+  border: 2px solid #b25659;
+  height: 160px;
+  margin: 40px;
+  width: 20%;
+  left: 20%;
+}
+
+.contenedor__viaje__caja {
+  position: absolute;
+  z-index: 3;
+  border: 2px solid #b25659;
+  height: 160px;
+  width: 30%;
+  left: 450px;
+  top: 50px;
+}
+
+.contenedor__viaje__caja__otra {
+  position: absolute;
+  z-index: 4;
+  border: 2px solid #b25659;
+  width: 20%;
+  left: 660px;
+  top: 75px;
+  height: 160px;
+}
+.list {
+  margin: 60px;
+  font-size: 1.2em;
+  text-align: justify;
+  line-height: 2;
+  background: #b25659;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+iframe {
   border: 1px solid black;
   width: 100%;
-
-  }
-  h3{
-    text-align: center;
-    margin-bottom: 15px;
-  }
-/*TURISMO*/
-table{
-    margin: 75px;
-    width: 85%;
-    border:15px ridge #b25659;
 }
-td{
-    text-align: justify;
-    font-size: 1.2em;
+h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+/*TURISMO*/
+table {
+  margin: 75px;
+  width: 85%;
+  border: 15px ridge #b25659;
+}
+td {
+  text-align: justify;
+  font-size: 1.2em;
 }
 /*CONTACTO*/
-.datos__texto--bold{
-    font-weight: bold;
-
+.datos__texto--bold {
+  font-weight: bold;
 }
-.datos__texto{
-    margin: 20px;
+.datos__texto {
+  margin: 20px;
 }
-select, textarea, label, input{
-    margin: 10px 15px 0 10px;
-    
+select,
+textarea,
+label,
+input {
+  margin: 10px 15px 0 10px;
 }
-input{
-    padding: 10px;
-    border-radius: .5em;
-    border: none;
-
+input {
+  padding: 10px;
+  border-radius: 0.5em;
+  border: none;
 }
-input:hover{
-    background-color:rgb(230, 197, 197);;
-
+input:hover {
+  background-color: rgb(230, 197, 197);
 }
-main{
-    width: 100vw;
-    height:100%;
-    
+main {
+  width: 100vw;
+  height: 100%;
 }
-.cajas{
-    background:  rgb(161, 76, 76); 
-    width: 61vw;
-    height: 85%;
-    padding: 10px;
-    display: inline-block;
-    border:15px ridge #b25659; 
-    margin:30px;
-    padding: 10px;
+.cajas {
+  background: rgb(161, 76, 76);
+  width: 61vw;
+  height: 85%;
+  padding: 10px;
+  display: inline-block;
+  border: 15px ridge #b25659;
+  margin: 30px;
+  padding: 10px;
 }
-aside{
-    background: rgb(185, 96, 96);
-    width: 26vw;
-    display: inline-block;
-    text-align: justify;
-    border:15px ridge #b25659;
-    margin-bottom: 35px;
+aside {
+  background: rgb(185, 96, 96);
+  width: 26vw;
+  display: inline-block;
+  text-align: justify;
+  border: 15px ridge #b25659;
+  margin-bottom: 35px;
 }
 
-#contentBox{
-    padding: 25px;
+#contentBox {
+  padding: 25px;
+}
+/*MEDIA QUERYES*/
+@media (min-width: 576px) {
+  .carousel-item {
+    width: 500px !important;
+    height: 400px !important;
+    image-rendering: crisp-edges; /*la imagen escala con logaritmo que preserva contraste y bordes y no suaviza colores*/
+  }
+}
+@media (min-width: 768px) {
+  .carousel-item {
+    width: 600px !important;
+    height: 400px !important;
+    image-rendering: crisp-edges; /*la imagen escala con logaritmo que preserva contraste y bordes y no suaviza colores*/
+  }
+}
+@media (min-width: 992px) {
+  .carousel-item {
+    width: 600px !important;
+    height: 400px !important;
+    image-rendering: crisp-edges; /*la imagen escala con logaritmo que preserva contraste y bordes y no suaviza colores*/
+  }
+}
+@media (min-width: 1200px) {
+  .carousel-item {
+    width: 600px !important;
+    height: 400px !important;
+    image-rendering: crisp-edges; /*la imagen escala con logaritmo que preserva contraste y bordes y no suaviza colores*/
+  }
+}
+@media (min-width: 1400px) {
+  .carousel-item {
+    width: 600px !important;
+    height: 400px !important;
+    image-rendering: crisp-edges; /*la imagen escala con logaritmo que preserva contraste y bordes y no suaviza colores*/
+  }
 }
