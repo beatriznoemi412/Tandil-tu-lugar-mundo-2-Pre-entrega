@@ -267,6 +267,12 @@ footer>h1 {
   font-family: "Dancing Script", cursive;
   font-size: 2rem;
 }
+.text-black{
+  font-size:2rem;
+}
+.informe{
+  font-size: 1rem;
+}
 .bi{
   color: black;
 }
