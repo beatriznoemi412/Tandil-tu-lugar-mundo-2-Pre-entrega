@@ -383,14 +383,14 @@ aside {
 @media (min-width: 576px) {
   .carousel-item {
     width: 500px !important;
-    height: 400px !important;
+    height: 330px !important;
     image-rendering: crisp-edges; /*la imagen escala con logaritmo que preserva contraste y bordes y no suaviza colores*/
   }
 }
 @media (min-width: 768px) {
   .carousel-item {
     width: 600px !important;
-    height: 400px !important;
+    height: 370px !important;
     image-rendering: crisp-edges; /*la imagen escala con logaritmo que preserva contraste y bordes y no suaviza colores*/
   }
 }
