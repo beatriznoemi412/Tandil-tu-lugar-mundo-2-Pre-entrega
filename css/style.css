@@ -321,10 +321,6 @@ footer > h1 {
   background-color: rgb(195, 110, 110)!important;
   border: none!important;
 }
-iframe{
-  width: 100%;
-  height: 550px;
-}
 
 /*TURISMO*/
 table {
@@ -384,56 +380,38 @@ aside {
   padding: 25px;
 }
 /*MEDIA QUERYES*/
-
 @media (min-width: 576px) {
-  /*GALERIA*/
   .carousel-item {
-    width: 100%!important;
-    height: 360px!important;
+    width: 500px !important;
+    height: 330px !important;
     image-rendering: crisp-edges; /*la imagen escala con logaritmo que preserva contraste y bordes y no suaviza colores*/
-  }  
-  /*TURISMO*/
-  iframe{
-    width: 100% !important;
-    height: 300px !important;
   }
 }
 @media (min-width: 768px) {
-  /*GALERIA*/
   .carousel-item {
-    width: 100%!important;
-    height: 450px!important;
-    image-rendering: crisp-edges; /*la imagen escala con logaritmo que preserva contraste y bordes y no suaviza colores*/
-  } 
-  /*TURISMO*/
-  iframe{
-    width: 100% !important;
-    height: 350px !important;
-  } 
-}
-@media (min-width: 992px) {
-  /*GALERIA*/
-  .carousel-item {
-    width: 100%!important;
-    height: 450px!important;
+    width: 600px !important;
+    height: 370px !important;
     image-rendering: crisp-edges; /*la imagen escala con logaritmo que preserva contraste y bordes y no suaviza colores*/
   }
-  /*TURISMO*/
-  iframe{
-    width: 100% !important;
+}
+@media (min-width: 992px) {
+  .carousel-item {
+    width: 600px !important;
     height: 400px !important;
-  }  
+    image-rendering: crisp-edges; /*la imagen escala con logaritmo que preserva contraste y bordes y no suaviza colores*/
+  }
 }
 @media (min-width: 1200px) {
-  /*GALERIA*/
   .carousel-item {
-    width: 100%!important;
-    height:450px!important;
+    width: 600px !important;
+    height: 400px !important;
     image-rendering: crisp-edges; /*la imagen escala con logaritmo que preserva contraste y bordes y no suaviza colores*/
-  } 
-  /*TURISMO*/
-  iframe{
-    width: 100% !important;
-    height: 500px !important;
-  } 
+  }
+}
+@media (min-width: 1400px) {
+  .carousel-item {
+    width: 600px !important;
+    height: 400px !important;
+    image-rendering: crisp-edges; /*la imagen escala con logaritmo que preserva contraste y bordes y no suaviza colores*/
+  }
 }
