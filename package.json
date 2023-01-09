@@ -1,0 +1,28 @@
+{
+  "name": "visite-tandil",
+  "version": "1.0.0",
+  "description": "Este proyecto está basado en el Lenguaje de marcado de hipertexto (HTML5), código que utilicé para estructurar este sitio web y para su diseño Css3. En esta segunda Pre-entrega usé el diseño flex-box para adaptar la barra de navegacion y el pie de página de las cinco páginas que posee mi sitio web.\r  En dos de sus páginas (Galeria y Transporte Urbano) apliqué un framework: Bootstrap, que cuenta con un layout que se adapta a la pantalla del dispositivo usado por el usuario.\r ###  Objetivos\r 1.  Emplear lenguajes HTML y CSS.\r 1. Uso de framework.\r 1. Generar un diseño responsive y dinámico con animaciones, transformaciones, transiciones.\r 1. Hacer conocer mi ciudad.\r ![](https://www.freejpg.com.ar/image-900/49/4900/F100005735-tandil.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilo.scss css/estilo.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beatriznoemi412/Tandil-tu-lugar-mundo-2-Pre-entrega.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beatriznoemi412/Tandil-tu-lugar-mundo-2-Pre-entrega/issues"
+  },
+  "homepage": "https://github.com/beatriznoemi412/Tandil-tu-lugar-mundo-2-Pre-entrega#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
