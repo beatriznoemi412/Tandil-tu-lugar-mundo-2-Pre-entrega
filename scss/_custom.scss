@@ -1,8 +1,3 @@
-$background-header: brown;
-$color-h1: white;
-$font-ciudad: "Dancing Script", cursive;
-$btn-accordion:"transparent";
-
 $colores: (
   "danger": brown,
   "primary": #f7dddd,
@@ -10,3 +5,4 @@ $colores: (
   "accordionItem": rgb(195, 110, 110),
   "pink":#dc3545,
   ) ;
+  @import "../node_modules/bootstrap/scss/bootstrap";

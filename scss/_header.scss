@@ -88,7 +88,7 @@ a:active {
   padding: 10px;
 }
 a:hover {
-  color: rgb(247, 221, 221);
+  color: rgb(222, 169, 169);
 }
 }
 
@@ -122,15 +122,12 @@ a:hover {
   
   .header,
   .navbar {
-    background-color: brown;
-    .nav-tabs{
-      border: none;
-    }
+    background-color: brown; 
   .titulo__expand {
     -webkit-animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
       both;
     animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  }
+  
   @-webkit-keyframes titulo__expand {
     0% {
       letter-spacing: -0.5em;
@@ -155,7 +152,14 @@ a:hover {
       opacity: 1;
     }
   }
-  .foto {
+  }
+  .nav-link{
+    border: none!important;
+     &:hover{
+      color: map-get($colors, "pink");
+     }
+    }
+ .foto {
     background-image: (url "../assets/img/TandilyDique.jpeg");
     width: 100vw;
     height: 600px;
@@ -163,11 +167,6 @@ a:hover {
     filter: alpha(opacity=80);
     zoom: 1;
   
-  a:hover {
-    border: none !important;
-    color:  map-get($theme-colors, "anchor");;
-    width: 100vw;
-  }
   .te_cuento {
     background-color: map-get($theme-colors, "danger");
     width: 100vw;
@@ -175,5 +174,6 @@ a:hover {
     font-family: $font-ciudad;
   }
 }
-   }
-  }
+}
+}  
+  

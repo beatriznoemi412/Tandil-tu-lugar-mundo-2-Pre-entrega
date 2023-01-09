@@ -8457,7 +8457,7 @@ textarea.form-control-lg {
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       padding: 10px; }
     .ciudad .ciudad__listas__reseteo a:hover, .ciudad .ciudad__span a:hover {
-      color: #f7dddd; }
+      color: #dea9a9; }
   .ciudad .ciudad__nav__img {
     background-image: url "../assets/img/TandilyDique.jpeg";
     width: 97vw;
@@ -8479,9 +8479,6 @@ body {
   body .header,
   body .navbar {
     background-color: brown; }
-    body .header .nav-tabs,
-    body .navbar .nav-tabs {
-      border: none; }
     body .header .titulo__expand,
     body .navbar .titulo__expand {
       -webkit-animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
@@ -8504,6 +8501,12 @@ body {
     opacity: 0.6; }
   100% {
     opacity: 1; } }
+    body .header .nav-link,
+    body .navbar .nav-link {
+      border: none !important; }
+      body .header .nav-link:hover,
+      body .navbar .nav-link:hover {
+        color: #d63384; }
     body .header .foto,
     body .navbar .foto {
       background-image: url "../assets/img/TandilyDique.jpeg";
@@ -8512,14 +8515,9 @@ body {
       opacity: 0.7;
       filter: alpha(opacity=80);
       zoom: 1; }
-      body .header .foto a:hover,
-      body .navbar .foto a:hover {
-        border: none !important;
-        color: black;
-        width: 100vw; }
       body .header .foto .te_cuento,
       body .navbar .foto .te_cuento {
-        background-color: brown;
+        background-color: #dc3545;
         width: 100vw;
         font-size: 2rem;
         font-family: "Dancing Script", cursive; }
