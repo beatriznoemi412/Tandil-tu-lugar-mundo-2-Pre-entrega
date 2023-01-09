@@ -8395,92 +8395,15 @@ textarea.form-control-lg {
   grid-row-gap: 15px;
   width: 100vw;
   height: 100vh; }
-
-#header {
-  background-color: brown;
-  grid-area: header;
-  width: 100vw;
-  height: 800px; }
-
-.titulo {
-  font-family: "Dancing Script", cursive;
-  font-size: 2.2rem;
-  text-align: center;
-  padding: 10px;
-  color: white;
-  height: 1; }
-
-.titulo__expand {
-  -webkit-animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
-
-@-webkit-keyframes titulo__expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0; }
-  40% {
-    opacity: 0.6; }
-  100% {
-    opacity: 1; } }
-
-@keyframes titulo__expand {
-  0% {
-    letter-spacing: -0.5em;
-    opacity: 0; }
-  40% {
-    opacity: 0.6; }
-  100% {
-    opacity: 1; } }
-
-.ciudad {
-  grid-area: ciudad; }
-  .ciudad .ciudad__listas__reseteo, .ciudad .ciudad__span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; }
-    .ciudad .ciudad__listas__reseteo li, .ciudad .ciudad__span li {
-      list-style-type: none; }
-    .ciudad .ciudad__listas__reseteo a, .ciudad .ciudad__span a,
-    .ciudad .ciudad__listas__reseteo .ciudad__listas__reseteo a:link,
-    .ciudad .ciudad__span .ciudad__listas__reseteo a:link,
-    .ciudad .ciudad__listas__reseteo .ciudad__span a:link,
-    .ciudad .ciudad__span .ciudad__span a:link,
-    .ciudad .ciudad__listas__reseteo a:visited,
-    .ciudad .ciudad__span a:visited,
-    .ciudad .ciudad__listas__reseteo a:active,
-    .ciudad .ciudad__span a:active {
-      text-decoration: none;
-      color: white;
-      font-size: 1.2rem;
-      font-weight: bold;
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-      padding: 10px; }
-    .ciudad .ciudad__listas__reseteo a:hover, .ciudad .ciudad__span a:hover {
-      color: #dea9a9; }
-  .ciudad .ciudad__nav__img {
-    background-image: url "../assets/img/TandilyDique.jpeg";
-    width: 97vw;
-    height: 600px;
-    opacity: 0.9;
-    filter: alpha(opacity=80);
-    zoom: 1;
-    margin-left: 10px; }
-  .ciudad .ciudad__span {
-    font-size: 2rem;
-    font-family: "Dancing Script", cursive;
-    color: white; }
-
-/*BOOTSTRAP*/
-/*BARRA DE NAVEGACION*/
-body {
-  background-image: linear-gradient(90deg, #ce9092, #c99c9d, rgba(232, 203, 203, 0.742));
-  overflow-x: hidden; }
-  body .header,
-  body .navbar {
-    background-color: brown; }
-    body .header .titulo__expand,
-    body .navbar .titulo__expand {
+  .general #header {
+    background-color: brown;
+    grid-area: header;
+    width: 100vw;
+    height: 650px; }
+    .general #header .titulo {
+      font-family: "Dancing Script", cursive;
+      color: white; }
+    .general #header .titulo__expand {
       -webkit-animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
       animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
 
@@ -8501,23 +8424,88 @@ body {
     opacity: 0.6; }
   100% {
     opacity: 1; } }
-    body .header .nav-link,
-    body .navbar .nav-link {
+    .general #header .ciudad {
+      grid-area: ciudad; }
+      .general #header .ciudad .ciudad__listas__reseteo, .general #header .ciudad .ciudad__span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; }
+        .general #header .ciudad .ciudad__listas__reseteo li, .general #header .ciudad .ciudad__span li {
+          list-style-type: none; }
+        .general #header .ciudad .ciudad__listas__reseteo a, .general #header .ciudad .ciudad__span a,
+        .general #header .ciudad .ciudad__listas__reseteo .ciudad__listas__reseteo a:link,
+        .general #header .ciudad .ciudad__span .ciudad__listas__reseteo a:link,
+        .general #header .ciudad .ciudad__listas__reseteo .ciudad__span a:link,
+        .general #header .ciudad .ciudad__span .ciudad__span a:link,
+        .general #header .ciudad .ciudad__listas__reseteo a:visited,
+        .general #header .ciudad .ciudad__span a:visited,
+        .general #header .ciudad .ciudad__listas__reseteo a:active,
+        .general #header .ciudad .ciudad__span a:active {
+          text-decoration: none;
+          color: white;
+          font-size: 1rem;
+          font-weight: bold;
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+          padding: 10px; }
+        .general #header .ciudad .ciudad__listas__reseteo a:hover, .general #header .ciudad .ciudad__span a:hover {
+          color: #dea9a9; }
+      .general #header .ciudad .ciudad__nav__img {
+        background-image: url "../assets/img/TandilyDique.jpeg";
+        width: 97vw;
+        height: 500px;
+        opacity: 0.9;
+        filter: alpha(opacity=80);
+        zoom: 1;
+        margin-left: 10px; }
+      .general #header .ciudad .ciudad__span {
+        font-family: "Dancing Script", cursive;
+        font-size: 1.6rem;
+        color: white; }
+
+/*BOOTSTRAP*/
+/*BARRA DE NAVEGACION*/
+body {
+  background-image: linear-gradient(90deg, #ce9092, #c99c9d, rgba(232, 203, 203, 0.742));
+  overflow-x: hidden; }
+  body .header, body .header .navbar {
+    background-color: brown; }
+    body .header h1, body .header .navbar h1, body .header .h1 {
+      font-family: "Dancing Script", cursive; }
+    body .header .titulo__expand {
+      -webkit-animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+      animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+
+@-webkit-keyframes titulo__expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+
+@keyframes titulo__expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+    body .header .nav-link {
       border: none !important; }
-      body .header .nav-link:hover,
-      body .navbar .nav-link:hover {
-        color: #d63384; }
-    body .header .foto,
-    body .navbar .foto {
+      body .header .nav-link:hover {
+        color: #d63384 !important; }
+    body .header .foto {
       background-image: url "../assets/img/TandilyDique.jpeg";
       width: 100vw;
-      height: 600px;
+      height: 400px;
       opacity: 0.7;
       filter: alpha(opacity=80);
       zoom: 1; }
-      body .header .foto .te_cuento,
-      body .navbar .foto .te_cuento {
+    body .header span, body .header .navbar span {
+      font-family: "Dancing Script", cursive; }
+      body .header span .te__cuento-color {
         background-color: #dc3545;
-        width: 100vw;
-        font-size: 2rem;
-        font-family: "Dancing Script", cursive; }
+        width: 100vw; }

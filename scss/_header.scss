@@ -18,20 +18,15 @@
   grid-row-gap: 15px;
   width: 100vw;
   height: 100vh;
-}
+
 #header {
   background-color: $background-header;
   grid-area: header;
   width: 100vw;
-  height:800px;
-} 
+  height:650px;
 .titulo {
   font-family: $font-ciudad;
-  font-size: 2.2rem;
-  text-align: center;
-  padding: 10px;
   color: $color-h1;
-  height: 1
 }
 .titulo__expand {
   -webkit-animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
@@ -82,7 +77,7 @@ a:visited,
 a:active {
   text-decoration: none;
   color: $color-h1;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 10px;
@@ -91,11 +86,10 @@ a:hover {
   color: rgb(222, 169, 169);
 }
 }
-
 .ciudad__nav__img {
   background-image: (url "../assets/img/TandilyDique.jpeg");
   width: 97vw;
-  height: 600px;
+  height: 500px;
   opacity: 0.9;
   filter: alpha(opacity=80);
   zoom: 1;
@@ -103,12 +97,13 @@ a:hover {
 }
 .ciudad__span {
   @extend .ciudad__listas__reseteo;
-  font-size: 2rem;
   font-family: $font-ciudad;
+  font-size: 1.6rem;
   color: $color-h1;
 }
 }
-
+}
+}
 /*BOOTSTRAP*/
   /*BARRA DE NAVEGACION*/
   body {
@@ -120,14 +115,19 @@ a:hover {
     );
     overflow-x: hidden;
   
-  .header,
+  .header{
+    background-color: $background-header;
+    h1{
+      font-family: $font-ciudad;
+    }
   .navbar {
-    background-color: brown; 
-  .titulo__expand {
+    @extend .header;
+  }
+    .titulo__expand {
     -webkit-animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
       both;
     animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  
+  }
   @-webkit-keyframes titulo__expand {
     0% {
       letter-spacing: -0.5em;
@@ -152,28 +152,29 @@ a:hover {
       opacity: 1;
     }
   }
-  }
   .nav-link{
     border: none!important;
      &:hover{
-      color: map-get($colors, "pink");
+      color: map-get($colors, "pink")!important;
      }
     }
  .foto {
     background-image: (url "../assets/img/TandilyDique.jpeg");
     width: 100vw;
-    height: 600px;
+    height: 400px;
     opacity: 0.7;
     filter: alpha(opacity=80);
     zoom: 1;
-  
-  .te_cuento {
+ }
+ span{
+  font-family: $font-ciudad;
+ 
+  .te__cuento-color{
     background-color: map-get($theme-colors, "danger");
     width: 100vw;
-    font-size: 2rem;
-    font-family: $font-ciudad;
   }
 }
+  }
 }
-}  
+ 
   
