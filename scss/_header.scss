@@ -1,0 +1,179 @@
+.general {
+  background-image: linear-gradient(
+    90deg,
+    #ce9092,
+    #d49697,
+    rgba(232, 203, 203, 0.742)
+  );
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 0.5fr;
+  grid-template-areas:
+    "header header header"
+    "ciudad ciudad ciudad"
+    "container container container"
+    "footer footer footer";
+  grid-column-gap: 5px;
+  grid-row-gap: 15px;
+  width: 100vw;
+  height: 100vh;
+}
+#header {
+  background-color: $background-header;
+  grid-area: header;
+  width: 100vw;
+  height:800px;
+} 
+.titulo {
+  font-family: $font-ciudad;
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 10px;
+  color: $color-h1;
+  height: 1
+}
+.titulo__expand {
+  -webkit-animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+    both;
+  animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+@-webkit-keyframes titulo__expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes titulo__expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.ciudad {
+  grid-area: ciudad;
+
+.ciudad__listas__reseteo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+li {
+  list-style-type: none;
+}
+a,
+.ciudad__listas__reseteo a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: $color-h1;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 10px;
+}
+a:hover {
+  color: rgb(247, 221, 221);
+}
+}
+
+.ciudad__nav__img {
+  background-image: (url "../assets/img/TandilyDique.jpeg");
+  width: 97vw;
+  height: 600px;
+  opacity: 0.9;
+  filter: alpha(opacity=80);
+  zoom: 1;
+  margin-left: 10px;
+}
+.ciudad__span {
+  @extend .ciudad__listas__reseteo;
+  font-size: 2rem;
+  font-family: $font-ciudad;
+  color: $color-h1;
+}
+}
+
+/*BOOTSTRAP*/
+  /*BARRA DE NAVEGACION*/
+  body {
+    background-image: linear-gradient(
+      90deg,
+      #ce9092,
+      #c99c9d,
+      rgba(232, 203, 203, 0.742)
+    );
+    overflow-x: hidden;
+  
+  .header,
+  .navbar {
+    background-color: brown;
+    .nav-tabs{
+      border: none;
+    }
+  .titulo__expand {
+    -webkit-animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
+      both;
+    animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  }
+  @-webkit-keyframes titulo__expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes titulo__expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .foto {
+    background-image: (url "../assets/img/TandilyDique.jpeg");
+    width: 100vw;
+    height: 600px;
+    opacity: 0.7;
+    filter: alpha(opacity=80);
+    zoom: 1;
+  
+  a:hover {
+    border: none !important;
+    color:  map-get($theme-colors, "anchor");;
+    width: 100vw;
+  }
+  .te_cuento {
+    background-color: map-get($theme-colors, "danger");
+    width: 100vw;
+    font-size: 2rem;
+    font-family: $font-ciudad;
+  }
+}
+   }
+  }
