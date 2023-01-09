@@ -1,9 +1,9 @@
-* {
+/* {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
 }
-/*NAV*/
+/*NAV*//*
 .general {
   background-image: linear-gradient(
     90deg,
@@ -189,7 +189,7 @@ h1 {
 }
 /*GALERIA con BOOTSTRAP*/
 /*BARRA DE NAVEGACION*/
-
+/*
 .titulo__expand {
   -webkit-animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
     both;
@@ -257,11 +257,11 @@ body {
 .carousel-item {
   width: 100% !important;
   height: 380px !important;
-  image-rendering: crisp-edges; /*la imagen escala con logaritmo que preserva contraste y bordes y no suaviza colores*/
+  image-rendering: crisp-edges; /*la imagen escala con logaritmo que preserva contraste y bordes y no suaviza colores*//*
 }
 .border {
   background-color: rgb(180, 77, 77);
-}
+}*/
 /*FOOTER con BOOTSTRAP*/
 footer {
   background-color: brown;
