@@ -8510,9 +8510,9 @@ body {
       opacity: 0.7;
       filter: alpha(opacity=80);
       zoom: 1; }
-    body .header span, body .header .navbar span {
+    body .header h2, body .header .navbar h2, body .header .h2 {
       font-family: "Dancing Script", cursive; }
-      body .header span .te__cuento-color {
+      body .header h2 .te__cuento-color, body .header .h2 .te__cuento-color {
         background-color: #dc3545;
         width: 100vw; }
 
@@ -8565,30 +8565,32 @@ footer .container-fluid, footer .container-sm, footer .container-md, footer .con
 .container {
   width: 100vw;
   text-align: center; }
-  .container #sectuno {
+  .container section {
     overflow: hidden; }
-    .container #sectuno .titulo {
+    .container section .titulo {
       text-align: center;
       font-size: 2em;
       font-family: "Dancing Script", cursive;
       margin-top: 10px; }
-    .container #sectuno a {
+    .container section a {
       color: white; }
-    .container #sectuno p {
-      width: 100vw;
+    .container section p {
+      display: block;
       font-size: 1.1rem;
-      text-align: justify; }
-  .container #sectdos .titulo2 {
+      text-align: justify;
+      margin-left: 50px;
+      line-height: 2; }
+  .container section .titulo2 {
     font-family: "Dancing Script", cursive; }
-  .container #sectdos .enumera {
-    width: 100%;
+  .container section .enumera {
     font-size: 1rem;
     font-weight: bold;
-    margin: 60px;
+    margin-left: 60px;
     line-height: 3;
     background: #c76464;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     text-align: justify; }
-  .container #sectdos .vistaPanoramica {
-    width: 100vw; }
+  .container section .vistaPanoramica {
+    width: 100%;
+    margin-left: 60px; }

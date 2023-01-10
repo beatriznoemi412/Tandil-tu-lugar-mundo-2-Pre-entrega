@@ -1,9 +1,11 @@
 .container {
     width: 100vw;
     text-align: center;
-#sectuno {
+
+section{
+   
     overflow: hidden;
-  
+
  .titulo{
     text-align: center;
     font-size: 2em;
@@ -14,22 +16,23 @@
     color: $color-h1;
   }
   p {
-    width: 100vw;
-    
+    display: block;
     font-size: 1.1rem;
     text-align: justify;
+    margin-left: 50px;
+    line-height: 2;
   }
- }
-
-   #sectdos{
+}
+  section{
+    
     .titulo2{
        font-family: $font-ciudad;
     }
-    .enumera{
-    width:100%;    
+    
+    .enumera{ 
     font-size: 1rem;
     font-weight: bold;
-    margin: 60px;
+    margin-left: 60px;
     line-height: 3;
     background: rgb(199, 100, 100);
     border-bottom-right-radius: 20px;
@@ -38,8 +41,8 @@
    }
 
   .vistaPanoramica {
-    width:100vw;
+    width: 100%;
+    margin-left:60px;
 }
 }
-
 }
