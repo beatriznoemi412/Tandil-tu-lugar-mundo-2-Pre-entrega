@@ -1,0 +1,45 @@
+.container {
+    width: 100vw;
+    text-align: center;
+#sectuno {
+    overflow: hidden;
+  
+ .titulo{
+    text-align: center;
+    font-size: 2em;
+    font-family: $font-ciudad;
+    margin-top: 10px;
+ }
+  a{
+    color: $color-h1;
+  }
+  p {
+    width: 100vw;
+    
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+ }
+
+   #sectdos{
+    .titulo2{
+       font-family: $font-ciudad;
+    }
+    .enumera{
+    width:100%;    
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 60px;
+    line-height: 3;
+    background: rgb(199, 100, 100);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: justify;
+   }
+
+  .vistaPanoramica {
+    width:100vw;
+}
+}
+
+}
