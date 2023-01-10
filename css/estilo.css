@@ -8515,3 +8515,49 @@ body {
       body .header span .te__cuento-color {
         background-color: #dc3545;
         width: 100vw; }
+
+.footer {
+  width: 100vw;
+  background-color: brown;
+  height: auto;
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around; }
+  .footer h1, .footer .h1, .footer h2, .footer .h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    color: black; }
+  .footer .footer__comunicarse {
+    padding: 20px;
+    color: black; }
+  .footer .correo, .footer .footer__comunicarse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center; }
+    .footer .correo .correo__mailto, .footer .footer__comunicarse .correo__mailto {
+      font-size: 1.2rem;
+      font-family: "Dancing Script", cursive;
+      font-weight: bold;
+      color: black; }
+
+/*FOOTER BOOTSTRAP*/
+footer .container-fluid, footer .container-sm, footer .container-md, footer .container-lg, footer .container-xl, footer .container-xxl {
+  background-color: brown; }
+  footer .container-fluid h1, footer .container-sm h1, footer .container-md h1, footer .container-lg h1, footer .container-xl h1, footer .container-xxl h1, footer .container-fluid .h1, footer .container-sm .h1, footer .container-md .h1, footer .container-lg .h1, footer .container-xl .h1, footer .container-xxl .h1, footer .container-fluid h2, footer .container-sm h2, footer .container-md h2, footer .container-lg h2, footer .container-xl h2, footer .container-xxl h2, footer .container-fluid .h2, footer .container-sm .h2, footer .container-md .h2, footer .container-lg .h2, footer .container-xl .h2, footer .container-xxl .h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 2rem; }
+  footer .container-fluid .informe, footer .container-sm .informe, footer .container-md .informe, footer .container-lg .informe, footer .container-xl .informe, footer .container-xxl .informe {
+    font-size: 1rem; }
+  footer .container-fluid .bi, footer .container-sm .bi, footer .container-md .bi, footer .container-lg .bi, footer .container-xl .bi, footer .container-xxl .bi {
+    color: black; }
+  footer .container-fluid #correo > h2, footer .container-sm #correo > h2, footer .container-md #correo > h2, footer .container-lg #correo > h2, footer .container-xl #correo > h2, footer .container-xxl #correo > h2, footer .container-fluid #correo > .h2, footer .container-sm #correo > .h2, footer .container-md #correo > .h2, footer .container-lg #correo > .h2, footer .container-xl #correo > .h2, footer .container-xxl #correo > .h2 {
+    font-family: "Dancing Script", cursive; }
+  footer .container-fluid .correo__email, footer .container-sm .correo__email, footer .container-md .correo__email, footer .container-lg .correo__email, footer .container-xl .correo__email, footer .container-xxl .correo__email {
+    font-family: "Dancing Script", cursive;
+    text-decoration: none; }

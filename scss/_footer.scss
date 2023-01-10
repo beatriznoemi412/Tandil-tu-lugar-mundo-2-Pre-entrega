@@ -1,0 +1,62 @@
+.footer {
+    width: 100vw;
+    background-color: $background-header;
+    height: auto;
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+  
+  h1, h2{
+    font-family: $font-ciudad;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    color: black;
+  }
+  .footer__comunicarse{
+    @extend .correo;
+    padding: 20px;
+    color:$anchor;
+  }
+  .correo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+   
+    .correo__mailto {
+    font-size: 1.2rem;
+    font-family: $font-ciudad;
+    font-weight: bold;
+    color: $anchor;
+  }
+}
+}
+
+/*FOOTER BOOTSTRAP*/
+footer {
+  .container-fluid{
+  background-color: brown;
+
+  h1, h2 {
+  font-family: $font-ciudad;
+  font-size: 2rem;
+ }
+.informe {
+  font-size: 1rem;
+}
+.bi {
+  color: black;
+}
+#correo > h2 {
+  font-family: $font-ciudad;
+}
+.correo__email{
+  font-family: $font-ciudad;
+  text-decoration: none;
+}
+}
+}
