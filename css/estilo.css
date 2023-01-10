@@ -8399,10 +8399,16 @@ textarea.form-control-lg {
     background-color: brown;
     grid-area: header;
     width: 100vw;
-    height: 650px; }
+    height: 640px; }
     .general #header .titulo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.6rem;
       font-family: "Dancing Script", cursive;
-      color: white; }
+      font-weight: bold;
+      color: white;
+      margin-top: 20px; }
     .general #header .titulo__expand {
       -webkit-animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
       animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both; }

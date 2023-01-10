@@ -144,11 +144,11 @@ p {
   border-bottom-left-radius: 20px;
   text-align: justify;
 }
-
+/*
 span {
   font-weight: bolder;
   font-size: 1em;
-}
+}*/
 .vistaPanoramica {
   width: 100%;
 }
@@ -379,39 +379,39 @@ aside {
 #contentBox {
   padding: 25px;
 }
-/*MEDIA QUERYES*/
+/*MEDIA QUERYES*//*
 @media (min-width: 576px) {
   .carousel-item {
     width: 500px !important;
     height: 330px !important;
     image-rendering: crisp-edges; /*la imagen escala con logaritmo que preserva contraste y bordes y no suaviza colores*/
-  }
+ /* }
 }
 @media (min-width: 768px) {
   .carousel-item {
     width: 600px !important;
     height: 370px !important;
     image-rendering: crisp-edges; /*la imagen escala con logaritmo que preserva contraste y bordes y no suaviza colores*/
-  }
+/*/  }
 }
 @media (min-width: 992px) {
   .carousel-item {
     width: 600px !important;
     height: 400px !important;
     image-rendering: crisp-edges; /*la imagen escala con logaritmo que preserva contraste y bordes y no suaviza colores*/
-  }
+/*  }
 }
 @media (min-width: 1200px) {
   .carousel-item {
     width: 600px !important;
     height: 400px !important;
     image-rendering: crisp-edges; /*la imagen escala con logaritmo que preserva contraste y bordes y no suaviza colores*/
-  }
+/*  }
 }
 @media (min-width: 1400px) {
   .carousel-item {
     width: 600px !important;
     height: 400px !important;
     image-rendering: crisp-edges; /*la imagen escala con logaritmo que preserva contraste y bordes y no suaviza colores*/
-  }
+/*  }
 }
