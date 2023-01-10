@@ -33,3 +33,13 @@ main{
       @include tamanos(70%, 300px);
   }
 }
+@media (min-width: 1200px){
+  .carousel-foto{
+      @include tamanos(90%, 300px);
+  }
+}
+@media (min-width: 1400px){
+  .carousel-foto{
+      @include tamanos(100%, 300px);
+  }
+}
