@@ -15,11 +15,26 @@
     text-align: center;
     padding: 20px;
     color: black;
+
+    @include mobile{
+      font-size: 1.2rem;
+    }
+
+    @include mobile{
+      font-size: 1.6rem;
+    }
   }
   .footer__comunicarse{
     @extend .correo;
     padding: 20px;
     color:$anchor;
+
+    @include mobile{
+      font-size: .6rem;
+    }
+    
+   
+  
   }
   .correo {
     display: flex;
@@ -32,6 +47,11 @@
     font-family: $font-ciudad;
     font-weight: bold;
     color: $anchor;
+
+    @include mobile{
+    font-size: .8rem;
+  
+  }
   }
 }
 }

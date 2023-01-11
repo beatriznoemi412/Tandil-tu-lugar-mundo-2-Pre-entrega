@@ -1,0 +1,25 @@
+@mixin mobile{
+    @media (min-width: 320px){
+        @content;
+    }
+}
+@mixin mobile1{
+    @media (min-width: 576px){
+        @content;
+    }
+}
+@mixin mobile2{
+    @media (min-width: 768px){
+        @content;
+    }
+}
+@mixin mobile3{
+    @media (min-width: 1200px){
+        @content;
+    }
+}
+@mixin mobile4{
+    @media (min-width: 1400px){
+        @content;
+        }
+}

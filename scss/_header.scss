@@ -23,7 +23,29 @@
   background-color: $background-header;
   grid-area: header;
   width: 100vw;
-  height:640px;
+  height:755px;
+
+  @include mobile{
+    width: 100vw;
+    height: 400px;
+  }
+  @include mobile1{
+    width:100vw;
+    height: 460px;
+  }
+  @include mobile2{
+    width: 100vw;
+    height: 560px;
+  
+  }
+  @include mobile4{
+    width: 100vw;
+    height: 970px;
+  
+  }
+  
+
+
 .titulo {
   display: flex;
   justify-content: center;
@@ -77,6 +99,7 @@
   flex-wrap: wrap;
 li {
   list-style-type: none;
+
 }
 a,
 .ciudad__listas__reseteo a:link,
@@ -88,29 +111,54 @@ a:active {
   font-weight: bold;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 10px;
-}
-a:hover {
+  &:hover {
   color: rgb(222, 169, 169);
 }
 }
+}
+.ciudad__nav{
+ display:flex;
+ justify-content: center;
+ align-content: center;
 .ciudad__nav__img {
   background-image: (url "../assets/img/TandilyDique.jpeg");
-  width: 97vw;
-  height: 500px;
+  width: 98%;
+  height: 800px;
   opacity: 0.9;
   filter: alpha(opacity=80);
   zoom: 1;
-  margin-left: 10px;
+ 
+  @include mobile{
+    margin: 6px;
+    width: 95%;
+    height: 200px;
+  }
+  @include mobile1{
+    margin: 6px;
+    width: 95%;
+    height: 300px;
+  }
+  @include mobile2{
+    margin: 6px;
+    width: 95%;
+    height: 400px;
+  }
+  @include mobile4{
+    width: 94%;
+    height: 800px;
+  }
+}
 }
 .ciudad__span {
   @extend .ciudad__listas__reseteo;
   font-family: $font-ciudad;
   font-size: 1.6rem;
   color: $color-h1;
+
 }
 }
 }
-}
+
 /*BOOTSTRAP*/
   /*BARRA DE NAVEGACION*/
   body {
@@ -127,9 +175,7 @@ a:hover {
     h1{
       font-family: $font-ciudad;
     }
-  .navbar {
-    @extend .header;
-  }
+  
     .titulo__expand {
     -webkit-animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
       both;
@@ -159,12 +205,15 @@ a:hover {
       opacity: 1;
     }
   }
+  .navbar {
+    background-color: $background-header;
   .nav-link{
     border: none!important;
-     &:hover{
+  }
+  .nav-link:hover{
       color: map-get($colors, "pink")!important;
      }
-    }
+    
  .foto {
     background-image: (url "../assets/img/TandilyDique.jpeg");
     width: 100vw;
@@ -183,5 +232,5 @@ a:hover {
 }
   }
 }
- 
-  
+}
+} 

@@ -1,48 +1,72 @@
+/*main*/
 .container {
-    width: 100vw;
-    text-align: center;
+  width: 100vw;
+  grid-area: container;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "sectuno sectuno"
+    "sectdos sectdos";
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
 
-section{
-   
-    overflow: hidden;
+#sectuno {
+  grid-area: sectuno;
 
- .titulo{
-    text-align: center;
-    font-size: 2em;
-    font-family: $font-ciudad;
-    margin-top: 10px;
- }
-  a{
-    color: $color-h1;
-  }
-  p {
-    display: block;
-    font-size: 1.1rem;
-    text-align: justify;
-    margin-left: 50px;
-    line-height: 2;
-  }
+.titulo{
+  text-align: center;
+  font-size: 2rem;
+  font-family: $font-ciudad;
 }
-  section{
-    
-    .titulo2{
-       font-family: $font-ciudad;
-    }
-    
-    .enumera{ 
-    font-size: 1rem;
-    font-weight: bold;
-    margin-left: 60px;
-    line-height: 3;
-    background: rgb(199, 100, 100);
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    text-align: justify;
-   }
+p {
+  margin: 50px;
+  font-size: 1.3rem;
+  text-align: justify;
 
-  .vistaPanoramica {
-    width: 100%;
-    margin-left:60px;
+  @include mobile{
+  font-size: .8rem;
+  }
+  @include mobile1{
+    font-size: 1.3rem;
+    }
+  }
+a{
+  color: $color-h1;
+}
+}
+#sectdos {
+  grid-area: sectdos;
+.titulo2{
+  font-family: $font-ciudad;
+  margin: 40px;
+  font-weight: bold;
+}
+.enumera {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 50px;
+  line-height: 2;
+  background: rgb(167, 68, 68);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  text-align: justify;
+
+  @include mobile{
+  font-size: .7rem;
+  width: 65%;
+  }
+  @include mobile2{
+    font-size: 1rem;
+    width: 80%;
+    }
+  @include mobile3{
+    width: 90%;
+    }
+
+  }
+.vistaPanoramica {
+  width: 100%;
 }
 }
 }
