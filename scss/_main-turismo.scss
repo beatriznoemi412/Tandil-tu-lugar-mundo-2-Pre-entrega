@@ -1,0 +1,26 @@
+/*TURISMO Y CONTACTO CON GRID Y FLEXBOX*/
+
+/*TURISMO*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  section {
+    h1{
+        font-family: $font-ciudad;
+    }
+    table {
+      width: 100%;
+      border: ridge 15px $background-header;
+      padding: 15px;
+      display: flex;
+      flex-wrap: nowrap;
+    #tabla{
+        margin: 50px;
+    }
+    a{
+        color: $color-h1;
+    } 
+    }
+  }
+}

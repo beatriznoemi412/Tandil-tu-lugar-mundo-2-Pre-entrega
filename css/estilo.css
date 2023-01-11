@@ -8394,30 +8394,16 @@ textarea.form-control-lg {
   grid-column-gap: 5px;
   grid-row-gap: 15px;
   width: 100vw;
-  height: 100vh;
-  /*BOOTSTRAP*/
-  /*BARRA DE NAVEGACION*/ }
+  height: 100vh; }
   .general #header {
     background-color: brown;
     grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     width: 100vw;
-    height: 755px; }
-    @media (min-width: 320px) {
-      .general #header {
-        width: 100vw;
-        height: 400px; } }
-    @media (min-width: 576px) {
-      .general #header {
-        width: 100vw;
-        height: 460px; } }
-    @media (min-width: 768px) {
-      .general #header {
-        width: 100vw;
-        height: 560px; } }
-    @media (min-width: 1400px) {
-      .general #header {
-        width: 100vw;
-        height: 970px; } }
+    height: 760px; }
     .general #header .titulo {
       display: flex;
       justify-content: center;
@@ -8457,75 +8443,60 @@ textarea.form-control-lg {
         flex-wrap: wrap; }
         .general #header .ciudad .ciudad__listas__reseteo li, .general #header .ciudad .ciudad__span li {
           list-style-type: none; }
-        .general #header .ciudad .ciudad__listas__reseteo a, .general #header .ciudad .ciudad__span a,
-        .general #header .ciudad .ciudad__listas__reseteo .ciudad__listas__reseteo a:link,
-        .general #header .ciudad .ciudad__span .ciudad__listas__reseteo a:link,
-        .general #header .ciudad .ciudad__listas__reseteo .ciudad__span a:link,
-        .general #header .ciudad .ciudad__span .ciudad__span a:link,
-        .general #header .ciudad .ciudad__listas__reseteo a:visited,
-        .general #header .ciudad .ciudad__span a:visited,
-        .general #header .ciudad .ciudad__listas__reseteo a:active,
-        .general #header .ciudad .ciudad__span a:active {
-          text-decoration: none;
-          color: white;
-          font-size: 1rem;
-          font-weight: bold;
-          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-          padding: 10px; }
-          .general #header .ciudad .ciudad__listas__reseteo a:hover, .general #header .ciudad .ciudad__span a:hover,
-          .general #header .ciudad .ciudad__listas__reseteo .ciudad__listas__reseteo a:link:hover,
-          .general #header .ciudad .ciudad__span .ciudad__listas__reseteo a:link:hover,
-          .general #header .ciudad .ciudad__listas__reseteo .ciudad__span a:link:hover,
-          .general #header .ciudad .ciudad__span .ciudad__span a:link:hover,
-          .general #header .ciudad .ciudad__listas__reseteo a:visited:hover,
-          .general #header .ciudad .ciudad__span a:visited:hover,
-          .general #header .ciudad .ciudad__listas__reseteo a:active:hover,
-          .general #header .ciudad .ciudad__span a:active:hover {
-            color: #dea9a9; }
-      .general #header .ciudad .ciudad__nav {
-        display: flex;
-        justify-content: center;
-        align-content: center; }
-        .general #header .ciudad .ciudad__nav .ciudad__nav__img {
-          background-image: url "../assets/img/TandilyDique.jpeg";
-          width: 98%;
-          height: 800px;
-          opacity: 0.9;
-          filter: alpha(opacity=80);
-          zoom: 1; }
-          @media (min-width: 320px) {
-            .general #header .ciudad .ciudad__nav .ciudad__nav__img {
-              margin: 6px;
-              width: 95%;
-              height: 200px; } }
-          @media (min-width: 576px) {
-            .general #header .ciudad .ciudad__nav .ciudad__nav__img {
-              margin: 6px;
-              width: 95%;
-              height: 300px; } }
-          @media (min-width: 768px) {
-            .general #header .ciudad .ciudad__nav .ciudad__nav__img {
-              margin: 6px;
-              width: 95%;
-              height: 400px; } }
-          @media (min-width: 1400px) {
-            .general #header .ciudad .ciudad__nav .ciudad__nav__img {
-              width: 94%;
-              height: 800px; } }
-      .general #header .ciudad .ciudad__span {
-        font-family: "Dancing Script", cursive;
-        font-size: 1.6rem;
-        color: white; }
-  .general body {
-    background-image: linear-gradient(90deg, #ce9092, #c99c9d, rgba(232, 203, 203, 0.742));
-    overflow-x: hidden; }
-    .general body .header {
-      background-color: brown; }
-      .general body .header h1, .general body .header .h1 {
-        font-family: "Dancing Script", cursive; }
-      .general body .header .titulo__expand {
-        -webkit-animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-        animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+          .general #header .ciudad .ciudad__listas__reseteo li a, .general #header .ciudad .ciudad__span li a,
+          .general #header .ciudad .ciudad__listas__reseteo li .ciudad__listas__reseteo a:link,
+          .general #header .ciudad .ciudad__span li .ciudad__listas__reseteo a:link,
+          .general #header .ciudad .ciudad__listas__reseteo li .ciudad__span a:link,
+          .general #header .ciudad .ciudad__span li .ciudad__span a:link,
+          .general #header .ciudad .ciudad__listas__reseteo li a:visited,
+          .general #header .ciudad .ciudad__span li a:visited,
+          .general #header .ciudad .ciudad__listas__reseteo li a:active,
+          .general #header .ciudad .ciudad__span li a:active {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+            padding: 10px; }
+            .general #header .ciudad .ciudad__listas__reseteo li a:hover, .general #header .ciudad .ciudad__span li a:hover,
+            .general #header .ciudad .ciudad__listas__reseteo li .ciudad__listas__reseteo a:link:hover,
+            .general #header .ciudad .ciudad__span li .ciudad__listas__reseteo a:link:hover,
+            .general #header .ciudad .ciudad__listas__reseteo li .ciudad__span a:link:hover,
+            .general #header .ciudad .ciudad__span li .ciudad__span a:link:hover,
+            .general #header .ciudad .ciudad__listas__reseteo li a:visited:hover,
+            .general #header .ciudad .ciudad__span li a:visited:hover,
+            .general #header .ciudad .ciudad__listas__reseteo li a:active:hover,
+            .general #header .ciudad .ciudad__span li a:active:hover {
+              color: #dea9a9; }
+    .general #header .ciudad__nav {
+      display: flex;
+      flex-direction: row;
+      justify-items: center;
+      align-items: center; }
+      .general #header .ciudad__nav .ciudad__nav__img {
+        background-image: url "../assets/img/TandilyDique.jpeg";
+        width: 100%;
+        height: 600px;
+        opacity: 0.9;
+        filter: alpha(opacity=80);
+        zoom: 1; }
+    .general #header .ciudad__span {
+      font-family: "Dancing Script", cursive;
+      font-size: 1.6rem;
+      color: white; }
+
+/*BOOTSTRAP*/
+/*BARRA DE NAVEGACION*/
+body {
+  background-image: linear-gradient(90deg, #ce9092, #c99c9d, rgba(232, 203, 203, 0.742));
+  overflow-x: hidden; }
+  body .header {
+    background-color: brown; }
+    body .header h1, body .header .h1 {
+      font-family: "Dancing Script", cursive; }
+    body .header .titulo__expand {
+      -webkit-animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+      animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
 
 @-webkit-keyframes titulo__expand {
   0% {
@@ -8544,24 +8515,24 @@ textarea.form-control-lg {
     opacity: 0.6; }
   100% {
     opacity: 1; } }
-      .general body .header .navbar {
-        background-color: brown; }
-        .general body .header .navbar .nav-link {
-          border: none !important; }
-        .general body .header .navbar .nav-link:hover {
+    body .header .navbar {
+      background-color: brown; }
+      body .header .navbar .nav-link {
+        border: none !important; }
+        body .header .navbar .nav-link:hover {
           color: #d63384 !important; }
-        .general body .header .navbar .foto {
-          background-image: url "../assets/img/TandilyDique.jpeg";
-          width: 100vw;
-          height: 400px;
-          opacity: 0.7;
-          filter: alpha(opacity=80);
-          zoom: 1; }
-        .general body .header .navbar h2, .general body .header .navbar .h2 {
-          font-family: "Dancing Script", cursive; }
-          .general body .header .navbar h2 .te__cuento-color, .general body .header .navbar .h2 .te__cuento-color {
-            background-color: #dc3545;
-            width: 100vw; }
+      body .header .navbar .foto {
+        background-image: url "../assets/img/TandilyDique.jpeg";
+        width: 100vw;
+        height: 400px;
+        opacity: 0.7;
+        filter: alpha(opacity=80);
+        zoom: 1; }
+      body .header .navbar h2, body .header .navbar .h2 {
+        font-family: "Dancing Script", cursive; }
+        body .header .navbar h2 .te__cuento-color, body .header .navbar .h2 .te__cuento-color {
+          background-color: #dc3545;
+          width: 100vw; }
 
 .footer {
   width: 100vw;
@@ -8745,3 +8716,22 @@ main section .carousel-foto {
 .container-fluid .row .accordion-item, .container-sm .row .accordion-item, .container-md .row .accordion-item, .container-lg .row .accordion-item, .container-xl .row .accordion-item, .container-xxl .row .accordion-item {
   background-color: #c36e6e !important;
   border: none !important; }
+
+/*TURISMO Y CONTACTO CON GRID Y FLEXBOX*/
+/*TURISMO*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+  .container section h1, .container section .h1 {
+    font-family: "Dancing Script", cursive; }
+  .container section table {
+    width: 100%;
+    border: ridge 15px brown;
+    padding: 15px;
+    display: flex;
+    flex-wrap: nowrap; }
+    .container section table #tabla {
+      margin: 50px; }
+    .container section table a {
+      color: white; }

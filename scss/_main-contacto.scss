@@ -1,0 +1,52 @@
+/*CONTACTO*/
+main{
+    .cajas{
+input {
+  border-radius: 0.5em;
+  border: none;
+  line-height: 2.5;
+  margin-top: 5px;
+
+&:hover {
+  background-color: rgb(230, 197, 197);
+}
+}
+#box {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cajas {
+  flex-basis: 50px;
+  flex-grow: 1;
+  border: 15px ridge #b25659;
+  padding: 20px;
+}
+.form__datos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.datos__texto--bold {
+  font-weight: bold;
+}
+label {
+  padding: 20px;
+  line-height: 2.5;
+}
+    }
+aside {
+  flex-basis: 50px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+.contentBox {
+  text-align: justify;
+}
+.contentBox,
+p {
+  font-size: 1.2rem;
+}
+}
