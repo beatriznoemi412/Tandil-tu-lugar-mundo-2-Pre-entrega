@@ -8735,3 +8735,38 @@ main section .carousel-foto {
       margin: 50px; }
     .container section table a {
       color: white; }
+
+/*CONTACTO*/
+main {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  margin: 30px; }
+  main .cajas {
+    flex-basis: 30px;
+    flex-grow: 1;
+    border: 15px ridge #b25659;
+    padding: 40px; }
+    main .cajas .form__datos {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main .cajas .form__datos .datos__texto--bold {
+        font-weight: bold; }
+      main .cajas .form__datos label {
+        padding: 20px;
+        line-height: 2.5; }
+      main .cajas .form__datos input {
+        border-radius: 0.5em;
+        border: none;
+        line-height: 2.5;
+        margin-top: 5px; }
+        main .cajas .form__datos input:hover {
+          background-color: #e6c5c5; }
+    main .cajas #box {
+      flex-basis: 40px;
+      flex-grow: 1; }
+      main .cajas #box .box__content {
+        text-align: justify; }
+      main .cajas #box p {
+        font-size: 1.2rem; }

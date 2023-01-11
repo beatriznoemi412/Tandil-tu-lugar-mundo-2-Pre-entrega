@@ -1,6 +1,29 @@
 /*CONTACTO*/
 main{
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  margin: 30px;
+  
+
     .cajas{
+        flex-basis: 30px;
+        flex-grow: 1;
+        border: 15px ridge #b25659;
+        padding: 40px;
+      .form__datos{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .datos__texto--bold {
+            font-weight: bold;
+          }
+          
+label {
+  padding: 20px;
+  line-height: 2.5;
+
+}
 input {
   border-radius: 0.5em;
   border: none;
@@ -10,43 +33,20 @@ input {
 &:hover {
   background-color: rgb(230, 197, 197);
 }
-}
-#box {
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.cajas {
-  flex-basis: 50px;
-  flex-grow: 1;
-  border: 15px ridge #b25659;
-  padding: 20px;
-}
-.form__datos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.datos__texto--bold {
-  font-weight: bold;
-}
-label {
-  padding: 20px;
-  line-height: 2.5;
+    
 }
     }
-aside {
-  flex-basis: 50px;
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-}
-.contentBox {
-  text-align: justify;
-}
-.contentBox,
+
+#box {
+    flex-basis: 40px;
+    flex-grow: 1;
+    .box__content {
+      text-align: justify;
+    } 
+
 p {
   font-size: 1.2rem;
+}
+}
 }
 }
