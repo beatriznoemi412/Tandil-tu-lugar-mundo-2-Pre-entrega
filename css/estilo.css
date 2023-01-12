@@ -8543,7 +8543,9 @@ body {
   flex-direction: row;
   align-content: center;
   justify-content: space-around; }
-  .footer h1, .footer .h1, .footer h2, .footer .h2 {
+  .footer h1, .footer .h1,
+  .footer h2,
+  .footer .h2 {
     font-family: "Dancing Script", cursive;
     font-size: 1.6rem;
     font-weight: bold;
@@ -8551,17 +8553,18 @@ body {
     padding: 20px;
     color: black; }
     @media (min-width: 320px) {
-      .footer h1, .footer .h1, .footer h2, .footer .h2 {
+      .footer h1, .footer .h1,
+      .footer h2,
+      .footer .h2 {
         font-size: 1.2rem; } }
     @media (min-width: 320px) {
-      .footer h1, .footer .h1, .footer h2, .footer .h2 {
+      .footer h1, .footer .h1,
+      .footer h2,
+      .footer .h2 {
         font-size: 1.6rem; } }
   .footer .footer__comunicarse {
     padding: 20px;
     color: black; }
-    @media (min-width: 320px) {
-      .footer .footer__comunicarse {
-        font-size: .6rem; } }
   .footer .correo, .footer .footer__comunicarse {
     display: flex;
     flex-direction: column;
@@ -8574,12 +8577,24 @@ body {
       color: black; }
       @media (min-width: 320px) {
         .footer .correo .correo__mailto, .footer .footer__comunicarse .correo__mailto {
-          font-size: .8rem; } }
+          font-size: 0.8rem; } }
 
 /*FOOTER BOOTSTRAP*/
 footer .container-fluid, footer .container-sm, footer .container-md, footer .container-lg, footer .container-xl, footer .container-xxl {
   background-color: brown; }
-  footer .container-fluid h1, footer .container-sm h1, footer .container-md h1, footer .container-lg h1, footer .container-xl h1, footer .container-xxl h1, footer .container-fluid .h1, footer .container-sm .h1, footer .container-md .h1, footer .container-lg .h1, footer .container-xl .h1, footer .container-xxl .h1, footer .container-fluid h2, footer .container-sm h2, footer .container-md h2, footer .container-lg h2, footer .container-xl h2, footer .container-xxl h2, footer .container-fluid .h2, footer .container-sm .h2, footer .container-md .h2, footer .container-lg .h2, footer .container-xl .h2, footer .container-xxl .h2 {
+  footer .container-fluid h1, footer .container-sm h1, footer .container-md h1, footer .container-lg h1, footer .container-xl h1, footer .container-xxl h1, footer .container-fluid .h1, footer .container-sm .h1, footer .container-md .h1, footer .container-lg .h1, footer .container-xl .h1, footer .container-xxl .h1,
+  footer .container-fluid h2,
+  footer .container-sm h2,
+  footer .container-md h2,
+  footer .container-lg h2,
+  footer .container-xl h2,
+  footer .container-xxl h2,
+  footer .container-fluid .h2,
+  footer .container-sm .h2,
+  footer .container-md .h2,
+  footer .container-lg .h2,
+  footer .container-xl .h2,
+  footer .container-xxl .h2 {
     font-family: "Dancing Script", cursive;
     font-size: 2rem; }
   footer .container-fluid .informe, footer .container-sm .informe, footer .container-md .informe, footer .container-lg .informe, footer .container-xl .informe, footer .container-xxl .informe {
@@ -8741,41 +8756,43 @@ main section .carousel-foto {
   color: white; }
 
 /*CONTACTO*/
-.contacto {
+.container {
   width: 100vw;
+  grid-area: container; }
+
+#content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "cajas box"; }
-  .contacto .cajas {
-    grid-area: cajas;
-    width: 40vw;
+  grid-template-areas: "caja box"; }
+  #content #caja {
+    grid-area: caja;
     border: 15px ridge brown;
-    margin: 50px; }
-    .contacto .cajas .form__datos {
+    width: 38vw; }
+    #content #caja .form__datos {
       display: flex;
       flex-direction: column;
       align-items: center; }
-      .contacto .cajas .form__datos .datos__texto--bold {
+      #content #caja .form__datos .datos__texto--bold {
         font-weight: bold; }
-      .contacto .cajas .form__datos label {
+      #content #caja .form__datos label {
         padding: 20px;
-        line-height: 1.5; }
-      .contacto .cajas .form__datos input {
+        line-height: 1; }
+      #content #caja .form__datos input {
         border-radius: 0.5em;
         border: none;
         line-height: 1;
         margin-top: 5px; }
-        .contacto .cajas .form__datos input:hover {
+        #content #caja .form__datos input:hover {
           background-color: #e6c5c5; }
-  .contacto #box {
+  #content #box {
     grid-area: box;
     width: 40vw;
     display: flex;
     justify-items: center;
     align-items: center; }
-    .contacto #box #box__content h2, .contacto #box #box__content .h2 {
+    #content #box #box__content h2, #content #box #box__content .h2 {
       font-family: "Dancing Script", cursive;
       margin: 20px; }
-    .contacto #box #box__content p {
+    #content #box #box__content p {
       font-size: 1.2rem; }

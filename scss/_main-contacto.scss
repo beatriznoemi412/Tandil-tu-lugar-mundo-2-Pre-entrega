@@ -1,17 +1,19 @@
 /*CONTACTO*/
-.contacto{
+.container{
   width: 100vw;
+  grid-area: container;
+}
+  #content{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas:
-  "cajas box";
+  grid-template-areas: 
+  "caja box";
 
-     .cajas{
-        grid-area: cajas;
-        width: 40vw;
+     #caja{
+        grid-area: caja;
         border: $border;
-        margin: 50px;
+        width: 38vw;
       
       .form__datos{
           display: flex;
@@ -24,7 +26,7 @@
           
 label {
   padding: 20px;
-  line-height: 1.5;
+  line-height: 1;
 
 }
 input {
@@ -46,6 +48,8 @@ input {
   display: flex;
   justify-items: center;
   align-items: center;
+ 
+
   #box__content{
   
 h2{
@@ -59,3 +63,4 @@ p {
 }
 }
      }
+    
