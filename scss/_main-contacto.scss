@@ -1,33 +1,36 @@
 /*CONTACTO*/
-main{
-  display: flex;
-  justify-content: space-around;
-  align-content: space-around;
-  margin: 30px;
-  
+.contacto{
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "cajas box";
 
-    .cajas{
-        flex-basis: 30px;
-        flex-grow: 1;
-        border: 15px ridge #b25659;
-        padding: 40px;
+     .cajas{
+        grid-area: cajas;
+        width: 40vw;
+        border: $border;
+        margin: 50px;
+      
       .form__datos{
           display: flex;
           flex-direction: column;
           align-items: center;
           .datos__texto--bold {
             font-weight: bold;
+            
           }
           
 label {
   padding: 20px;
-  line-height: 2.5;
+  line-height: 1.5;
 
 }
 input {
   border-radius: 0.5em;
   border: none;
-  line-height: 2.5;
+  line-height: 1;
   margin-top: 5px;
 
 &:hover {
@@ -36,17 +39,23 @@ input {
     
 }
     }
-
+  }
 #box {
-    flex-basis: 40px;
-    flex-grow: 1;
-    .box__content {
-      text-align: justify;
-    } 
+  grid-area: box;
+  width: 40vw;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  #box__content{
+  
+h2{
+  font-family: $font-ciudad;
+  margin: 20px;
+}
 
 p {
   font-size: 1.2rem;
 }
 }
 }
-}
+     }

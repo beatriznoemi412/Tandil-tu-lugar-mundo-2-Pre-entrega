@@ -8515,26 +8515,26 @@ body {
     opacity: 0.6; }
   100% {
     opacity: 1; } }
-    body .header .navbar {
+    body .header .nav {
       background-color: brown; }
-      body .header .navbar .nav-link {
+      body .header .nav .nav-link {
         border: none !important; }
-        body .header .navbar .nav-link:hover {
+        body .header .nav .nav-link:hover {
           color: #d63384 !important; }
-      body .header .navbar .foto {
-        background-image: url "../assets/img/TandilyDique.jpeg";
-        width: 100vw;
-        height: 400px;
-        opacity: 0.7;
-        filter: alpha(opacity=80);
-        zoom: 1; }
-      body .header .navbar h2, body .header .navbar .h2 {
-        font-family: "Dancing Script", cursive; }
-        body .header .navbar h2 .te__cuento-color, body .header .navbar .h2 .te__cuento-color {
-          background-color: #dc3545;
-          width: 100vw; }
+    body .header div .foto {
+      background-image: url "../assets/img/TandilyDique.jpeg";
+      width: 100vw;
+      height: 600px !important;
+      opacity: 0.9;
+      filter: alpha(opacity=80);
+      zoom: 1; }
+    body .header .span .te_cuento {
+      background-color: brown;
+      width: 100vw;
+      font-family: "Dancing Script", cursive; }
 
 .footer {
+  grid-area: footer;
   width: 100vw;
   background-color: brown;
   height: auto;
@@ -8691,6 +8691,12 @@ main section .carousel-foto {
 
 /*TRANSPORTE URBANO PASAJEROS*/
 /*ACCORDION BOOTSTRAP*/
+.container-fluid .row .titulo, .container-sm .row .titulo, .container-md .row .titulo, .container-lg .row .titulo, .container-xl .row .titulo, .container-xxl .row .titulo {
+  font-family: "Dancing Script", cursive; }
+
+.container-fluid .row .row h2, .container-sm .row .row h2, .container-md .row .row h2, .container-lg .row .row h2, .container-xl .row .row h2, .container-xxl .row .row h2, .container-fluid .row .row .h2, .container-sm .row .row .h2, .container-md .row .row .h2, .container-lg .row .row .h2, .container-xl .row .row .h2, .container-xxl .row .row .h2 {
+  font-family: "Dancing Script", cursive; }
+
 .container-fluid .row .accordion, .container-sm .row .accordion, .container-md .row .accordion, .container-lg .row .accordion, .container-xl .row .accordion, .container-xxl .row .accordion {
   background-color: transparent !important;
   opacity: 0.8 !important; }
@@ -8719,54 +8725,58 @@ main section .carousel-foto {
 
 /*TURISMO Y CONTACTO CON GRID Y FLEXBOX*/
 /*TURISMO*/
-.container {
+.contacto section h1, .contacto section .h1 {
+  font-family: "Dancing Script", cursive;
+  text-align: center; }
+
+.contacto section table {
+  grid-area: cajas;
+  width: 90vw;
+  border: 15px ridge brown;
+  font-size: 1rem;
   display: flex;
-  justify-content: center;
-  align-content: center; }
-  .container section h1, .container section .h1 {
-    font-family: "Dancing Script", cursive; }
-  .container section table {
-    width: 100%;
-    border: ridge 15px brown;
-    padding: 15px;
-    display: flex;
-    flex-wrap: nowrap; }
-    .container section table #tabla {
-      margin: 50px; }
-    .container section table a {
-      color: white; }
+  flex-wrap: nowrap;
+  margin: 50px; }
+
+.contacto section a {
+  color: white; }
 
 /*CONTACTO*/
-main {
-  display: flex;
-  justify-content: space-around;
-  align-content: space-around;
-  margin: 30px; }
-  main .cajas {
-    flex-basis: 30px;
-    flex-grow: 1;
-    border: 15px ridge #b25659;
-    padding: 40px; }
-    main .cajas .form__datos {
+.contacto {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "cajas box"; }
+  .contacto .cajas {
+    grid-area: cajas;
+    width: 40vw;
+    border: 15px ridge brown;
+    margin: 50px; }
+    .contacto .cajas .form__datos {
       display: flex;
       flex-direction: column;
       align-items: center; }
-      main .cajas .form__datos .datos__texto--bold {
+      .contacto .cajas .form__datos .datos__texto--bold {
         font-weight: bold; }
-      main .cajas .form__datos label {
+      .contacto .cajas .form__datos label {
         padding: 20px;
-        line-height: 2.5; }
-      main .cajas .form__datos input {
+        line-height: 1.5; }
+      .contacto .cajas .form__datos input {
         border-radius: 0.5em;
         border: none;
-        line-height: 2.5;
+        line-height: 1;
         margin-top: 5px; }
-        main .cajas .form__datos input:hover {
+        .contacto .cajas .form__datos input:hover {
           background-color: #e6c5c5; }
-    main .cajas #box {
-      flex-basis: 40px;
-      flex-grow: 1; }
-      main .cajas #box .box__content {
-        text-align: justify; }
-      main .cajas #box p {
-        font-size: 1.2rem; }
+  .contacto #box {
+    grid-area: box;
+    width: 40vw;
+    display: flex;
+    justify-items: center;
+    align-items: center; }
+    .contacto #box #box__content h2, .contacto #box #box__content .h2 {
+      font-family: "Dancing Script", cursive;
+      margin: 20px; }
+    .contacto #box #box__content p {
+      font-size: 1.2rem; }

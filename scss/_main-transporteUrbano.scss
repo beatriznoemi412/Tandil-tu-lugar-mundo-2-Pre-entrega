@@ -3,7 +3,16 @@
   /*ACCORDION BOOTSTRAP*/
   .container-fluid{
     .row{
-        
+     
+      .titulo{
+        font-family: $font-ciudad;
+      } 
+      .row{
+        h2{
+          font-family: $font-ciudad;
+        } 
+      
+      }
   .accordion{
     background-color: transparent!important;
     opacity: 0.8 !important;
@@ -33,4 +42,6 @@
     border: none!important;
   }
 }
-  }
+     }
+  
+
