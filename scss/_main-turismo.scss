@@ -1,7 +1,7 @@
 /*TURISMO Y CONTACTO CON GRID Y FLEXBOX*/
 
 /*TURISMO*/
-.contacto {
+.container{
     
   section {
     h1{
@@ -9,13 +9,13 @@
         text-align: center;
     }
     table {
-      grid-area: cajas;
-      width: 90vw;
+      grid-area: sectuno;
+      width: 80vw;
       border:$border;     
       font-size: 1rem;
       display: flex;
       flex-wrap: nowrap;
-      margin: 50px;
+    
     }
     a{
         color: $color-h1;

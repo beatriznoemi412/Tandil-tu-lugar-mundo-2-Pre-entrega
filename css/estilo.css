@@ -8725,20 +8725,19 @@ main section .carousel-foto {
 
 /*TURISMO Y CONTACTO CON GRID Y FLEXBOX*/
 /*TURISMO*/
-.contacto section h1, .contacto section .h1 {
+.container section h1, .container section .h1 {
   font-family: "Dancing Script", cursive;
   text-align: center; }
 
-.contacto section table {
-  grid-area: cajas;
-  width: 90vw;
+.container section table {
+  grid-area: sectuno;
+  width: 80vw;
   border: 15px ridge brown;
   font-size: 1rem;
   display: flex;
-  flex-wrap: nowrap;
-  margin: 50px; }
+  flex-wrap: nowrap; }
 
-.contacto section a {
+.container section a {
   color: white; }
 
 /*CONTACTO*/
