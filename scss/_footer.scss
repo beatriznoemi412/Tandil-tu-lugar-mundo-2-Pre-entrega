@@ -4,10 +4,7 @@
   background-color: $background-header;
   height: auto;
   grid-area: footer;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-around;
+  @include flexbox(row, space-around, center);
 
   h1,
   h2 {
@@ -19,11 +16,11 @@
     color: black;
 
     @include mobile {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     @include mobile {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
     }
   }
   .footer__comunicarse {
@@ -34,21 +31,19 @@
   .correo {
     display: flex;
     flex-direction: column;
+    justify-content: baseline;
     align-items: center;
-    justify-items: center;
 
     .correo__mailto {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-family: $font-ciudad;
       font-weight: bold;
       color: $anchor;
 
-      @include mobile {
-        font-size: 0.8rem;
       }
     }
   }
-}
+
 
 /*FOOTER BOOTSTRAP*/
 footer {

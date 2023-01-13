@@ -10,19 +10,40 @@
   grid-template-areas: 
   "caja box";
 
+  @include mobile{
+    @include flexbox(column, center, center);
+  }
+  
+
      #caja{
         grid-area: caja;
         border: $border;
         width: 38vw;
-      
-      .form__datos{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+
+        @include mobile{
+          @include flexbox(column, center, center);
+          border:none;
+          margin-left: 50px;
+        }
+        @include mobile1{
+           @include flexbox(column, center, center);
+            max-width: 500px;
+        }
+         
+        .form__datos{
+        @include flexbox3(column, center, center);
+          
           .datos__texto--bold {
+          
             font-weight: bold;
             
           }
+textarea{
+  @include mobile{
+    width:70vw;
+    height: 150px;
+  }
+}
           
 label {
   padding: 20px;
@@ -49,7 +70,13 @@ input {
   justify-items: center;
   align-items: center;
  
-
+  @include mobile{
+    @include flexbox3(column, center, center);
+    width: 85vw;
+    margin: 5px;
+  
+  }
+         
   #box__content{
   
 h2{

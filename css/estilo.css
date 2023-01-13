@@ -8404,10 +8404,13 @@ textarea.form-control-lg {
     align-content: center;
     width: 100vw;
     height: 760px; }
+    @media (min-width: 320px) {
+      .general #header {
+        height: 350px; } }
     .general #header .titulo {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-content: center;
       font-size: 1.6rem;
       font-family: "Dancing Script", cursive;
       font-weight: bold;
@@ -8480,6 +8483,11 @@ textarea.form-control-lg {
         opacity: 0.9;
         filter: alpha(opacity=80);
         zoom: 1; }
+        @media (min-width: 320px) {
+          .general #header .ciudad__nav .ciudad__nav__img {
+            width: 95%;
+            height: 160px;
+            margin: 10px; } }
     .general #header .ciudad__span {
       font-family: "Dancing Script", cursive;
       font-size: 1.6rem;
@@ -8541,8 +8549,8 @@ body {
   grid-area: footer;
   display: flex;
   flex-direction: row;
-  align-content: center;
-  justify-content: space-around; }
+  justify-content: space-around;
+  align-content: center; }
   .footer h1, .footer .h1,
   .footer h2,
   .footer .h2 {
@@ -8556,28 +8564,25 @@ body {
       .footer h1, .footer .h1,
       .footer h2,
       .footer .h2 {
-        font-size: 1.2rem; } }
+        font-size: 1rem; } }
     @media (min-width: 320px) {
       .footer h1, .footer .h1,
       .footer h2,
       .footer .h2 {
-        font-size: 1.6rem; } }
+        font-size: 1.5rem; } }
   .footer .footer__comunicarse {
     padding: 20px;
     color: black; }
   .footer .correo, .footer .footer__comunicarse {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-items: center; }
+    justify-content: baseline;
+    align-items: center; }
     .footer .correo .correo__mailto, .footer .footer__comunicarse .correo__mailto {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-family: "Dancing Script", cursive;
       font-weight: bold;
       color: black; }
-      @media (min-width: 320px) {
-        .footer .correo .correo__mailto, .footer .footer__comunicarse .correo__mailto {
-          font-size: 0.8rem; } }
 
 /*FOOTER BOOTSTRAP*/
 footer .container-fluid, footer .container-sm, footer .container-md, footer .container-lg, footer .container-xl, footer .container-xxl {
@@ -8765,16 +8770,42 @@ main section .carousel-foto {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "caja box"; }
+  @media (min-width: 320px) {
+    #content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; } }
   #content #caja {
     grid-area: caja;
     border: 15px ridge brown;
     width: 38vw; }
+    @media (min-width: 320px) {
+      #content #caja {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        border: none;
+        margin-left: 50px; } }
+    @media (min-width: 576px) {
+      #content #caja {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        max-width: 500px; } }
     #content #caja .form__datos {
       display: flex;
       flex-direction: column;
+      justify-items: center;
       align-items: center; }
       #content #caja .form__datos .datos__texto--bold {
         font-weight: bold; }
+      @media (min-width: 320px) {
+        #content #caja .form__datos textarea {
+          width: 70vw;
+          height: 150px; } }
       #content #caja .form__datos label {
         padding: 20px;
         line-height: 1; }
@@ -8791,6 +8822,14 @@ main section .carousel-foto {
     display: flex;
     justify-items: center;
     align-items: center; }
+    @media (min-width: 320px) {
+      #content #box {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        width: 85vw;
+        margin: 5px; } }
     #content #box #box__content h2, #content #box #box__content .h2 {
       font-family: "Dancing Script", cursive;
       margin: 20px; }

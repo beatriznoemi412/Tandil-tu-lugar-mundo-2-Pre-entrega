@@ -2,3 +2,24 @@
     width: $ancho;
     height: $alto;
 }
+
+@mixin flexbox($orientacion, $justify, $align){
+    display: flex;
+    flex-direction: $orientacion;
+    justify-content: $justify;
+    align-content: $align;
+}
+
+@mixin flexbox2($justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-content: $align;
+
+}
+@mixin flexbox3($orientacion, $justify, $align){
+    display: flex;
+    flex-direction: $orientacion;
+    justify-items: $justify;
+    align-items: $align;
+}
+
