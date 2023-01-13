@@ -22,4 +22,9 @@
     justify-items: $justify;
     align-items: $align;
 }
+@mixin flexbox4($orientacion, $flex-wrap){
+    display: flex;
+    flex-direction: $orientacion;
+    flex-wrap:$flex-wrap;
+}
 

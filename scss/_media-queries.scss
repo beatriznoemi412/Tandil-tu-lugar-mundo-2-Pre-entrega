@@ -18,6 +18,11 @@
         @content;
     }
 }
+@mixin mobile5{
+    @media (min-width: 992px){
+        @content;
+    }
+}
 @mixin mobile3{
     @media (min-width: 1200px){
         @content;

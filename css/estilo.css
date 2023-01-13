@@ -8384,6 +8384,11 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 .general {
   background-image: linear-gradient(90deg, #ce9092, #d49697, rgba(232, 203, 203, 0.742));
   overflow-x: hidden;
@@ -8403,10 +8408,43 @@ textarea.form-control-lg {
     justify-content: center;
     align-content: center;
     width: 100vw;
-    height: 760px; }
+    height: 780px; }
     @media (min-width: 320px) {
       .general #header {
+        display: flex;
+        justify-content: center;
+        align-content: center;
         height: 350px; } }
+    @media (min-width: 320px) {
+      .general #header {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 380px; } }
+    @media (min-width: 768px) {
+      .general #header {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 500px; } }
+    @media (min-width: 992px) {
+      .general #header {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 650px; } }
+    @media (min-width: 1200px) {
+      .general #header {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 680px; } }
+    @media (min-width: 1400px) {
+      .general #header {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 780px; } }
     .general #header .titulo {
       display: flex;
       justify-content: center;
@@ -8477,17 +8515,71 @@ textarea.form-control-lg {
       justify-items: center;
       align-items: center; }
       .general #header .ciudad__nav .ciudad__nav__img {
+        display: flex;
+        justify-content: center;
+        align-content: center;
         background-image: url "../assets/img/TandilyDique.jpeg";
-        width: 100%;
-        height: 600px;
-        opacity: 0.9;
+        width: 100vw;
+        height: 650px;
+        opacity: 0.8;
         filter: alpha(opacity=80);
-        zoom: 1; }
+        zoom: 1;
+        margin-right: 25px; }
         @media (min-width: 320px) {
           .general #header .ciudad__nav .ciudad__nav__img {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 90%;
+            height: 170px;
+            margin-left: 10px; } }
+        @media (min-width: 425px) {
+          .general #header .ciudad__nav .ciudad__nav__img {
+            display: flex;
+            justify-content: center;
+            align-content: center;
             width: 95%;
-            height: 160px;
-            margin: 10px; } }
+            height: 170px;
+            margin-left: 10px; } }
+        @media (min-width: 576px) {
+          .general #header .ciudad__nav .ciudad__nav__img {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 92%;
+            height: 230px;
+            margin-left: 12px; } }
+        @media (min-width: 768px) {
+          .general #header .ciudad__nav .ciudad__nav__img {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 94%;
+            height: 350px;
+            margin-left: 12px; } }
+        @media (min-width: 992px) {
+          .general #header .ciudad__nav .ciudad__nav__img {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 98%;
+            height: 500px;
+            margin-left: 10px; } }
+        @media (min-width: 1200px) {
+          .general #header .ciudad__nav .ciudad__nav__img {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 98%;
+            height: 500px;
+            margin-left: 10px; } }
+        @media (min-width: 1400px) {
+          .general #header .ciudad__nav .ciudad__nav__img {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 100vw;
+            height: 650px; } }
     .general #header .ciudad__span {
       font-family: "Dancing Script", cursive;
       font-size: 1.6rem;
@@ -8767,14 +8859,17 @@ main section .carousel-foto {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "caja box"; }
+  grid-template-areas: "caja box";
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
   @media (min-width: 320px) {
     .container {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-content: center; } }
-  @media (min-width: 1400px) {
+  @media (min-width: 768px) {
     .container {
       display: flex;
       flex-direction: row;
@@ -8782,7 +8877,11 @@ main section .carousel-foto {
   .container #caja {
     grid-area: caja;
     border: 15px ridge brown;
-    width: 30vw; }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 40vw;
+    flex-grow: 1; }
     @media (min-width: 320px) {
       .container #caja {
         display: flex;
@@ -8796,14 +8895,18 @@ main section .carousel-foto {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-content: center; } }
+        align-content: center;
+        margin: 70px; } }
     @media (min-width: 768px) {
       .container #caja {
-        width: 75vw;
+        width: 30%;
         border: 15px ridge brown; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1200px) {
       .container #caja {
-        flex-basis: 38vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-basis: 30vw;
         flex-grow: 1; } }
     .container #caja .form__datos {
       display: flex;
@@ -8823,48 +8926,55 @@ main section .carousel-foto {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-content: center;
-          margin-left: 50px; } }
-      @media (min-width: 320px) {
-        .container #caja .form__datos .datos__texto--bold textarea {
-          width: 60vw;
-          height: 150px; } }
-      @media (min-width: 768px) {
-        .container #caja .form__datos .datos__texto--bold textarea {
-          width: 40vw;
-          height: 300px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-content: center;
-          margin-left: 20px; } }
-      .container #caja .form__datos label {
+          align-content: center; } }
+      .container #caja .form__datos .datos__texto--bold #textarea {
+        width: 90%;
+        height: 150px; }
+      .container #caja .form__datos .datos__texto--bold .datos__texto-label {
         padding: 20px;
         line-height: 1; }
-      .container #caja .form__datos input {
+      .container #caja .form__datos .datos__texto--bold .datos__texto--medida {
         border-radius: 0.5em;
         border: none;
         line-height: 1;
         margin-top: 5px; }
-        .container #caja .form__datos input:hover {
+        .container #caja .form__datos .datos__texto--bold .datos__texto--medida:hover {
           background-color: #e6c5c5; }
+      .container #caja .form__datos .datos__texto--bold #desplegable {
+        width: 62%;
+        border-radius: .5em; }
   .container #box {
     grid-area: box;
-    width: 40vw; }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    flex-basis: 30vw;
+    flex-grow: 1; }
     @media (min-width: 320px) {
       .container #box {
         display: flex;
         flex-direction: column;
         justify-items: center;
         align-items: center;
-        width: 85vw;
-        margin: 5px; } }
+        width: 60vw;
+        margin-left: 50px; } }
+    @media (min-width: 768px) {
+      .container #box {
+        width: 40%; } }
     @media (min-width: 1400px) {
       .container #box {
-        flex-basis: 40vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-basis: 30vw;
         flex-grow: 1; } }
     .container #box #box__content h2, .container #box #box__content .h2 {
       font-family: "Dancing Script", cursive;
       margin: 20px; }
     .container #box #box__content p {
       font-size: 1.2rem; }
+      @media (min-width: 320px) {
+        .container #box #box__content p {
+          font-size: .9rem; } }
