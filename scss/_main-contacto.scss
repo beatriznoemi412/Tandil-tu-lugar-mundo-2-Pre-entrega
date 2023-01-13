@@ -2,8 +2,6 @@
 .container{
   width: 100vw;
   grid-area: container;
-}
-  #content{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -13,12 +11,17 @@
   @include mobile{
     @include flexbox(column, center, center);
   }
+  @include mobile4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   
 
      #caja{
         grid-area: caja;
         border: $border;
-        width: 38vw;
+        width: 30vw;
 
         @include mobile{
           @include flexbox(column, center, center);
@@ -27,23 +30,47 @@
         }
         @include mobile1{
            @include flexbox(column, center, center);
-            max-width: 500px;
+            
+        }@include mobile2{
+            width: 75vw;
+            border: $border;
+        }  
+        @include mobile4{
+          
+           flex-basis: 38vw;
+           flex-grow: 1;
         }
+
+
          
         .form__datos{
         @include flexbox3(column, center, center);
-          
+         
           .datos__texto--bold {
-          
-            font-weight: bold;
-            
+          @include mobile_otro{
+           @include flexbox(column, center, center);
+           margin-left: 50px;  
+          font-weight: bold;
+            }
+          @include mobile2{
+            @include flexbox(column, center, center);  
+            margin-left: 50px;
           }
 textarea{
   @include mobile{
-    width:70vw;
+    width:60vw;
     height: 150px;
   }
+  @include mobile2{
+    width:40vw;
+    height: 300px;
+    @include flexbox(column, center, center);  
+            margin-left: 20px;
+          
+  }
+
 }
+          }
           
 label {
   padding: 20px;
@@ -64,18 +91,19 @@ input {
     }
   }
 #box {
-  grid-area: box;
-  width: 40vw;
-  display: flex;
-  justify-items: center;
-  align-items: center;
+    grid-area: box;
+    width:40vw;
  
   @include mobile{
     @include flexbox3(column, center, center);
     width: 85vw;
     margin: 5px;
-  
   }
+  @include mobile4{
+    flex-basis: 40vw;
+    flex-grow:1;
+  }
+
          
   #box__content{
   
@@ -90,4 +118,3 @@ p {
 }
 }
      }
-    

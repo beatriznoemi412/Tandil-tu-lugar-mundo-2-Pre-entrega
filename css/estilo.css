@@ -8763,25 +8763,28 @@ main section .carousel-foto {
 /*CONTACTO*/
 .container {
   width: 100vw;
-  grid-area: container; }
-
-#content {
+  grid-area: container;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "caja box"; }
   @media (min-width: 320px) {
-    #content {
+    .container {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-content: center; } }
-  #content #caja {
+  @media (min-width: 1400px) {
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; } }
+  .container #caja {
     grid-area: caja;
     border: 15px ridge brown;
-    width: 38vw; }
+    width: 30vw; }
     @media (min-width: 320px) {
-      #content #caja {
+      .container #caja {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -8789,49 +8792,79 @@ main section .carousel-foto {
         border: none;
         margin-left: 50px; } }
     @media (min-width: 576px) {
-      #content #caja {
+      .container #caja {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-content: center;
-        max-width: 500px; } }
-    #content #caja .form__datos {
+        align-content: center; } }
+    @media (min-width: 768px) {
+      .container #caja {
+        width: 75vw;
+        border: 15px ridge brown; } }
+    @media (min-width: 1400px) {
+      .container #caja {
+        flex-basis: 38vw;
+        flex-grow: 1; } }
+    .container #caja .form__datos {
       display: flex;
       flex-direction: column;
       justify-items: center;
       align-items: center; }
-      #content #caja .form__datos .datos__texto--bold {
-        font-weight: bold; }
+      @media (min-width: 425px) {
+        .container #caja .form__datos .datos__texto--bold {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+          margin-left: 50px;
+          font-weight: bold; } }
+      @media (min-width: 768px) {
+        .container #caja .form__datos .datos__texto--bold {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+          margin-left: 50px; } }
       @media (min-width: 320px) {
-        #content #caja .form__datos textarea {
-          width: 70vw;
+        .container #caja .form__datos .datos__texto--bold textarea {
+          width: 60vw;
           height: 150px; } }
-      #content #caja .form__datos label {
+      @media (min-width: 768px) {
+        .container #caja .form__datos .datos__texto--bold textarea {
+          width: 40vw;
+          height: 300px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-content: center;
+          margin-left: 20px; } }
+      .container #caja .form__datos label {
         padding: 20px;
         line-height: 1; }
-      #content #caja .form__datos input {
+      .container #caja .form__datos input {
         border-radius: 0.5em;
         border: none;
         line-height: 1;
         margin-top: 5px; }
-        #content #caja .form__datos input:hover {
+        .container #caja .form__datos input:hover {
           background-color: #e6c5c5; }
-  #content #box {
+  .container #box {
     grid-area: box;
-    width: 40vw;
-    display: flex;
-    justify-items: center;
-    align-items: center; }
+    width: 40vw; }
     @media (min-width: 320px) {
-      #content #box {
+      .container #box {
         display: flex;
         flex-direction: column;
         justify-items: center;
         align-items: center;
         width: 85vw;
         margin: 5px; } }
-    #content #box #box__content h2, #content #box #box__content .h2 {
+    @media (min-width: 1400px) {
+      .container #box {
+        flex-basis: 40vw;
+        flex-grow: 1; } }
+    .container #box #box__content h2, .container #box #box__content .h2 {
       font-family: "Dancing Script", cursive;
       margin: 20px; }
-    #content #box #box__content p {
+    .container #box #box__content p {
       font-size: 1.2rem; }

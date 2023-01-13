@@ -3,6 +3,11 @@
         @content;
     }
 }
+@mixin mobile_otro{
+    @media (min-width: 425px){
+        @content;
+    }
+}
 @mixin mobile1{
     @media (min-width: 576px){
         @content;
