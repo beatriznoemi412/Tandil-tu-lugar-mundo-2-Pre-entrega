@@ -10,16 +10,46 @@
     }
     table {
       grid-area: sectuno;
-      width: 80vw;
-      border:$border;     
+      border:$border;
+      width: 90vw; 
       font-size: 1rem;
       display: flex;
       flex-wrap: nowrap;
-    
-    }
-    a{
-        color: $color-h1;
-    } 
-    }
-  }
+    #tabla{
+      @include mobile_otro{
+        @include flexbox2 (center, center);
 
+      }
+      @include mobile1{
+        @include flexbox2 (center, center);
+
+      }
+      
+      @include mobile2 {
+        border: $border;
+      }
+      @include mobile6{
+        border: 20px ridge rgb(183, 170, 170);
+      }
+        
+        }      
+      td{
+        margin: 8px;
+        a{
+            color: $color-h1;
+        } 
+      }
+      
+      #historia {
+        @include mobile{
+        display: none;
+        }
+      
+        @include mobile2{
+        display: flex;
+            
+ }
+} 
+  }
+}
+}

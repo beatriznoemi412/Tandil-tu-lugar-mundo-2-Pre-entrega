@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 /*!
    * Bootstrap  v5.2.3 (https://getbootstrap.com/)
    * Copyright 2011-2022 The Bootstrap Authors
@@ -8384,11 +8389,6 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
 .general {
   background-image: linear-gradient(90deg, #ce9092, #d49697, rgba(232, 203, 203, 0.742));
   overflow-x: hidden;
@@ -8408,7 +8408,7 @@ textarea.form-control-lg {
     justify-content: center;
     align-content: center;
     width: 100vw;
-    height: 780px; }
+    height: 950px; }
     @media (min-width: 320px) {
       .general #header {
         display: flex;
@@ -8477,110 +8477,97 @@ textarea.form-control-lg {
     opacity: 1; } }
     .general #header .ciudad {
       grid-area: ciudad; }
-      .general #header .ciudad .ciudad__listas__reseteo, .general #header .ciudad .ciudad__span {
+      .general #header .ciudad .ciudad__listas__reseteo {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap; }
-        .general #header .ciudad .ciudad__listas__reseteo li, .general #header .ciudad .ciudad__span li {
+        .general #header .ciudad .ciudad__listas__reseteo li {
           list-style-type: none; }
-          .general #header .ciudad .ciudad__listas__reseteo li a, .general #header .ciudad .ciudad__span li a,
+          .general #header .ciudad .ciudad__listas__reseteo li a,
           .general #header .ciudad .ciudad__listas__reseteo li .ciudad__listas__reseteo a:link,
-          .general #header .ciudad .ciudad__span li .ciudad__listas__reseteo a:link,
-          .general #header .ciudad .ciudad__listas__reseteo li .ciudad__span a:link,
-          .general #header .ciudad .ciudad__span li .ciudad__span a:link,
           .general #header .ciudad .ciudad__listas__reseteo li a:visited,
-          .general #header .ciudad .ciudad__span li a:visited,
-          .general #header .ciudad .ciudad__listas__reseteo li a:active,
-          .general #header .ciudad .ciudad__span li a:active {
+          .general #header .ciudad .ciudad__listas__reseteo li a:active {
             text-decoration: none;
             color: white;
             font-size: 1rem;
             font-weight: bold;
             font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
             padding: 10px; }
-            .general #header .ciudad .ciudad__listas__reseteo li a:hover, .general #header .ciudad .ciudad__span li a:hover,
+            .general #header .ciudad .ciudad__listas__reseteo li a:hover,
             .general #header .ciudad .ciudad__listas__reseteo li .ciudad__listas__reseteo a:link:hover,
-            .general #header .ciudad .ciudad__span li .ciudad__listas__reseteo a:link:hover,
-            .general #header .ciudad .ciudad__listas__reseteo li .ciudad__span a:link:hover,
-            .general #header .ciudad .ciudad__span li .ciudad__span a:link:hover,
             .general #header .ciudad .ciudad__listas__reseteo li a:visited:hover,
-            .general #header .ciudad .ciudad__span li a:visited:hover,
-            .general #header .ciudad .ciudad__listas__reseteo li a:active:hover,
-            .general #header .ciudad .ciudad__span li a:active:hover {
+            .general #header .ciudad .ciudad__listas__reseteo li a:active:hover {
               color: #dea9a9; }
-    .general #header .ciudad__nav {
+    .general #header .tandil {
       display: flex;
-      flex-direction: row;
-      justify-items: center;
-      align-items: center; }
-      .general #header .ciudad__nav .ciudad__nav__img {
+      justify-content: center;
+      justify-items: center; }
+      .general #header .tandil .ciudad__img {
         display: flex;
         justify-content: center;
         align-content: center;
         background-image: url "../assets/img/TandilyDique.jpeg";
         width: 100vw;
-        height: 650px;
+        height: 600px;
         opacity: 0.8;
         filter: alpha(opacity=80);
         zoom: 1;
-        margin-right: 25px; }
+        padding-right: 15px; }
         @media (min-width: 320px) {
-          .general #header .ciudad__nav .ciudad__nav__img {
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            width: 90%;
-            height: 170px;
-            margin-left: 10px; } }
-        @media (min-width: 425px) {
-          .general #header .ciudad__nav .ciudad__nav__img {
+          .general #header .tandil .ciudad__img {
             display: flex;
             justify-content: center;
             align-content: center;
             width: 95%;
-            height: 170px;
-            margin-left: 10px; } }
-        @media (min-width: 576px) {
-          .general #header .ciudad__nav .ciudad__nav__img {
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            width: 92%;
-            height: 230px;
-            margin-left: 12px; } }
-        @media (min-width: 768px) {
-          .general #header .ciudad__nav .ciudad__nav__img {
+            height: 200px;
+            padding: 10px; } }
+        @media (min-width: 425px) {
+          .general #header .tandil .ciudad__img {
             display: flex;
             justify-content: center;
             align-content: center;
             width: 94%;
-            height: 350px;
-            margin-left: 12px; } }
+            height: 200px;
+            padding-left: 10px; } }
+        @media (min-width: 576px) {
+          .general #header .tandil .ciudad__img {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 96%;
+            height: 250px; } }
+        @media (min-width: 768px) {
+          .general #header .tandil .ciudad__img {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 96%;
+            height: 360px;
+            padding-left: 10px; } }
         @media (min-width: 992px) {
-          .general #header .ciudad__nav .ciudad__nav__img {
+          .general #header .tandil .ciudad__img {
             display: flex;
             justify-content: center;
             align-content: center;
             width: 98%;
-            height: 500px;
-            margin-left: 10px; } }
+            height: 485px; } }
         @media (min-width: 1200px) {
-          .general #header .ciudad__nav .ciudad__nav__img {
+          .general #header .tandil .ciudad__img {
             display: flex;
             justify-content: center;
             align-content: center;
             width: 98%;
-            height: 500px;
-            margin-left: 10px; } }
+            height: 540px; } }
         @media (min-width: 1400px) {
-          .general #header .ciudad__nav .ciudad__nav__img {
+          .general #header .tandil .ciudad__img {
             display: flex;
             justify-content: center;
             align-content: center;
-            width: 100vw;
-            height: 650px; } }
+            width: 97%;
+            height: 600px; } }
     .general #header .ciudad__span {
+      text-align: center;
       font-family: "Dancing Script", cursive;
       font-size: 1.6rem;
       color: white; }
@@ -8621,13 +8608,28 @@ body {
         border: none !important; }
         body .header .nav .nav-link:hover {
           color: #d63384 !important; }
-    body .header div .foto {
+    body .header .foto {
       background-image: url "../assets/img/TandilyDique.jpeg";
       width: 100vw;
-      height: 600px !important;
+      height: 650;
       opacity: 0.9;
       filter: alpha(opacity=80);
       zoom: 1; }
+      @media (min-width: 320px) {
+        body .header .foto {
+          height: 200px !important; } }
+      @media (min-width: 768px) {
+        body .header .foto {
+          height: 300px !important; } }
+      @media (min-width: 992px) {
+        body .header .foto {
+          height: 400px; } }
+      @media (min-width: 1200px) {
+        body .header .foto {
+          height: 500px !important; } }
+      @media (min-width: 1400px) {
+        body .header .foto {
+          height: 650px !important; } }
     body .header .span .te_cuento {
       background-color: brown;
       width: 100vw;
@@ -8647,7 +8649,7 @@ body {
   .footer h2,
   .footer .h2 {
     font-family: "Dancing Script", cursive;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
     padding: 20px;
@@ -8657,14 +8659,20 @@ body {
       .footer h2,
       .footer .h2 {
         font-size: 1rem; } }
-    @media (min-width: 320px) {
+    @media (min-width: 768px) {
       .footer h1, .footer .h1,
       .footer h2,
       .footer .h2 {
-        font-size: 1.5rem; } }
+        font-size: 2rem; } }
   .footer .footer__comunicarse {
     padding: 20px;
     color: black; }
+    @media (min-width: 320px) {
+      .footer .footer__comunicarse .informacion {
+        font-size: .8rem; } }
+    @media (min-width: 768px) {
+      .footer .footer__comunicarse .informacion {
+        font-size: 1rem; } }
   .footer .correo, .footer .footer__comunicarse {
     display: flex;
     flex-direction: column;
@@ -8679,30 +8687,19 @@ body {
 /*FOOTER BOOTSTRAP*/
 footer .container-fluid, footer .container-sm, footer .container-md, footer .container-lg, footer .container-xl, footer .container-xxl {
   background-color: brown; }
-  footer .container-fluid h1, footer .container-sm h1, footer .container-md h1, footer .container-lg h1, footer .container-xl h1, footer .container-xxl h1, footer .container-fluid .h1, footer .container-sm .h1, footer .container-md .h1, footer .container-lg .h1, footer .container-xl .h1, footer .container-xxl .h1,
-  footer .container-fluid h2,
-  footer .container-sm h2,
-  footer .container-md h2,
-  footer .container-lg h2,
-  footer .container-xl h2,
-  footer .container-xxl h2,
-  footer .container-fluid .h2,
-  footer .container-sm .h2,
-  footer .container-md .h2,
-  footer .container-lg .h2,
-  footer .container-xl .h2,
-  footer .container-xxl .h2 {
-    font-family: "Dancing Script", cursive;
-    font-size: 2rem; }
-  footer .container-fluid .informe, footer .container-sm .informe, footer .container-md .informe, footer .container-lg .informe, footer .container-xl .informe, footer .container-xxl .informe {
-    font-size: 1rem; }
-  footer .container-fluid .bi, footer .container-sm .bi, footer .container-md .bi, footer .container-lg .bi, footer .container-xl .bi, footer .container-xxl .bi {
-    color: black; }
-  footer .container-fluid #correo > h2, footer .container-sm #correo > h2, footer .container-md #correo > h2, footer .container-lg #correo > h2, footer .container-xl #correo > h2, footer .container-xxl #correo > h2, footer .container-fluid #correo > .h2, footer .container-sm #correo > .h2, footer .container-md #correo > .h2, footer .container-lg #correo > .h2, footer .container-xl #correo > .h2, footer .container-xxl #correo > .h2 {
+  footer .container-fluid .tit, footer .container-sm .tit, footer .container-md .tit, footer .container-lg .tit, footer .container-xl .tit, footer .container-xxl .tit, footer .container-fluid #correo .subtit, footer .container-sm #correo .subtit, footer .container-md #correo .subtit, footer .container-lg #correo .subtit, footer .container-xl #correo .subtit, footer .container-xxl #correo .subtit {
     font-family: "Dancing Script", cursive; }
-  footer .container-fluid .correo__email, footer .container-sm .correo__email, footer .container-md .correo__email, footer .container-lg .correo__email, footer .container-xl .correo__email, footer .container-xxl .correo__email {
-    font-family: "Dancing Script", cursive;
-    text-decoration: none; }
+  footer .container-fluid .list .informe, footer .container-sm .list .informe, footer .container-md .list .informe, footer .container-lg .list .informe, footer .container-xl .list .informe, footer .container-xxl .list .informe {
+    font-size: 1rem; }
+    @media (min-width: 320px) {
+      footer .container-fluid .list .informe .dato, footer .container-sm .list .informe .dato, footer .container-md .list .informe .dato, footer .container-lg .list .informe .dato, footer .container-xl .list .informe .dato, footer .container-xxl .list .informe .dato {
+        font-size: .6rem; } }
+    @media (min-width: 768px) {
+      footer .container-fluid .list .informe .dato, footer .container-sm .list .informe .dato, footer .container-md .list .informe .dato, footer .container-lg .list .informe .dato, footer .container-xl .list .informe .dato, footer .container-xxl .list .informe .dato {
+        font-size: 1.2rem; } }
+  footer .container-fluid #correo .correo__email, footer .container-sm #correo .correo__email, footer .container-md #correo .correo__email, footer .container-lg #correo .correo__email, footer .container-xl #correo .correo__email, footer .container-xxl #correo .correo__email {
+    text-decoration: none;
+    font-family: "Dancing Script", cursive; }
 
 /*main*/
 .container {
@@ -8843,14 +8840,37 @@ main section .carousel-foto {
 
 .container section table {
   grid-area: sectuno;
-  width: 80vw;
   border: 15px ridge brown;
+  width: 90vw;
   font-size: 1rem;
   display: flex;
   flex-wrap: nowrap; }
-
-.container section a {
-  color: white; }
+  @media (min-width: 425px) {
+    .container section table #tabla {
+      display: flex;
+      justify-content: center;
+      align-content: center; } }
+  @media (min-width: 576px) {
+    .container section table #tabla {
+      display: flex;
+      justify-content: center;
+      align-content: center; } }
+  @media (min-width: 768px) {
+    .container section table #tabla {
+      border: 15px ridge brown; } }
+  @media (min-width: 576) and (orientation: landscape) {
+    .container section table #tabla {
+      border: 20px ridge #b7aaaa; } }
+  .container section table td {
+    margin: 8px; }
+    .container section table td a {
+      color: white; }
+  @media (min-width: 320px) {
+    .container section table #historia {
+      display: none; } }
+  @media (min-width: 768px) {
+    .container section table #historia {
+      display: flex; } }
 
 /*CONTACTO*/
 .container {

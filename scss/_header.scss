@@ -24,7 +24,7 @@
   grid-area: header;
   @include flexbox(column, center, center);
   width: 100vw;
-  height: 780px;
+  height:950px;
   @include mobile{
     @include  flexbox2(center, center);
     height: 350px;
@@ -118,67 +118,66 @@ a:active {
 }
 }
 }
-.ciudad__nav{
-  @include flexbox3(row, center, center);
+.tandil{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 
-.ciudad__nav__img {
+.ciudad__img {
   @include  flexbox2(center, center);
   background-image: (url "../assets/img/TandilyDique.jpeg");
-  width: 100vw;
-  height: 650px;
+  width:100vw;
+  height: 600px;
   opacity: 0.8;
   filter: alpha(opacity=80);
   zoom: 1;
-  margin-right: 25px;
+  padding-right: 15px;
 
   @include mobile{
     @include  flexbox2(center, center);
-    width: 90%;
-    height: 170px;
-    margin-left: 10px;
+    width: 95%;
+    height: 200px;
+    padding: 10px;
   }
   @include mobile_otro{
     @include  flexbox2(center, center);
-    width: 95%;
-    height: 170px;
-    margin-left: 10px;
+    width: 94%;
+    height: 200px;
+    padding-left: 10px;
+   
   }
   @include mobile1{
     @include  flexbox2(center, center);
-    width: 92%;
-    height: 230px;
-    margin-left: 12px;
+    width: 96%;
+    height: 250px;
+    
   }
   @include mobile2{
     @include  flexbox2(center, center);
-    width: 94%;
-    height: 350px;
-    margin-left: 12px;
+    width: 96%;
+    height: 360px;
+    padding-left: 10px;
   }
   @include mobile5{
     @include  flexbox2(center, center);
     width: 98%;
-    height: 500px;
-    margin-left: 10px;
+    height: 485px;
   }
   @include mobile3{
     @include  flexbox2(center, center);
     width: 98%;
-    height: 500px;
-    margin-left: 10px;
+    height: 540px;
   }
   @include mobile4{
     @include  flexbox2(center, center);
-    width: 100vw;
-    height: 650px;
-    
-    
+    width: 97%;
+    height: 600px;
   }
+ }
+}
 
-}
-}
 .ciudad__span {
-  @extend .ciudad__listas__reseteo;
+  text-align: center;
   font-family: $font-ciudad;
   font-size: 1.6rem;
   color: $color-h1;
@@ -186,6 +185,7 @@ a:active {
 }
 }
 }
+
 
 
 /*BOOTSTRAP*/
@@ -201,7 +201,6 @@ a:active {
   
   .header{
     background-color: $background-header;
-    
     h1{
       font-family: $font-ciudad;
     }
@@ -248,19 +247,30 @@ a:active {
     }
   }
 
-
-    
-div{
-
  .foto {
     background-image: (url "../assets/img/TandilyDique.jpeg");
     width: 100vw;
-    height: 600px !important;
+    height: 650;
     opacity: 0.9;
     filter: alpha(opacity=80);
     zoom: 1;
+
+    @include mobile{
+      height: 200px!important;
+    }
+    @include mobile2{
+      height: 300px!important;
+    }
+    @include mobile5{
+      height: 400px;
+    }
+    @include mobile3{
+      height: 500px!important;
+    }
+    @include mobile4{
+      height: 650px!important;
+    }
  }
-}
 
  .span{
 

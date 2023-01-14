@@ -9,24 +9,30 @@
   h1,
   h2 {
     font-family: $font-ciudad;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
     padding: 20px;
     color: black;
-
-    @include mobile {
+    @include mobile{
       font-size: 1rem;
     }
-
-    @include mobile {
-      font-size: 1.5rem;
+    @include mobile2{
+      font-size: 2rem;
     }
   }
   .footer__comunicarse {
     @extend .correo;
     padding: 20px;
     color: $anchor;
+    .informacion{
+    @include mobile{
+      font-size: .8rem;
+    }
+    @include mobile2{
+      font-size: 1rem;
+    }
+    }
   }
   .correo {
     display: flex;
@@ -46,27 +52,35 @@
 
 
 /*FOOTER BOOTSTRAP*/
-footer {
+footer{
   .container-fluid {
     background-color: brown;
 
-    h1,
-    h2 {
+    .tit{
       font-family: $font-ciudad;
-      font-size: 2rem;
-    }
+      }
+    .list{
     .informe {
       font-size: 1rem;
-    }
-    .bi {
-      color: black;
-    }
-    #correo > h2 {
-      font-family: $font-ciudad;
-    }
-    .correo__email {
-      font-family: $font-ciudad;
-      text-decoration: none;
+      .dato{
+        @include mobile{
+        font-size: .6rem;
+        }
+        @include mobile2{
+        font-size: 1.2rem;
+        }
+      }
     }
   }
+    #correo {
+      .subtit{
+      @extend .tit;
+      }
+    
+    .correo__email {
+      text-decoration: none;
+      font-family: $font-ciudad;
+    }
+  }
+}  
 }
