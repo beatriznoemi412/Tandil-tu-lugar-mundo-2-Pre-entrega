@@ -7,5 +7,6 @@
 1. Uso de framework.
 1. Generar un diseño responsive y dinámico con animaciones, transformaciones, transiciones.
 1. Emplee código SASS y aplicación SEO.
+1. media queries responden a mobile first.
 1. Hacer conocer mi ciudad.
 ![](https://www.freejpg.com.ar/image-900/49/4900/F100005735-tandil.jpg)
