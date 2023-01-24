@@ -4,191 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fotos con paseos increibles de Tandil">
+    <meta name="description" content="Conoce Tandil: paseos turísticos.">
     <link rel="stylesheet" href="../css/estilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=
     Josefin+Sans:wght@100&family=Lobster+Two&display=swap" rel="stylesheet">
     <link href="https://coolors.co/c6d4ff-7a82ab-307473-12664f-2dc2bd">
-    <title>Fotos de Tandil</title>
+    <script src="https://kit.fontawesome.com/43d14d156a.js" crossorigin="anonymous"></script>
+    <title>Descripción e historia de paseos turísticos</title>
 </head>
-<body>
-  <header class="header container-fluid">
-    <div class="row">
-      <div class="col-sm-12 col-xs-12"> 
-    <h1 class="text-light mb fw-bold h3 titulo__expand d-flex justify-content-center mt-3" id="logo">
-      Tandil, tu Lugar en el Mundo
-    </h1>
-    <nav class="nav nav-tabs navbar navbar-expand-sm navbar-light navbar-toggleable-sm p-2 h6">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center align-items-center" id="navbarTogglerDemo01">
-      <ul class="navbar-nav text-center mb-0 ">
-          <li role="presentation" class="nav-item active">
-            <a class="nav-link text-light mb fw-bold"
-              aria-current="page" href="../index.html">Inicio</a>
-          </li>
-          <li role="presentation" class="nav-item">
-            <a class="nav-link text-light mb fw-bold" href="galeria.html">Galería</a>
-          </li>
-          <li role="presentation" class="nav-item">
-            <a class="nav-link text-light mb fw-bold" href="turismo.html">Turismo</a>
-          </li>
-          <li role="presentation" class="nav-item">
-            <a class="nav-link text-light mb fw-bold" href="transporteUrbano.html">Transporte Urbano</a>
-          </li>
-          <li role="presentation" class="nav-item">
-            <a class="nav-link text-light mb fw-bold" href="contacto.html">Contacto</a>
-          </li>
-        </ul>
+<body class="general">
+    <header id="header">
+        <h1 class="titulo titulo__expand" id="logo">Tandil, tu Lugar en el Mundo</h1>
+        <div class="respmenu">
+          <input type="checkbox">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
+        <nav class="ciudad">
+            <div class="ciudad__listas">
+            <ul class="ciudad__listas__reseteo">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="turismo.html">Turismo</a></li>
+            <li><a href="transporteUrbano.html">Transporte Urbano</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
         </div>
-      </nav>
+          <div class="ciudad__nav">
+            <img class="ciudad__nav__img" src="../assets/img/TandilyDique.jpeg" alt="Lago del Fuerte" title="Lago del Fuerte">
         </div>
-    </div>
-    <div>
-    <img class="foto fondo-blur img-fluid  d-block w-100"
-      src="../assets/img/TandilyDique.jpeg"
-      alt="Dique de Tandil"/>
-  </div>
-  
-  <div class="span d-flex justify-content-center align-content-center h4">
-    <p class="te_cuento text-light mb  p-0 text-center h3">Te contamos e informamos sobre la ciudad.</p>
-  </div>
-</header>
-
-    <main class="container-fluid p-4">
-      <section class="row justify-content-center">
-        <div class="col-lg-6 col-xs-12">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="3000">
-                <img class="carousel-foto rounded mx-auto d-block w-100" src="../assets/img/flores_dique.jpg" alt="Lago del Fuerte">
-                <div class="carousel-caption d-md-block">
-                    <p>Lago del Fuerte</p>
-                  </div>
-              </div>
-              <div class="carousel-item"  data-bs-interval="3000">
-                <img class="carousel-foto rounded mx-auto d-block w-100" src="../assets/img/Palacio-Municipal-de-Tandil.jpg" alt="Palacio Municipal">
-                <div class="carousel-caption d-md-block">
-                    <p>Palacio Municipal</p>
-                  </div>
-              </div>
-              <div class="carousel-item"  data-bs-interval="3000">
-                <img class="carousel-foto rounded mx-auto d-block w-100" src="../assets/img/PlazaIndependencia_Iglesia.jpg" alt="Plaza Independencia e Iglesia Santísimo Sacramento">
-                <div class="carousel-caption d-md-block">
-                    <p>Plaza Independencia</p>
-              </div>
-              </div>
-              <div class="carousel-item"  data-bs-interval="3000">
-                <img class="carousel-foto item rounded mx-auto d-block w-100" src="../assets/img/calvario.jpg" alt="Calvario">
-                <div class="carousel-caption d-md-block">
-                    <p>Monte Calvario</p>
-              </div>
-              </div>
-              <div class="carousel-item"  data-bs-interval="3000">
-                <img class="carousel-foto item rounded mx-auto d-block w-100" src="../assets/img/monte-calvario.jpg" alt="Monte Calvario">
-                <div class="carousel-caption d-md-block">
-                    <p>Vía Crucis Monte Calvario</p>
-                </div>
-              </div>
-              <div class="carousel-item"  data-bs-interval="3000">
-                <img class="carousel-foto item rounded mx-auto d-block w-100" src="../assets/img/Capilla_Santa_Gemma.jpg" alt="Capilla Santa Gemma">
-                <div class="carousel-caption d-md-block">
-                    <p>Capilla Santa Gemma</p>
-                </div>
-              </div>
-              <div class="carousel-item"  data-bs-interval="3000">
-                <img class="carousel-foto item rounded mx-auto d-block w-100" src="../assets/img/Centinela.jpg" alt="Cerro el Centinela">
-                <div class="carousel-caption d-md-block">
-                    <p>Cerro el Centinela</p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="3000">
-                <img class="carousel-foto item rounded mx-auto d-block w-100" src="../assets/img/Picapedrero.jpg" alt="Escultura el Picappedrero en Lago del Fuerte">
-                <div class="carousel-caption d-md-block">
-                    <p>El Picapedrero en el Lago</p>
-                </div>
-              </div>
-              <div class="carousel-item"  data-bs-interval="3000">
-                <img class="carousel-foto item rounded mx-auto d-block w-100" src="../assets/img/Movediza.jpg" alt="Cerro la Movediza">
-                <div class="carousel-caption d-md-block">
-                    <p>Cerro la Movediza</p>
-                </div>
-              </div>
-              <div class="carousel-item"  data-bs-interval="3000">
-                <img class="carousel-foto item rounded mx-auto d-block w-100" src="../assets/img/canotaje.jpg" alt="Canotaje en Lago del Fuerte">
-                <div class="carousel-caption d-md-block">
-                    <p>Canotaje en el Lago del Fuerte</p>
-                </div>
-              </div>
-              <div class="carousel-item"  data-bs-interval="3000">
-                <img class="carousel-foto item rounded mx-auto d-block w-100" src="../assets/img/fuerte-parque-independencia.jpg" alt="Fuerte Parque fuerte-parque-independencia">
-                <div class="carousel-caption d-md-block">
-                    <p>Fuerte Parque Independencia</p>
-                </div>
-              </div>
-              <div class="carousel-item"  data-bs-interval="3000">
-                <img class="carousel-foto item rounded mx-auto d-block w-100" src="../assets/img/cumbreParque.jpg" alt="Castillo Morisco en Parque Independencia">
-                <div class="carousel-caption d-md-block">
-                    <p>Castillo Morisco en Parque Independencia</p>
-                </div>
-              </div>
-              <div class="carousel-item"  data-bs-interval="3000">
-                <img class="carousel-foto item rounded mx-auto d-block w-100" src="../assets/img/QuijoteySancho.jpg" alt="Don Quijote y Sancho en Lago del Fuerte">
-                <div class="carousel-caption d-md-block">
-                    <p>Quijote y Sancho en Lago del Fuerte</p>
-                </div>
-              </div>
-              <div class="carousel-item"  data-bs-interval="3000">
-                <img class="carousel-foto item rounded mx-auto d-block w-100" src="../assets/img/CristoSierra.jpg" alt="Cristo de la Sierra">
-                <div class="carousel-caption d-md-block">
-                    <p>Cristo de la Sierra</p>
-                </div>
-              </div>
-               <a class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </a>
-            <a class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </a>
-        </div>
-        </div>
+           <h2 class="ciudad__tit">Te contamos e informamos sobre la ciudad.</h2>
+        </nav>
       </div>
-      </section>
-    </main>
- 
-    <footer>
-      <div class="container-fluid">
-        <div id="row">
-        <div class="col-sm-12 col-xs-12 d-flex justify-content-around align-content-center">
-        <h1 class="tit text-black p-2 h3 fw-bold">Tandil, tu Lugar en el Mundo</h1>
-        <div class="list text-black d-flex flex-column justify-content-center align-items-center">
-        <ul class="informe p-3">
-        <img src="../assets/img/location_on.svg" alt="icono de location">
-        <li class="dato">Municipio de Tandil. Belgrano 485. Tandil</li>
-        <li>Hospital 107</li>
-        <img src="../assets/img/phone_in_talk.svg" alt="icono de telefono">
-        <li class="dato">Policía de Género</li>
-        <img src="../assets/img/phone_in_talk.svg" alt="icono de telefono">
-        <li class="dato">Policía 911</li>
-        <img src="../assets/img/phone_in_talk.svg" alt="icono de telefono">
-        </ul>
-        </div>
-  
-      
-        <div id="correo" class="d-flex flex-column align-items-center">
-        <h2 class="subtit text-black mt-2 h3 fw-bold">Ponete en contacto con nosotros</h2>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-open" viewBox="0 0 16 16">
-        <path d="M8.47 1.318a1 1 0 0 0-.94 0l-6 3.2A1 1 0 0 0 1 5.4v.817l5.75 3.45L8 8.917l1.25.75L15 6.217V5.4a1 1 0 0 0-.53-.882l-6-3.2ZM15 7.383l-4.778 2.867L15 13.117V7.383Zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734ZM7.059.435a2 2 0 0 1 1.882 0l6 3.2A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765l6-3.2Z"/>
-        </svg><i class="bi bi-envelope-open"></i>
-        <a class="correo__email text-black fw-bold h6" href="mailto:tandiltulugarenelmundo@gmail.com"
-         title="Mandanos un email">Mandanos un email</a>
-        </div>
-        </div>
-        </div>
-        </div>
-    </footer>
-  </body>
-</html>
+    </header>
+
