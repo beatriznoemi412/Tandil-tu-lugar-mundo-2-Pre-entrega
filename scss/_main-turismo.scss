@@ -3,19 +3,22 @@
 /*TURISMO*/
 .container{
     
-  section {
+  #sectuno {
+     grid-area: sectuno;
     h1{
         font-family: $font-ciudad;
+        font-size: 1.8rem;
         text-align: center;
+        margin: 20px;
     }
-    table {
-      grid-area: sectuno;
+    #tabla {
       border:$border;
       width: 90vw; 
       font-size: 1rem;
       display: flex;
       flex-wrap: nowrap;
-    #tabla{
+      margin:40px;
+
       @include mobile_otro{
         @include flexbox2 (center, center);
 
@@ -52,4 +55,4 @@
 } 
   }
 }
-}
+

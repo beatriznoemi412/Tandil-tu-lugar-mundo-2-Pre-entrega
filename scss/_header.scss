@@ -125,46 +125,46 @@ a:active {
   filter: alpha(opacity=80);
   zoom: 1;
 
- /* @include mobile{
+  @include mobile{
     @include  flexbox2(center, center);
-    width: 95%;
+    width: 100%;
     height: 200px;
-    padding: 10px;
+    
   }
   @include mobile_otro{
     @include  flexbox2(center, center);
-    width: 94%;
+    width: 100%;
     height: 200px;
-    padding-left: 10px;
+    
    
   }
   @include mobile1{
     @include  flexbox2(center, center);
-    width: 96%;
+    width: 100%;
     height: 250px;
     
   }
   @include mobile2{
     @include  flexbox2(center, center);
-    width: 96%;
+    width: 100%;
     height: 360px;
-    padding-left: 10px;
+    
   }
   @include mobile5{
     @include  flexbox2(center, center);
-    width: 98%;
+    width: 100%;
     height: 485px;
   }
   @include mobile3{
     @include  flexbox2(center, center);
-    width: 98%;
+    width: 100%;
     height: 540px;
   }
   @include mobile4{
     @include  flexbox2(center, center);
-    width: 97%;
+    width: 100%;
     height: 600px;
-  }*/
+  }
  }
 
 

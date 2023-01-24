@@ -106,47 +106,56 @@
       max-height: 100vh;
       opacity: 0.8;
       filter: alpha(opacity=80);
-      zoom: 1;
-      /* @include mobile{
-    @include  flexbox2(center, center);
-    width: 95%;
-    height: 200px;
-    padding: 10px;
-  }
-  @include mobile_otro{
-    @include  flexbox2(center, center);
-    width: 94%;
-    height: 200px;
-    padding-left: 10px;
-   
-  }
-  @include mobile1{
-    @include  flexbox2(center, center);
-    width: 96%;
-    height: 250px;
-    
-  }
-  @include mobile2{
-    @include  flexbox2(center, center);
-    width: 96%;
-    height: 360px;
-    padding-left: 10px;
-  }
-  @include mobile5{
-    @include  flexbox2(center, center);
-    width: 98%;
-    height: 485px;
-  }
-  @include mobile3{
-    @include  flexbox2(center, center);
-    width: 98%;
-    height: 540px;
-  }
-  @include mobile4{
-    @include  flexbox2(center, center);
-    width: 97%;
-    height: 600px;
-  }*/ }
+      zoom: 1; }
+      @media (min-width: 320px) {
+        .general #header .ciudad__nav__img {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          width: 100%;
+          height: 200px; } }
+      @media (min-width: 425px) {
+        .general #header .ciudad__nav__img {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          width: 100%;
+          height: 200px; } }
+      @media (min-width: 576px) {
+        .general #header .ciudad__nav__img {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          width: 100%;
+          height: 250px; } }
+      @media (min-width: 768px) {
+        .general #header .ciudad__nav__img {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          width: 100%;
+          height: 360px; } }
+      @media (min-width: 992px) {
+        .general #header .ciudad__nav__img {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          width: 100%;
+          height: 485px; } }
+      @media (min-width: 1200px) {
+        .general #header .ciudad__nav__img {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          width: 100%;
+          height: 540px; } }
+      @media (min-width: 1400px) {
+        .general #header .ciudad__nav__img {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          width: 100%;
+          height: 600px; } }
     .general #header .ciudad__tit {
       background-color: brown;
       text-align: center;
@@ -168,22 +177,19 @@
     display: inline-block;
     line-height: 2.5;
     text-align: center;
-    padding: 20px; }
-    .footer .redes .tit__footer,
-    .footer .redes h2 {
+    padding: 10px; }
+    .footer .redes .tit__footer {
       font-family: "Dancing Script", cursive;
       font-size: 2rem;
       font-weight: bold;
       text-align: center;
-      padding: 20px;
+      margin-top: 25px;
       color: black; }
       @media (min-width: 320px) {
-        .footer .redes .tit__footer,
-        .footer .redes h2 {
+        .footer .redes .tit__footer {
           font-size: 1.3rem; } }
       @media (min-width: 768px) {
-        .footer .redes .tit__footer,
-        .footer .redes h2 {
+        .footer .redes .tit__footer {
           font-size: 2rem; } }
     .footer .redes .red1, .footer .redes .red2, .footer .redes .red3 {
       width: 40px;
@@ -192,6 +198,11 @@
       -webkit-animation: slide-in-blurred-left 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
       animation: slide-in-blurred-left 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
       animation-delay: 3s; }
+      .footer .redes .red1:hover, .footer .redes .red2:hover, .footer .redes .red3:hover {
+        background-color: #c78181;
+        cursor: pointer;
+        border-top-left-radius: .4em;
+        border-top-right-radius: .4em; }
 
 @-webkit-keyframes slide-in-blurred-left {
   0% {
@@ -229,7 +240,7 @@
     filter: blur(0);
     opacity: 1; } }
   .footer .footer__comunicarse {
-    padding: 20px;
+    padding: 10px;
     color: black; }
     @media (min-width: 320px) {
       .footer .footer__comunicarse .informacion {
@@ -241,12 +252,25 @@
     display: flex;
     flex-direction: column;
     justify-content: baseline;
-    align-items: center; }
-    .footer .correo .correo__mailto, .footer .footer__comunicarse .correo__mailto {
-      font-size: 1.1rem;
+    align-items: center;
+    margin: 60px 30px 0 0; }
+    .footer .correo .correo__contact, .footer .footer__comunicarse .correo__contact, .footer .correo .correo__mailto, .footer .footer__comunicarse .correo__mailto {
+      font-size: 2rem;
       font-family: "Dancing Script", cursive;
       font-weight: bold;
       color: black; }
+    .footer .correo img, .footer .footer__comunicarse img {
+      width: 25px;
+      height: 25px;
+      margin-top: 5px; }
+    .footer .correo .correo__mailto, .footer .footer__comunicarse .correo__mailto {
+      font-size: 1.5rem;
+      padding: 10px; }
+      .footer .correo .correo__mailto:hover, .footer .footer__comunicarse .correo__mailto:hover {
+        background-color: #c78181;
+        padding: 1px;
+        border-top-left-radius: .4em;
+        border-top-right-radius: .4em; }
 
 /*main*/
 .container {
@@ -260,12 +284,8 @@
   grid-row-gap: 5px; }
   .container #sectuno {
     grid-area: sectuno; }
-    .container #sectuno .titulo {
-      text-align: center;
-      font-size: 2rem;
-      font-family: "Dancing Script", cursive; }
     .container #sectuno p {
-      margin: 50px;
+      margin: 100px;
       font-size: 1.3rem;
       text-align: justify; }
       @media (min-width: 320px) {
@@ -278,71 +298,67 @@
       color: white; }
   .container #sectdos {
     grid-area: sectdos; }
-    .container #sectdos .titulo2 {
-      font-family: "Dancing Script", cursive;
-      margin: 40px;
-      font-weight: bold; }
     .container #sectdos .enumera {
-      font-size: 1rem;
+      font-size: 1.1rem;
       font-weight: bold;
-      margin: 50px;
-      line-height: 2;
-      background: #a74444;
-      border-bottom-right-radius: 20px;
-      border-bottom-left-radius: 20px;
-      text-align: justify; }
-      @media (min-width: 320px) {
-        .container #sectdos .enumera {
-          font-size: .7rem;
-          width: 65%; } }
-      @media (min-width: 768px) {
-        .container #sectdos .enumera {
-          font-size: 1rem;
-          width: 80%; } }
-      @media (min-width: 1200px) {
-        .container #sectdos .enumera {
-          width: 90%; } }
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      transition: 1s; }
+      .container #sectdos .enumera .box1, .container #sectdos .enumera .box2, .container #sectdos .enumera .box3, .container #sectdos .enumera .box4, .container #sectdos .enumera .box5 {
+        list-style-type: none;
+        border: 8px ridge brown;
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        padding: 15px;
+        width: 25%;
+        margin: 15px; }
     .container #sectdos .vistaPanoramica {
-      width: 100%; }
+      width: 100vw;
+      height: 30%; }
 
 /*TURISMO Y CONTACTO CON GRID Y FLEXBOX*/
 /*TURISMO*/
-.container section h1 {
-  font-family: "Dancing Script", cursive;
-  text-align: center; }
-
-.container section table {
-  grid-area: sectuno;
-  border: 15px ridge brown;
-  width: 90vw;
-  font-size: 1rem;
-  display: flex;
-  flex-wrap: nowrap; }
-  @media (min-width: 425px) {
-    .container section table #tabla {
-      display: flex;
-      justify-content: center;
-      align-content: center; } }
-  @media (min-width: 576px) {
-    .container section table #tabla {
-      display: flex;
-      justify-content: center;
-      align-content: center; } }
-  @media (min-width: 768px) {
-    .container section table #tabla {
-      border: 15px ridge brown; } }
-  @media (min-width: 576) and (orientation: landscape) {
-    .container section table #tabla {
-      border: 20px ridge #b7aaaa; } }
-  .container section table td {
+.container #sectuno {
+  grid-area: sectuno; }
+  .container #sectuno h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 20px; }
+  .container #sectuno #tabla {
+    border: 15px ridge brown;
+    width: 90vw;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 40px; }
+    @media (min-width: 425px) {
+      .container #sectuno #tabla {
+        display: flex;
+        justify-content: center;
+        align-content: center; } }
+    @media (min-width: 576px) {
+      .container #sectuno #tabla {
+        display: flex;
+        justify-content: center;
+        align-content: center; } }
+    @media (min-width: 768px) {
+      .container #sectuno #tabla {
+        border: 15px ridge brown; } }
+    @media (min-width: 576) and (orientation: landscape) {
+      .container #sectuno #tabla {
+        border: 20px ridge #b7aaaa; } }
+  .container #sectuno td {
     margin: 8px; }
-    .container section table td a {
+    .container #sectuno td a {
       color: white; }
   @media (min-width: 320px) {
-    .container section table #historia {
+    .container #sectuno #historia {
       display: none; } }
   @media (min-width: 768px) {
-    .container section table #historia {
+    .container #sectuno #historia {
       display: flex; } }
 
 /*CONTACTO*/

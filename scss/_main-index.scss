@@ -14,13 +14,8 @@
 #sectuno {
   grid-area: sectuno;
 
-.titulo{
-  text-align: center;
-  font-size: 2rem;
-  font-family: $font-ciudad;
-}
 p {
-  margin: 50px;
+  margin: 100px;
   font-size: 1.3rem;
   text-align: justify;
 
@@ -37,36 +32,31 @@ a{
 }
 #sectdos {
   grid-area: sectdos;
-.titulo2{
-  font-family: $font-ciudad;
-  margin: 40px;
-  font-weight: bold;
-}
-.enumera {
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 50px;
-  line-height: 2;
-  background: rgb(167, 68, 68);
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  text-align: justify;
 
-  @include mobile{
-  font-size: .7rem;
-  width: 65%;
-  }
-  @include mobile2{
-    font-size: 1rem;
-    width: 80%;
-    }
-  @include mobile3{
-    width: 90%;
-    }
+  .enumera {
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    transition:1s;
+
+    .box1, .box2, .box3, .box4, .box5 {
+      list-style-type: none;
+      border: 8px ridge brown;
+      border-top-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      padding: 15px;
+      width: 25%;
+      margin: 15px; 
 
   }
+  }
+
 .vistaPanoramica {
-  width: 100%;
+  width: 100vw;
+  height: 30%;
 }
 }
 }

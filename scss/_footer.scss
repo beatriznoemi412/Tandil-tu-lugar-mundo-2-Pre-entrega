@@ -9,14 +9,13 @@
     display: inline-block;
     line-height: 2.5;
     text-align: center;
-    padding: 20px;
-  .tit__footer,
-  h2{
+    padding: 10px;
+  .tit__footer{
     font-family: $font-ciudad;
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
-    padding: 20px;
+    margin-top:25px;
     color: black;
     @include mobile{
       font-size: 1.3rem;
@@ -34,7 +33,12 @@
       -webkit-animation: slide-in-blurred-left 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
               animation: slide-in-blurred-left 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
       animation-delay: 3s;
-      
+    &:hover{
+      background-color: rgb(199, 129, 129);
+      cursor: pointer;
+      border-top-left-radius: .4em;
+      border-top-right-radius: .4em;
+    } 
     
     @-webkit-keyframes slide-in-blurred-left {
       0% {
@@ -81,7 +85,7 @@
 
   .footer__comunicarse {
     @extend .correo;
-    padding: 20px;
+    padding: 10px;
     color: $anchor;
     .informacion{
     @include mobile{
@@ -89,6 +93,7 @@
     }
     @include mobile2{
       font-size: 1rem;
+    
     }
     }
   }
@@ -97,15 +102,30 @@
     flex-direction: column;
     justify-content: baseline;
     align-items: center;
-
-    .correo__mailto {
-      font-size: 1.1rem;
+    margin: 60px 30px 0 0;
+    .correo__contact{
+      font-size: 2rem;
       font-family: $font-ciudad;
       font-weight: bold;
       color: $anchor;
-
+    }
+    img{
+      width: 25px;
+      height: 25px;
+      margin-top: 5px;
+    }
+    .correo__mailto {
+      font-size: 1.5rem;
+      padding: 10px;
+      @extend .correo__contact;
+      &:hover{
+        background-color: rgb(199, 129, 129);
+        padding: 1px;
+        border-top-left-radius: .4em;
+      border-top-right-radius: .4em;
+      }
       }
     }
   }
-
+  
 
