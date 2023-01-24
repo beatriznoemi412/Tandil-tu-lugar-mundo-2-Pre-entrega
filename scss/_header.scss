@@ -8,14 +8,11 @@
   overflow-x: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: 0.5fr 1fr 0.2fr;
   grid-template-areas:
     "header header header"
-    "ciudad ciudad ciudad"
     "container container container"
     "footer footer footer";
-  grid-column-gap: 5px;
-  grid-row-gap: 15px;
   width: 100vw;
   height: 100vh;
 
@@ -24,7 +21,8 @@
   grid-area: header;
   @include flexbox(column, center, center);
   width: 100vw;
-  height:950px;
+  position: relative;
+  /*
   @include mobile{
     @include  flexbox2(center, center);
     height: 350px;
@@ -48,15 +46,15 @@
   @include mobile4{
     @include  flexbox2(center, center);
     height: 780px;
-  }
+  }*/
 
 .titulo {
-  @include flexbox2(center, center);
   font-size: 1.6rem;
   font-family: $font-ciudad;
   font-weight: bold;
   color: $color-h1;
-  margin-top: 20px;
+  margin: 20px;
+  text-align: center;
 }
 .titulo__expand {
   -webkit-animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
@@ -88,11 +86,11 @@
     opacity: 1;
   }
 }
-
-
-.ciudad {
-  grid-area: ciudad;
-
+.respmenu input,
+.respmenu .fa-bars,
+.respmenu .fa-times{
+  display: none;
+}
 .ciudad__listas__reseteo {
   display: flex;
   justify-content: center;
@@ -113,27 +111,20 @@ a:active {
   padding: 10px;
   &:hover {
   color: rgb(222, 169, 169);
+  cursor: pointer;
 }
 }
 }
 }
-}
-.tandil{
-  display: flex;
-  justify-content: center;
-  justify-items: center;
 
-.ciudad__img {
-  @include  flexbox2(center, center);
-  background-image: (url "../assets/img/TandilyDique.jpeg");
-  width:100vw;
-  height: 600px;
+.ciudad__nav__img {
+  min-width:100vw;
+  max-height:100vh;
   opacity: 0.8;
   filter: alpha(opacity=80);
   zoom: 1;
-  padding-right: 15px;
 
-  @include mobile{
+ /* @include mobile{
     @include  flexbox2(center, center);
     width: 95%;
     height: 200px;
@@ -172,11 +163,12 @@ a:active {
     @include  flexbox2(center, center);
     width: 97%;
     height: 600px;
-  }
+  }*/
  }
-}
 
-.ciudad__span {
+
+.ciudad__tit{
+  background-color: $background-header;
   text-align: center;
   font-family: $font-ciudad;
   font-size: 1.6rem;
@@ -188,99 +180,3 @@ a:active {
 
 
 
-/*BOOTSTRAP*/
-  /*BARRA DE NAVEGACION*/
-  body {
-    background-image: linear-gradient(
-      90deg,
-      #ce9092,
-      #c99c9d,
-      rgba(232, 203, 203, 0.742)
-    );
-    overflow-x: hidden;
-  
-  .header{
-    background-color: $background-header;
-    h1{
-      font-family: $font-ciudad;
-    }
-  
-    .titulo__expand {
-    -webkit-animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
-      both;
-    animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-      
-  @-webkit-keyframes titulo__expand {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes titulo__expand {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-} 
-  .nav {
-    background-color: $background-header;
-  
-    .nav-link{
-    border: none!important;
-  &:hover{
-      color: map-get($colors, "pink")!important;
-     }
-    }
-  }
-
- .foto {
-    background-image: (url "../assets/img/TandilyDique.jpeg");
-    width: 100vw;
-    height: 650;
-    opacity: 0.9;
-    filter: alpha(opacity=80);
-    zoom: 1;
-
-    @include mobile{
-      height: 200px!important;
-    }
-    @include mobile2{
-      height: 300px!important;
-    }
-    @include mobile5{
-      height: 400px;
-    }
-    @include mobile3{
-      height: 500px!important;
-    }
-    @include mobile4{
-      height: 650px!important;
-    }
- }
-
- .span{
-
-  .te_cuento{
-    background-color:$background-header;
-    width: 100vw;
-    font-family: $font-ciudad;
-  
-  }
- }
-  }
-  
-}

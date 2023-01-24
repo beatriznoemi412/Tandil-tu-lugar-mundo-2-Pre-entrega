@@ -51,36 +51,3 @@
   }
 
 
-/*FOOTER BOOTSTRAP*/
-footer{
-  .container-fluid {
-    background-color: brown;
-
-    .tit{
-      font-family: $font-ciudad;
-      }
-    .list{
-    .informe {
-      font-size: 1rem;
-      .dato{
-        @include mobile{
-        font-size: .6rem;
-        }
-        @include mobile2{
-        font-size: 1.2rem;
-        }
-      }
-    }
-  }
-    #correo {
-      .subtit{
-      @extend .tit;
-      }
-    
-    .correo__email {
-      text-decoration: none;
-      font-family: $font-ciudad;
-    }
-  }
-}  
-}
