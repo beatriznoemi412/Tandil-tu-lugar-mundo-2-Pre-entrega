@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Te informamos sobre recorrido colectivos.">
     <link rel="stylesheet" href="../css/estilo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=
     Josefin+Sans:wght@100&family=Lobster+Two&display=swap" rel="stylesheet">
     <link href="https://coolors.co/c6d4ff-7a82ab-307473-12664f-2dc2bd">
@@ -36,7 +37,63 @@
         </nav>
       </div>
     </header>
+    <main class="container">
+      <section id="sectuno">
 
+        <h1 class="titulo">Viajá por Tandil en Transporte Público.</h1>
+        <p class="parrafo">Si Necesitás movilizarte una opción económica es el colectivo. Tenemos varias 
+        líneas que abarcan gran parte de la ciudad.</p>
+        <p class="parrafo">Para conocer qué colectivo tomar, cuándo bajar, dónde y cuánto caminar, cuánto
+        tiempo esperar tu línea y cúantas paradas quedan hay una App para ello que es muy popular.  
+        </p>
+        <p class="parrafo">Si querés saber más de recorridos, boleto electrónico y estacionamiento medido:
+          www.gpssumo.com</a> o teléfono (0249) 442-2433.</p>
+      
+        <div class="conten">
+      
+        <img class="conten__viaje" src="../assets/img/tarjetaSumo.jpg" alt="Tarjeta Sumo">
+        <img class="conten_viaje_caja" src="../assets/img/tarjetaSumo.jpg" alt="Tarjeta Sumo">
+        <img class="conten_viajecaja_otra" src="../assets/img/tarjetaSumo.jpg" alt="Tarjeta Sumo">
+        </div>
+          <h2 class="subtitulo">La ciudad cuenta con seis líneas de colectivos:</h2>
+      
+          <ul class="enumera">
+          <div class="box1" id="linea1" data-aos="zoom-out-right">
+          <li>LINEA 500 (amarillo) "Transporte 9 de Julio". Su cabecera en Catamarca y Vicente López.</li>
+          </div>
+          <div class="box2" id="linea2" data-aos="zoom-out-right">
+          <li>LINEA 501 (rojo) "Transporte Ciudad de Tandil". Cabecera en Salceda y Catriel.
+          Otra en Campus Universidad Nacional del Centro.</li>
+          </div>
+          <div class="box3" id="linea3" data-aos="zoom-out-right">
+          <li>LINEA 502 (blanco) "Transporte la Movediza S:A:". Cabecera en Arrillaga y Jujuy. Otra en el Parque Industrial.</li>
+          </div>
+          <div class="box3" id="linea4" data-aos="zoom-out-right">
+          <li>LINEA 503 (azul) "Transporte Gral. Rodríguez S.A.". Cabecera: Cementerio Municipal y Cementerio Pradera de Paz. Otra en  
+          Campus Universidad Nacional del Centro y Alargue Cerro Leones y alargue El Paraíso.</li>
+          </div>
+          <div class="box4" id="linea5" data-aos="zoom-out-right">
+          <li>LINEA 504 (Verde) "Transporte Villa Aguirre S.A.". Cabecera: Bº Metalúrgico: (García y Cardiel) y en Bº 25 de Mayo: 
+            (Nigro e Independencia) y alargue Barrio La Unión</li>
+          </div>
+          <div class="box5" id="linea6" data-aos="zoom-out-right">
+          <li>LINEA 505 (Marrón) "Transporte Gral. Belgrano S.R.L.". Con
+            cabecera en La Rural: (Pédersen y Los Ombúes) y en Campus Universidad Nacional del Centro.</li>
+          </div>
+          </ul>
+      </section>
+      <section id="sectdos" class="sectdos">
+      <div id="iframe">
+      
+      <iframe src="https://www.google.com/maps/d/embed?mid=131BmMdFSqmvFc0hv_w5f3OtAx0BFwKmt&ehbc=2E312F">
+      </iframe>
+      </div>
+        
+      <spam class="mencion">Mapa realizado por el Gobierno Municipal de Tandil.</spam>
+
+    </section>
+    </main>
+    
 
     <footer class="footer">
       <div class="redes">
@@ -67,6 +124,8 @@
       </div>
   </footer>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
- 
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

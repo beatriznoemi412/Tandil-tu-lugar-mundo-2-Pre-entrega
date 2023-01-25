@@ -1,0 +1,97 @@
+.container{
+  #sectuno{
+    .parrafo{
+      margin: 50px;
+    }
+.conten {
+    position: relative;
+    transition-duration: 1s;
+    transition: transform 1s;
+  &:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .conten__viaje{
+    position: relative;
+    z-index: 1;
+    border: 2px solid #b25659;
+    height: 170px;
+    margin:25px;
+    width:22%;
+    left: 20%;
+  }
+  
+  .conten_viaje_caja {
+    position: absolute;
+    z-index: 3; 
+    border: 2px solid #b25659;
+    height: 170px;  
+    width: 23%;
+    left: 450px;
+    top: 50px;
+  }
+  
+  .conten_viajecaja_otra {
+    position: absolute;
+    z-index: 4;
+    border: 2px solid #b25659;
+    width: 22%;
+    left: 660px;
+    top: 75px;
+    height: 155px;
+  }
+}
+  .subtitulo{
+    font-family: $font-ciudad;
+    font-size: 2rem;
+    text-align: center;
+    margin: 50px;
+
+  }
+  .enumera{
+      font-size: 1.1rem;
+      font-weight: bold;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      transition:1s;
+      .box1, .box2, .box3, .box4, .box5 {
+        list-style-type: none;
+        border: 8px ridge brown;
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        padding: 15px;
+        width: 25%;
+        margin: 15px; 
+  
+    &:hover{
+     transform: scale(1.1);
+     transition-duration: 2s;
+     background-color: rgb(205, 121, 121);
+     color: white;
+     cursor: pointer;
+  }
+}
+  } 
+  }
+  #sectdos{
+  #iframe{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+  
+  iframe{
+    width: 100vw;
+    height: 600px;
+    border: none;
+  }
+}
+  .mencion{
+    font-size: 1.3rem;
+    margin: 50px;
+  }
+  }
+}

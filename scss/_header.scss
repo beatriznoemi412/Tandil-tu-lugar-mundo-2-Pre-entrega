@@ -22,7 +22,7 @@
   @include flexbox(column, center, center);
   width: 100vw;
   position: relative;
-  /*
+  
   @include mobile{
     @include  flexbox2(center, center);
     height: 350px;
@@ -46,7 +46,7 @@
   @include mobile4{
     @include  flexbox2(center, center);
     height: 780px;
-  }*/
+  }
 
 .titulo {
   font-size: 1.6rem;
