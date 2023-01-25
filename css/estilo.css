@@ -85,10 +85,57 @@
     opacity: 0.6; }
   100% {
     opacity: 1; } }
-    .general #header .respmenu input,
+    @media (min-width: 320px) {
+      .general #header .respmenu {
+        color: white;
+        position: relative;
+        min-height: 25px; } }
+    .general #header .respmenu .input,
     .general #header .respmenu .fa-bars,
     .general #header .respmenu .fa-times {
       display: none; }
+    @media (min-width: 320px) {
+      .general #header .respmenu .fa-bars, .general #header .respmenu .fa-times {
+        font-size: 25px;
+        pointer-events: none;
+        color: #ddacac; } }
+    @media (min-width: 320px) {
+      .general #header .respmenu .fa-bars .input[type="checkbox"], .general #header .respmenu .fa-times .input[type="checkbox"] {
+        opacity: 0; } }
+    @media (min-width: 320px) {
+      .general #header .respmenu .fa-bars .input[type="checkbox"] .input[type="checkbox"], .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-bars, .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-times, .general #header .respmenu .fa-times .input[type="checkbox"] .input[type="checkbox"], .general #header .respmenu .fa-times .input[type="checkbox"] .fa-bars, .general #header .respmenu .fa-times .input[type="checkbox"] .fa-times {
+        position: absolute;
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 0;
+        bottom: 0;
+        top: -55px;
+        width: 25px;
+        height: 25px; } }
+    @media (min-width: 320px) {
+      .general #header .respmenu .fa-bars .input[type="checkbox"] .input[type="checkbox"] .pages, .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-bars .pages, .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-times .pages, .general #header .respmenu .fa-times .input[type="checkbox"] .input[type="checkbox"] .pages, .general #header .respmenu .fa-times .input[type="checkbox"] .fa-bars .pages, .general #header .respmenu .fa-times .input[type="checkbox"] .fa-times .pages {
+        display: block;
+        padding: 10px 20px;
+        max-width: 200px;
+        text-shadow: 2px 2px black; } }
+    @media (min-width: 320px) {
+      .general #header .respmenu .fa-bars .input[type="checkbox"] .input[type="checkbox"] .pages .ciudad, .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-bars .pages .ciudad, .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-times .pages .ciudad, .general #header .respmenu .fa-times .input[type="checkbox"] .input[type="checkbox"] .pages .ciudad, .general #header .respmenu .fa-times .input[type="checkbox"] .fa-bars .pages .ciudad, .general #header .respmenu .fa-times .input[type="checkbox"] .fa-times .pages .ciudad {
+        display: none; } }
+    @media (min-width: 320px) {
+      .general #header .respmenu .fa-bars .input[type="checkbox"] .input[type="checkbox"] .pages .ciudad .input:checked ~ .ciudad, .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-bars .pages .ciudad .input:checked ~ .ciudad, .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-times .pages .ciudad .input:checked ~ .ciudad, .general #header .respmenu .fa-times .input[type="checkbox"] .input[type="checkbox"] .pages .ciudad .input:checked ~ .ciudad, .general #header .respmenu .fa-times .input[type="checkbox"] .fa-bars .pages .ciudad .input:checked ~ .ciudad, .general #header .respmenu .fa-times .input[type="checkbox"] .fa-times .pages .ciudad .input:checked ~ .ciudad {
+        display: block; } }
+    @media (min-width: 320px) {
+      .general #header .respmenu .fa-bars .input[type="checkbox"] .input[type="checkbox"] .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars, .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-bars .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars, .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-times .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars, .general #header .respmenu .fa-times .input[type="checkbox"] .input[type="checkbox"] .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars, .general #header .respmenu .fa-times .input[type="checkbox"] .fa-bars .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars, .general #header .respmenu .fa-times .input[type="checkbox"] .fa-times .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars {
+        display: none; } }
+    @media (min-width: 320px) {
+      .general #header .respmenu .fa-bars .input[type="checkbox"] .input[type="checkbox"] .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars .input:not(:checked) ~ .fa-times, .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-bars .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars .input:not(:checked) ~ .fa-times, .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-times .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars .input:not(:checked) ~ .fa-times, .general #header .respmenu .fa-times .input[type="checkbox"] .input[type="checkbox"] .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars .input:not(:checked) ~ .fa-times, .general #header .respmenu .fa-times .input[type="checkbox"] .fa-bars .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars .input:not(:checked) ~ .fa-times, .general #header .respmenu .fa-times .input[type="checkbox"] .fa-times .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars .input:not(:checked) ~ .fa-times {
+        display: none; } }
+    @media (min-width: 768px) {
+      .general #header .respmenu .fa-bars, .general #header .respmenu .fa-times {
+        display: none; }
+      .general #header .respmenu .ciudad {
+        display: flex;
+        flex-direction: column; } }
     .general #header .ciudad__listas__reseteo {
       display: flex;
       justify-content: center;
@@ -112,67 +159,67 @@
           .general #header .ciudad__listas__reseteo li a:active:hover {
             color: #dea9a9;
             cursor: pointer; }
-    .general #header .ciudad__nav__img {
-      min-width: 100vw;
-      max-height: 100vh;
-      opacity: 0.8;
-      filter: alpha(opacity=80);
-      zoom: 1; }
-      @media (min-width: 320px) {
-        .general #header .ciudad__nav__img {
-          display: flex;
-          justify-content: center;
-          align-content: center;
-          width: 100%;
-          height: 200px; } }
-      @media (min-width: 425px) {
-        .general #header .ciudad__nav__img {
-          display: flex;
-          justify-content: center;
-          align-content: center;
-          width: 100%;
-          height: 200px; } }
-      @media (min-width: 576px) {
-        .general #header .ciudad__nav__img {
-          display: flex;
-          justify-content: center;
-          align-content: center;
-          width: 100%;
-          height: 250px; } }
-      @media (min-width: 768px) {
-        .general #header .ciudad__nav__img {
-          display: flex;
-          justify-content: center;
-          align-content: center;
-          width: 100%;
-          height: 360px; } }
-      @media (min-width: 992px) {
-        .general #header .ciudad__nav__img {
-          display: flex;
-          justify-content: center;
-          align-content: center;
-          width: 100%;
-          height: 485px; } }
-      @media (min-width: 1200px) {
-        .general #header .ciudad__nav__img {
-          display: flex;
-          justify-content: center;
-          align-content: center;
-          width: 100%;
-          height: 540px; } }
-      @media (min-width: 1400px) {
-        .general #header .ciudad__nav__img {
-          display: flex;
-          justify-content: center;
-          align-content: center;
-          width: 100%;
-          height: 600px; } }
-    .general #header .ciudad__tit {
-      background-color: brown;
-      text-align: center;
-      font-family: "Dancing Script", cursive;
-      font-size: 1.6rem;
-      color: white; }
+  .general .ciudad__nav__img {
+    min-width: 100vw;
+    max-height: 100vh;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    zoom: 1; }
+    @media (min-width: 320px) {
+      .general .ciudad__nav__img {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 200px; } }
+    @media (min-width: 425px) {
+      .general .ciudad__nav__img {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 200px; } }
+    @media (min-width: 576px) {
+      .general .ciudad__nav__img {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 250px; } }
+    @media (min-width: 768px) {
+      .general .ciudad__nav__img {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 360px; } }
+    @media (min-width: 992px) {
+      .general .ciudad__nav__img {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 485px; } }
+    @media (min-width: 1200px) {
+      .general .ciudad__nav__img {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 540px; } }
+    @media (min-width: 1400px) {
+      .general .ciudad__nav__img {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 600px; } }
+  .general .ciudad__tit {
+    background-color: brown;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 1.6rem;
+    color: white; }
 
 .footer {
   grid-area: footer;

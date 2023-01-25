@@ -86,10 +86,90 @@
     opacity: 1;
   }
 }
-.respmenu input,
-.respmenu .fa-bars,
-.respmenu .fa-times{
+.respmenu{
+  @include mobile{
+    color: white;
+    position: relative;
+    min-height: 25px;
+  }
+ .input,
+ .fa-bars,
+ .fa-times{
   display: none;
+ }
+  .fa-bars, .fa-times {
+    @include mobile{
+    font-size: 25px;
+    pointer-events: none;
+    color:rgb(221, 172, 172)
+  }
+
+  .input[type="checkbox"] {
+    @include mobile{
+    opacity: 0;
+  }
+
+  .input[type="checkbox"], .fa-bars, .fa-times {
+    @include mobile{
+    position: absolute;
+    box-sizing: border-box;
+    padding:10px;
+    margin: 0;
+    bottom:0;
+    top: -55px;
+    width: 25px;
+    height: 25px;
+  }
+
+ .pages{
+  @include mobile{
+  display: block;
+  padding: 10px 20px;
+  max-width: 200px;
+  text-shadow: 2px 2px black;
+ }
+
+
+ .ciudad {
+  @include mobile{
+  display: none;
+}
+
+.input:checked ~ .ciudad {
+  @include mobile{
+  display: block;
+}
+
+.input:checked ~ .fa-bars {
+  @include mobile{
+  display: none;
+}
+
+.input:not(:checked) ~ .fa-times {
+  @include mobile{
+  display: none;
+}
+}
+}
+}
+}
+}
+  }
+}
+  }
+}
+
+@media (min-width: 768px){
+
+  .respmenu .fa-bars, .respmenu .fa-times {
+    display: none;
+}
+.respmenu .ciudad{
+  display: flex;
+  flex-direction: column;
+ 
+}
+  
 }
 .ciudad__listas__reseteo {
   display: flex;
@@ -117,7 +197,7 @@ a:active {
 }
 }
 }
-
+}
 .ciudad__nav__img {
   min-width:100vw;
   max-height:100vh;
@@ -177,7 +257,7 @@ a:active {
 
 }
 }
-}
+
 
 
 
