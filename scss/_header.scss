@@ -86,265 +86,122 @@
     opacity: 1;
   }
 }
-}
 .respmenu{
+.input[type="checkbox"]{
   @include mobile{
-    color: white;
+  position: absolute;
+  padding: 10px;
+  margin: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  opacity: 0;
+  @include mobile{
     position: relative;
     min-height: 25px;
   }
- .input{
+}
+
+.fa-bars {
   display: none;
- 
-  &:checked ~ .fa-bars {
-    @include mobile{
-    display: none;
-  }
-  
-  &:checked ~ .ciudad__listas{
-    @include mobile{
-    display: block;
-  }
-  
-  &:not(:checked) ~ .fa-times {
-  @include mobile{
-  display: none;
-}
- 
-  
- .fa-bars, .fa-times, .input[type="checkbox"]{
-  display: none;
-  @include mobile{
-    position: absolute;
-    box-sizing: border-box;
-    padding:10px;
-    margin: 0;
-    bottom:0;
-    top: -55px;
-    width: 25px;
-    height: 25px;
-  }
-}
-   .input[type="checkbox"]{
-    @include mobile{
-      opacity: 0;
-    }
-   }
-   .fa-bars, .fa-times{ 
-    @include mobile{
-    font-size: 25px;
-    pointer-events: none;
-    color:rgb(221, 172, 172)
-   }
-  }
-}
-}
-}
-.ciudad{
-.ciudad__listas{
-    @include mobile{
-    display: none;
-  }
-  
-.ciudad__listas__reseteo {
-  display: flex;
-  justify-items: center;
-  align-items: center;
- 
   @include mobile{
     display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    padding: 10px 20px;
-    max-width: 200px;
-    text-shadow: 1px 1px black;
+    pointer-events: none;
+    font-size: 25px;
+    color: #ce9092;
+
   }
-li {
-  list-style-type: none;
 }
-a,
-.ciudad__listas__reseteo a:link,
-a:visited,
-a:active {
-  text-decoration: none;
-  color: $color-h1;
-  font-size: 1rem;
-  font-weight: bold;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  padding: 10px;
-  
-  &:hover {
-  color: rgb(222, 169, 169);
-  cursor: pointer;
-}
-}
-}
-}
-}
- }
-}
-
- .ciudad__nav{ 
-.ciudad__nav__img {
-  min-width:100vw;
-  max-height:100vh;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
-  zoom: 1;
-
+.fa-times{
+  @extend .fa-bars;
   @include mobile{
-    @include  flexbox2(center, center);
-    width: 100%;
-    height: 200px;
-    
-  }
-  @include mobile_otro{
-    @include  flexbox2(center, center);
-    width: 100%;
-    height: 200px;
-    
-   
-  }
-  @include mobile1{
-    @include  flexbox2(center, center);
-    width: 100%;
-    height: 250px;
-    
-  }
-  @include mobile2{
-    @include  flexbox2(center, center);
-    width: 100%;
-    height: 360px;
-    
-  }
-  @include mobile5{
-    @include  flexbox2(center, center);
-    width: 100%;
-    height: 485px;
-  }
-  @include mobile3{
-    @include  flexbox2(center, center);
-    width: 100%;
-    height: 540px;
-  }
-  @include mobile4{
-    @include  flexbox2(center, center);
-    width: 100%;
-    height: 600px;
-  }
- }
-  
-
-.ciudad__tit{
-  background-color: $background-header;
-  text-align: center;
-  font-family: $font-ciudad;
-  font-size: 1.6rem;
-  color: $color-h1;
-
+    display: flex;
+    pointer-events: none;
+    font-size: 25px;
+    color: #ce9092;
 }
 }
+.input{
+  @extend .fa-bars;
+  @include mobile{
+    .input:checked ~ .ciudad__listas__reseteo{
+       display: block;
+       &:checked ~ .fa-bars{
+        display: none;
+       &:not(:checked) ~ .fa-times{
+        display:none;
+       }
+      }
+    }
   }
-/*
-
-@media (min-width: 992px){
-
-   .fa-bars,.fa-times {
-    display: none;
 }
- .ciudad{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
- 
- 
-
-.ciudad__listas__reseteo {
+}
+.ciudad__listas__reseteo{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  @include mobile{
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
 li {
   list-style-type: none;
+ 
 
 a,
 .ciudad__listas__reseteo a:link,
 a:visited,
 a:active {
   text-decoration: none;
-  color: $color-h1;
-  font-size: 1rem;
+  color: white;
+  font-size: 1.3rem;
   font-weight: bold;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 10px;
-  &:hover {
-  color: rgb(222, 169, 169);
+
+  @include mobile{
+    text-shadow: 3px 3px black;
+    font-size: 1rem;
+  }
+
+&:hover {
+  color: rgb(247, 221, 221);
   cursor: pointer;
 }
 }
 }
-}
-
-.ciudad__nav__img {
-  min-width:100vw;
-  max-height:100vh;
+} 
+.ciudad__nav__img{
   opacity: 0.8;
   filter: alpha(opacity=80);
   zoom: 1;
+  min-width: 100vw;
+  max-height: 100vh;
 
   @include mobile{
-    @include  flexbox2(center, center);
-    width: 100%;
-    height: 200px;
-    
+    width: 50%;
+    height: 150px;
   }
-  @include mobile_otro{
-    @include  flexbox2(center, center);
-    width: 100%;
-    height: 200px;
-    
-   
-  }
-  @include mobile1{
-    @include  flexbox2(center, center);
-    width: 100%;
-    height: 250px;
-    
-  }
-  @include mobile2{
-    @include  flexbox2(center, center);
-    width: 100%;
-    height: 360px;
-    
-  }
-  @include mobile5{
-    @include  flexbox2(center, center);
-    width: 100%;
-    height: 485px;
-  }
-  @include mobile3{
-    @include  flexbox2(center, center);
-    width: 100%;
-    height: 540px;
-  }
-  @include mobile4{
-    @include  flexbox2(center, center);
-    width: 100%;
-    height: 600px;
-  }
- }
+}
 
 
-.ciudad__tit{
-  background-color: $background-header;
+.ciudad__subtit {
+  background-color: brown;
   text-align: center;
-  font-family: $font-ciudad;
-  font-size: 1.6rem;
-  color: $color-h1;
+  font-size: 2rem;
+  font-family: "Dancing Script", cursive;
+  color: white;
 
+  @include mobile{
+   font-size: 1.3rem;
+  }
 }
 }
 }
-*/
+}
+
+
+
