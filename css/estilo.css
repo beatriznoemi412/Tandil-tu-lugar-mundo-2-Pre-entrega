@@ -85,142 +85,240 @@
     opacity: 0.6; }
   100% {
     opacity: 1; } }
+  @media (min-width: 320px) {
+    .general .respmenu {
+      color: white;
+      position: relative;
+      min-height: 25px; } }
+  .general .respmenu .input {
+    display: none; }
     @media (min-width: 320px) {
-      .general #header .respmenu {
-        color: white;
-        position: relative;
-        min-height: 25px; } }
-    .general #header .respmenu .input,
-    .general #header .respmenu .fa-bars,
-    .general #header .respmenu .fa-times {
+      .general .respmenu .input:checked ~ .fa-bars {
+        display: none; } }
+    @media (min-width: 320px) {
+      .general .respmenu .input:checked ~ .fa-bars:checked ~ .ciudad__listas {
+        display: block; } }
+    @media (min-width: 320px) {
+      .general .respmenu .input:checked ~ .fa-bars:checked ~ .ciudad__listas:not(:checked) ~ .fa-times {
+        display: none; } }
+    .general .respmenu .input:checked ~ .fa-bars:checked ~ .ciudad__listas:not(:checked) ~ .fa-times .fa-bars, .general .respmenu .input:checked ~ .fa-bars:checked ~ .ciudad__listas:not(:checked) ~ .fa-times .fa-times, .general .respmenu .input:checked ~ .fa-bars:checked ~ .ciudad__listas:not(:checked) ~ .fa-times .input[type="checkbox"] {
       display: none; }
+      @media (min-width: 320px) {
+        .general .respmenu .input:checked ~ .fa-bars:checked ~ .ciudad__listas:not(:checked) ~ .fa-times .fa-bars, .general .respmenu .input:checked ~ .fa-bars:checked ~ .ciudad__listas:not(:checked) ~ .fa-times .fa-times, .general .respmenu .input:checked ~ .fa-bars:checked ~ .ciudad__listas:not(:checked) ~ .fa-times .input[type="checkbox"] {
+          position: absolute;
+          box-sizing: border-box;
+          padding: 10px;
+          margin: 0;
+          bottom: 0;
+          top: -55px;
+          width: 25px;
+          height: 25px; } }
     @media (min-width: 320px) {
-      .general #header .respmenu .fa-bars, .general #header .respmenu .fa-times {
+      .general .respmenu .input:checked ~ .fa-bars:checked ~ .ciudad__listas:not(:checked) ~ .fa-times .input[type="checkbox"] {
+        opacity: 0; } }
+    @media (min-width: 320px) {
+      .general .respmenu .input:checked ~ .fa-bars:checked ~ .ciudad__listas:not(:checked) ~ .fa-times .fa-bars, .general .respmenu .input:checked ~ .fa-bars:checked ~ .ciudad__listas:not(:checked) ~ .fa-times .fa-times {
         font-size: 25px;
         pointer-events: none;
         color: #ddacac; } }
     @media (min-width: 320px) {
-      .general #header .respmenu .fa-bars .input[type="checkbox"], .general #header .respmenu .fa-times .input[type="checkbox"] {
-        opacity: 0; } }
-    @media (min-width: 320px) {
-      .general #header .respmenu .fa-bars .input[type="checkbox"] .input[type="checkbox"], .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-bars, .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-times, .general #header .respmenu .fa-times .input[type="checkbox"] .input[type="checkbox"], .general #header .respmenu .fa-times .input[type="checkbox"] .fa-bars, .general #header .respmenu .fa-times .input[type="checkbox"] .fa-times {
-        position: absolute;
-        box-sizing: border-box;
-        padding: 10px;
-        margin: 0;
-        bottom: 0;
-        top: -55px;
-        width: 25px;
-        height: 25px; } }
-    @media (min-width: 320px) {
-      .general #header .respmenu .fa-bars .input[type="checkbox"] .input[type="checkbox"] .pages, .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-bars .pages, .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-times .pages, .general #header .respmenu .fa-times .input[type="checkbox"] .input[type="checkbox"] .pages, .general #header .respmenu .fa-times .input[type="checkbox"] .fa-bars .pages, .general #header .respmenu .fa-times .input[type="checkbox"] .fa-times .pages {
-        display: block;
-        padding: 10px 20px;
-        max-width: 200px;
-        text-shadow: 2px 2px black; } }
-    @media (min-width: 320px) {
-      .general #header .respmenu .fa-bars .input[type="checkbox"] .input[type="checkbox"] .pages .ciudad, .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-bars .pages .ciudad, .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-times .pages .ciudad, .general #header .respmenu .fa-times .input[type="checkbox"] .input[type="checkbox"] .pages .ciudad, .general #header .respmenu .fa-times .input[type="checkbox"] .fa-bars .pages .ciudad, .general #header .respmenu .fa-times .input[type="checkbox"] .fa-times .pages .ciudad {
+      .general .respmenu .input .ciudad .ciudad__listas {
         display: none; } }
-    @media (min-width: 320px) {
-      .general #header .respmenu .fa-bars .input[type="checkbox"] .input[type="checkbox"] .pages .ciudad .input:checked ~ .ciudad, .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-bars .pages .ciudad .input:checked ~ .ciudad, .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-times .pages .ciudad .input:checked ~ .ciudad, .general #header .respmenu .fa-times .input[type="checkbox"] .input[type="checkbox"] .pages .ciudad .input:checked ~ .ciudad, .general #header .respmenu .fa-times .input[type="checkbox"] .fa-bars .pages .ciudad .input:checked ~ .ciudad, .general #header .respmenu .fa-times .input[type="checkbox"] .fa-times .pages .ciudad .input:checked ~ .ciudad {
-        display: block; } }
-    @media (min-width: 320px) {
-      .general #header .respmenu .fa-bars .input[type="checkbox"] .input[type="checkbox"] .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars, .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-bars .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars, .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-times .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars, .general #header .respmenu .fa-times .input[type="checkbox"] .input[type="checkbox"] .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars, .general #header .respmenu .fa-times .input[type="checkbox"] .fa-bars .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars, .general #header .respmenu .fa-times .input[type="checkbox"] .fa-times .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars {
-        display: none; } }
-    @media (min-width: 320px) {
-      .general #header .respmenu .fa-bars .input[type="checkbox"] .input[type="checkbox"] .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars .input:not(:checked) ~ .fa-times, .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-bars .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars .input:not(:checked) ~ .fa-times, .general #header .respmenu .fa-bars .input[type="checkbox"] .fa-times .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars .input:not(:checked) ~ .fa-times, .general #header .respmenu .fa-times .input[type="checkbox"] .input[type="checkbox"] .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars .input:not(:checked) ~ .fa-times, .general #header .respmenu .fa-times .input[type="checkbox"] .fa-bars .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars .input:not(:checked) ~ .fa-times, .general #header .respmenu .fa-times .input[type="checkbox"] .fa-times .pages .ciudad .input:checked ~ .ciudad .input:checked ~ .fa-bars .input:not(:checked) ~ .fa-times {
-        display: none; } }
-    @media (min-width: 768px) {
-      .general #header .respmenu .fa-bars, .general #header .respmenu .fa-times {
-        display: none; }
-      .general #header .respmenu .ciudad {
-        display: flex;
-        flex-direction: column; } }
-    .general #header .ciudad__listas__reseteo {
+    .general .respmenu .input .ciudad .ciudad__listas .ciudad__listas__reseteo {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap; }
-      .general #header .ciudad__listas__reseteo li {
+      justify-items: center;
+      align-items: center; }
+      @media (min-width: 320px) {
+        .general .respmenu .input .ciudad .ciudad__listas .ciudad__listas__reseteo {
+          display: flex;
+          flex-direction: column;
+          justify-items: center;
+          align-items: center;
+          padding: 10px 20px;
+          max-width: 200px;
+          text-shadow: 1px 1px black; } }
+      .general .respmenu .input .ciudad .ciudad__listas .ciudad__listas__reseteo li {
         list-style-type: none; }
-        .general #header .ciudad__listas__reseteo li a,
-        .general #header .ciudad__listas__reseteo li .ciudad__listas__reseteo a:link,
-        .general #header .ciudad__listas__reseteo li a:visited,
-        .general #header .ciudad__listas__reseteo li a:active {
-          text-decoration: none;
-          color: white;
-          font-size: 1rem;
-          font-weight: bold;
-          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-          padding: 10px; }
-          .general #header .ciudad__listas__reseteo li a:hover,
-          .general #header .ciudad__listas__reseteo li .ciudad__listas__reseteo a:link:hover,
-          .general #header .ciudad__listas__reseteo li a:visited:hover,
-          .general #header .ciudad__listas__reseteo li a:active:hover {
-            color: #dea9a9;
-            cursor: pointer; }
-  .general .ciudad__nav__img {
+      .general .respmenu .input .ciudad .ciudad__listas .ciudad__listas__reseteo a,
+      .general .respmenu .input .ciudad .ciudad__listas .ciudad__listas__reseteo .ciudad__listas__reseteo a:link,
+      .general .respmenu .input .ciudad .ciudad__listas .ciudad__listas__reseteo a:visited,
+      .general .respmenu .input .ciudad .ciudad__listas .ciudad__listas__reseteo a:active {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        padding: 10px; }
+        .general .respmenu .input .ciudad .ciudad__listas .ciudad__listas__reseteo a:hover,
+        .general .respmenu .input .ciudad .ciudad__listas .ciudad__listas__reseteo .ciudad__listas__reseteo a:link:hover,
+        .general .respmenu .input .ciudad .ciudad__listas .ciudad__listas__reseteo a:visited:hover,
+        .general .respmenu .input .ciudad .ciudad__listas .ciudad__listas__reseteo a:active:hover {
+          color: #dea9a9;
+          cursor: pointer; }
+  .general .ciudad__nav .ciudad__nav__img {
     min-width: 100vw;
     max-height: 100vh;
     opacity: 0.8;
     filter: alpha(opacity=80);
     zoom: 1; }
     @media (min-width: 320px) {
-      .general .ciudad__nav__img {
+      .general .ciudad__nav .ciudad__nav__img {
         display: flex;
         justify-content: center;
         align-content: center;
         width: 100%;
         height: 200px; } }
     @media (min-width: 425px) {
-      .general .ciudad__nav__img {
+      .general .ciudad__nav .ciudad__nav__img {
         display: flex;
         justify-content: center;
         align-content: center;
         width: 100%;
         height: 200px; } }
     @media (min-width: 576px) {
-      .general .ciudad__nav__img {
+      .general .ciudad__nav .ciudad__nav__img {
         display: flex;
         justify-content: center;
         align-content: center;
         width: 100%;
         height: 250px; } }
     @media (min-width: 768px) {
-      .general .ciudad__nav__img {
+      .general .ciudad__nav .ciudad__nav__img {
         display: flex;
         justify-content: center;
         align-content: center;
         width: 100%;
         height: 360px; } }
     @media (min-width: 992px) {
-      .general .ciudad__nav__img {
+      .general .ciudad__nav .ciudad__nav__img {
         display: flex;
         justify-content: center;
         align-content: center;
         width: 100%;
         height: 485px; } }
     @media (min-width: 1200px) {
-      .general .ciudad__nav__img {
+      .general .ciudad__nav .ciudad__nav__img {
         display: flex;
         justify-content: center;
         align-content: center;
         width: 100%;
         height: 540px; } }
     @media (min-width: 1400px) {
-      .general .ciudad__nav__img {
+      .general .ciudad__nav .ciudad__nav__img {
         display: flex;
         justify-content: center;
         align-content: center;
         width: 100%;
         height: 600px; } }
-  .general .ciudad__tit {
+  .general .ciudad__nav .ciudad__tit {
     background-color: brown;
     text-align: center;
     font-family: "Dancing Script", cursive;
     font-size: 1.6rem;
     color: white; }
 
+/*
+
+@media (min-width: 992px){
+
+   .fa-bars,.fa-times {
+    display: none;
+}
+ .ciudad{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+ 
+
+.ciudad__listas__reseteo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+li {
+  list-style-type: none;
+
+a,
+.ciudad__listas__reseteo a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: $color-h1;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 10px;
+  &:hover {
+  color: rgb(222, 169, 169);
+  cursor: pointer;
+}
+}
+}
+}
+
+.ciudad__nav__img {
+  min-width:100vw;
+  max-height:100vh;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  zoom: 1;
+
+  @include mobile{
+    @include  flexbox2(center, center);
+    width: 100%;
+    height: 200px;
+    
+  }
+  @include mobile_otro{
+    @include  flexbox2(center, center);
+    width: 100%;
+    height: 200px;
+    
+   
+  }
+  @include mobile1{
+    @include  flexbox2(center, center);
+    width: 100%;
+    height: 250px;
+    
+  }
+  @include mobile2{
+    @include  flexbox2(center, center);
+    width: 100%;
+    height: 360px;
+    
+  }
+  @include mobile5{
+    @include  flexbox2(center, center);
+    width: 100%;
+    height: 485px;
+  }
+  @include mobile3{
+    @include  flexbox2(center, center);
+    width: 100%;
+    height: 540px;
+  }
+  @include mobile4{
+    @include  flexbox2(center, center);
+    width: 100%;
+    height: 600px;
+  }
+ }
+
+
+.ciudad__tit{
+  background-color: $background-header;
+  text-align: center;
+  font-family: $font-ciudad;
+  font-size: 1.6rem;
+  color: $color-h1;
+
+}
+}
+}
+*/
 .footer {
   grid-area: footer;
   width: 100vw;
@@ -231,11 +329,26 @@
   flex-direction: row;
   justify-content: space-around;
   align-content: center; }
+  @media (min-width: 320px) {
+    .footer {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center; } }
+  @media (min-width: 320px) and (min-width: 992px) {
+    .footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-content: center; } }
   .footer .redes {
     display: inline-block;
     line-height: 2.5;
     text-align: center;
     padding: 10px; }
+    @media (min-width: 320px) {
+      .footer .redes {
+        padding: 0; } }
     .footer .redes .tit__footer {
       font-family: "Dancing Script", cursive;
       font-size: 2rem;
@@ -245,7 +358,8 @@
       color: black; }
       @media (min-width: 320px) {
         .footer .redes .tit__footer {
-          font-size: 1.3rem; } }
+          font-size: 1.3rem;
+          margin-top: 0; } }
       @media (min-width: 768px) {
         .footer .redes .tit__footer {
           font-size: 2rem; } }
@@ -256,6 +370,10 @@
       -webkit-animation: slide-in-blurred-left 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
       animation: slide-in-blurred-left 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
       animation-delay: 3s; }
+      @media (min-width: 320px) {
+        .footer .redes .red1, .footer .redes .red2, .footer .redes .red3 {
+          margin: 0;
+          margin-right: 10px; } }
       .footer .redes .red1:hover, .footer .redes .red2:hover, .footer .redes .red3:hover {
         background-color: #c78181;
         cursor: pointer;
@@ -298,37 +416,58 @@
     filter: blur(0);
     opacity: 1; } }
   .footer .footer__comunicarse {
-    padding: 10px;
+    font-size: 1.2rem;
+    color: black;
+    text-align: center; }
+    @media (min-width: 320px) {
+      .footer .footer__comunicarse li {
+        display: none; } }
+    @media (min-width: 992px) {
+      .footer .footer__comunicarse li {
+        display: flex; } }
+  @media (min-width: 320px) {
+    .footer .informacion {
+      font-size: 1rem; } }
+  @media (min-width: 768px) {
+    .footer .informacion {
+      font-size: 1.2rem; } }
+
+.correo, .footer .footer__comunicarse {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  margin: 60px 30px 0 0; }
+  @media (min-width: 320px) {
+    .correo, .footer .footer__comunicarse {
+      margin: 0; } }
+  .correo .correo__contact, .footer .footer__comunicarse .correo__contact, .correo .correo__mailto, .footer .footer__comunicarse .correo__mailto {
+    font-size: 2rem;
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
     color: black; }
     @media (min-width: 320px) {
-      .footer .footer__comunicarse .informacion {
-        font-size: .8rem; } }
-    @media (min-width: 768px) {
-      .footer .footer__comunicarse .informacion {
+      .correo .correo__contact, .footer .footer__comunicarse .correo__contact, .correo .correo__mailto, .footer .footer__comunicarse .correo__mailto {
+        font-size: 1.5rem;
+        align-items: center; } }
+    @media (min-width: 1200px) {
+      .correo .correo__contact, .footer .footer__comunicarse .correo__contact, .correo .correo__mailto, .footer .footer__comunicarse .correo__mailto {
+        font-size: 2rem; } }
+  .correo img, .footer .footer__comunicarse img {
+    width: 25px;
+    height: 25px;
+    margin-top: 5px; }
+  .correo .correo__mailto, .footer .footer__comunicarse .correo__mailto {
+    font-size: 1.5rem;
+    padding: 10px; }
+    @media (min-width: 320px) {
+      .correo .correo__mailto, .footer .footer__comunicarse .correo__mailto {
         font-size: 1rem; } }
-  .footer .correo, .footer .footer__comunicarse {
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-    align-items: center;
-    margin: 60px 30px 0 0; }
-    .footer .correo .correo__contact, .footer .footer__comunicarse .correo__contact, .footer .correo .correo__mailto, .footer .footer__comunicarse .correo__mailto {
-      font-size: 2rem;
-      font-family: "Dancing Script", cursive;
-      font-weight: bold;
-      color: black; }
-    .footer .correo img, .footer .footer__comunicarse img {
-      width: 25px;
-      height: 25px;
-      margin-top: 5px; }
-    .footer .correo .correo__mailto, .footer .footer__comunicarse .correo__mailto {
-      font-size: 1.5rem;
-      padding: 10px; }
-      .footer .correo .correo__mailto:hover, .footer .footer__comunicarse .correo__mailto:hover {
-        background-color: #c78181;
-        padding: 1px;
-        border-top-left-radius: .4em;
-        border-top-right-radius: .4em; }
+    .correo .correo__mailto:hover, .footer .footer__comunicarse .correo__mailto:hover {
+      background-color: #c78181;
+      padding: 1px;
+      border-top-left-radius: .4em;
+      border-top-right-radius: .4em; }
 
 /*main*/
 .container {
@@ -342,13 +481,25 @@
   grid-row-gap: 5px; }
   .container #sectuno {
     grid-area: sectuno; }
+    .container #sectuno .titulo {
+      margin: 50px;
+      font-size: 2rem; }
+      @media (min-width: 320px) {
+        .container #sectuno .titulo {
+          font-size: 1.5rem;
+          margin: 30px; } }
+      @media (min-width: 1400px) {
+        .container #sectuno .titulo {
+          font-size: 2rem;
+          margin: 60px; } }
     .container #sectuno p {
       margin: 100px;
       font-size: 1.3rem;
       text-align: justify; }
       @media (min-width: 320px) {
         .container #sectuno p {
-          font-size: .8rem; } }
+          font-size: .9rem;
+          margin: 40px; } }
       @media (min-width: 576px) {
         .container #sectuno p {
           font-size: 1.3rem; } }
@@ -356,6 +507,17 @@
       color: white; }
   .container #sectdos {
     grid-area: sectdos; }
+    .container #sectdos .subtitulo {
+      font-family: "Dancing Script", cursive;
+      padding: 40px;
+      font-size: 1.8rem; }
+      @media (min-width: 320px) {
+        .container #sectdos .subtitulo {
+          padding: 15px;
+          font-size: 1.3rem; } }
+      @media (min-width: 1400px) {
+        .container #sectdos .subtitulo {
+          font-size: 2rem; } }
     .container #sectdos .enumera {
       font-size: 1.1rem;
       font-weight: bold;
@@ -372,6 +534,26 @@
         padding: 15px;
         width: 25%;
         margin: 15px; }
+        @media (min-width: 320px) {
+          .container #sectdos .enumera .box1, .container #sectdos .enumera .box2, .container #sectdos .enumera .box3, .container #sectdos .enumera .box4, .container #sectdos .enumera .box5 {
+            font-size: .9rem;
+            width: 45%;
+            margin: 10px; } }
+        @media (min-width: 576px) {
+          .container #sectdos .enumera .box1, .container #sectdos .enumera .box2, .container #sectdos .enumera .box3, .container #sectdos .enumera .box4, .container #sectdos .enumera .box5 {
+            width: 40%; } }
+        @media (min-width: 768px) {
+          .container #sectdos .enumera .box1, .container #sectdos .enumera .box2, .container #sectdos .enumera .box3, .container #sectdos .enumera .box4, .container #sectdos .enumera .box5 {
+            font-size: 1rem;
+            width: 30%; } }
+        @media (min-width: 992px) {
+          .container #sectdos .enumera .box1, .container #sectdos .enumera .box2, .container #sectdos .enumera .box3, .container #sectdos .enumera .box4, .container #sectdos .enumera .box5 {
+            font-size: 1.1rem;
+            width: 25%; } }
+        @media (min-width: 1400px) {
+          .container #sectdos .enumera .box1, .container #sectdos .enumera .box2, .container #sectdos .enumera .box3, .container #sectdos .enumera .box4, .container #sectdos .enumera .box5 {
+            font-size: 1.4rem;
+            width: 25%; } }
     .container #sectdos .vistaPanoramica {
       width: 100vw;
       height: 30%; }
@@ -380,14 +562,40 @@
   margin: auto;
   background-color: #af5f61;
   width: 800px;
-  height: 100vh;
-  padding: 30px; }
+  height: 100vh; }
+  @media (min-width: 320px) {
+    #main {
+      display: inline-block;
+      width: 320px;
+      height: 100vh; } }
+  @media (min-width: 576px) {
+    #main {
+      display: inline-block;
+      width: 550px;
+      height: 100vh; } }
+  @media (min-width: 768px) {
+    #main {
+      display: inline-block;
+      width: 650px;
+      height: 100vh; } }
   #main .slider__img {
     position: relative;
     width: 600px;
-    height: 300px;
-    margin: 70px;
+    height: 350px;
+    margin: 20px;
     list-style-type: none; }
+    @media (min-width: 320px) {
+      #main .slider__img {
+        width: 280px;
+        margin: 20px 10px 0 40px; } }
+    @media (min-width: 576px) {
+      #main .slider__img {
+        width: 450px;
+        margin: 20px 10px 0 70px; } }
+    @media (min-width: 768px) {
+      #main .slider__img {
+        width: 500px;
+        margin: 30px 0 0 90px; } }
     #main .slider__img .slider__img--li {
       position: absolute;
       left: 0;
@@ -406,10 +614,28 @@
       width: 100%;
       height: 400px;
       object-fit: cover; }
+      @media (min-width: 320px) {
+        #main .slider__img .slider__img--ancho {
+          width: 80%;
+          height: 250px; } }
+      @media (min-width: 576px) {
+        #main .slider__img .slider__img--ancho {
+          width: 90%;
+          height: 350px; } }
+      @media (min-width: 768px) {
+        #main .slider__img .slider__img--ancho {
+          width: 90%;
+          height: 350px; } }
 
 .menu__numero {
-  display: inline-block;
-  margin: 40px 0 0 50px; }
+  display: inline-flex; }
+  @media (min-width: 320px) {
+    .menu__numero {
+      display: inline-flex;
+      margin: 2px; } }
+  @media (min-width: 576px) {
+    .menu__numero {
+      margin: 5.5px; } }
   .menu__numero .id {
     display: inline-flex;
     color: black;
@@ -418,14 +644,27 @@
     padding: 15px;
     height: 8px;
     width: 8px;
-    font-size: 13px;
+    font-size: 1rem;
     border-radius: 100%; }
+    @media (min-width: 320px) {
+      .menu__numero .id {
+        display: inline;
+        font-size: 0.7rem;
+        padding: 12px;
+        height: 4px;
+        width: 4px; } }
+    @media (min-width: 768px) {
+      .menu__numero .id {
+        margin: 3.1px; } }
     .menu__numero .id:hover {
       transform: scale(1.4);
       transition-duration: 2s;
       background-color: #a91717;
       color: white;
       cursor: pointer; }
+      @media (min-width: 320px) {
+        .menu__numero .id:hover {
+          transform: scale(1.2); } }
 
 .container #sectuno .parrafo {
   margin: 50px; }

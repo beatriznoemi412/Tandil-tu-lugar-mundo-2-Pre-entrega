@@ -13,14 +13,26 @@
 
 #sectuno {
   grid-area: sectuno;
-
+.titulo{
+  margin: 50px;
+  font-size: 2rem;
+  @include mobile{
+    font-size: 1.5rem;
+    margin: 30px;
+  }
+  @include mobile4{
+    font-size: 2rem;
+    margin: 60px;
+  }
+}
 p {
   margin: 100px;
   font-size: 1.3rem;
   text-align: justify;
 
   @include mobile{
-  font-size: .8rem;
+  font-size: .9rem;
+  margin: 40px;
   }
   @include mobile1{
     font-size: 1.3rem;
@@ -32,6 +44,18 @@ a{
 }
 #sectdos {
   grid-area: sectdos;
+  .subtitulo{
+    font-family: $font-ciudad;
+    padding: 40px;
+    font-size: 1.8rem;
+    @include mobile{
+      padding: 15px;
+      font-size: 1.3rem;
+    }
+    @include mobile4{
+      font-size: 2rem;
+    }
+  } 
 
   .enumera {
     font-size: 1.1rem;
@@ -49,8 +73,28 @@ a{
       border-bottom-right-radius: 1rem;
       padding: 15px;
       width: 25%;
-      margin: 15px; 
-
+      margin: 15px;
+      
+      @include mobile{
+        font-size: .9rem;
+        width: 45%;
+        margin: 10px;
+      }
+      @include mobile1{
+        width: 40%;
+      }
+      @include mobile2{
+        font-size: 1rem;
+        width: 30%;
+      }
+      @include mobile5{
+        font-size: 1.1rem;
+        width: 25%;
+      }
+      @include mobile4{
+        font-size: 1.4rem;
+        width: 25%;
+      }
   }
   }
 

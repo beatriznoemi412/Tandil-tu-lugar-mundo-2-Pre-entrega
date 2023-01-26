@@ -86,31 +86,35 @@
     opacity: 1;
   }
 }
+}
 .respmenu{
   @include mobile{
     color: white;
     position: relative;
     min-height: 25px;
   }
- .input,
- .fa-bars,
- .fa-times{
+ .input{
   display: none;
- }
-  .fa-bars, .fa-times {
+ 
+  &:checked ~ .fa-bars {
     @include mobile{
-    font-size: 25px;
-    pointer-events: none;
-    color:rgb(221, 172, 172)
+    display: none;
   }
-
-  .input[type="checkbox"] {
+  
+  &:checked ~ .ciudad__listas{
     @include mobile{
-    opacity: 0;
+    display: block;
   }
-
-  .input[type="checkbox"], .fa-bars, .fa-times {
-    @include mobile{
+  
+  &:not(:checked) ~ .fa-times {
+  @include mobile{
+  display: none;
+}
+ 
+  
+ .fa-bars, .fa-times, .input[type="checkbox"]{
+  display: none;
+  @include mobile{
     position: absolute;
     box-sizing: border-box;
     padding:10px;
@@ -120,57 +124,143 @@
     width: 25px;
     height: 25px;
   }
-
- .pages{
+}
+   .input[type="checkbox"]{
+    @include mobile{
+      opacity: 0;
+    }
+   }
+   .fa-bars, .fa-times{ 
+    @include mobile{
+    font-size: 25px;
+    pointer-events: none;
+    color:rgb(221, 172, 172)
+   }
+  }
+}
+}
+}
+.ciudad{
+.ciudad__listas{
+    @include mobile{
+    display: none;
+  }
+  
+.ciudad__listas__reseteo {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+ 
   @include mobile{
-  display: block;
-  padding: 10px 20px;
-  max-width: 200px;
-  text-shadow: 2px 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 200px;
+    text-shadow: 1px 1px black;
+  }
+li {
+  list-style-type: none;
+}
+a,
+.ciudad__listas__reseteo a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: $color-h1;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 10px;
+  
+  &:hover {
+  color: rgb(222, 169, 169);
+  cursor: pointer;
+}
+}
+}
+}
+}
  }
+}
 
+ .ciudad__nav{ 
+.ciudad__nav__img {
+  min-width:100vw;
+  max-height:100vh;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  zoom: 1;
 
- .ciudad {
   @include mobile{
-  display: none;
-}
+    @include  flexbox2(center, center);
+    width: 100%;
+    height: 200px;
+    
+  }
+  @include mobile_otro{
+    @include  flexbox2(center, center);
+    width: 100%;
+    height: 200px;
+    
+   
+  }
+  @include mobile1{
+    @include  flexbox2(center, center);
+    width: 100%;
+    height: 250px;
+    
+  }
+  @include mobile2{
+    @include  flexbox2(center, center);
+    width: 100%;
+    height: 360px;
+    
+  }
+  @include mobile5{
+    @include  flexbox2(center, center);
+    width: 100%;
+    height: 485px;
+  }
+  @include mobile3{
+    @include  flexbox2(center, center);
+    width: 100%;
+    height: 540px;
+  }
+  @include mobile4{
+    @include  flexbox2(center, center);
+    width: 100%;
+    height: 600px;
+  }
+ }
+  
 
-.input:checked ~ .ciudad {
-  @include mobile{
-  display: block;
-}
+.ciudad__tit{
+  background-color: $background-header;
+  text-align: center;
+  font-family: $font-ciudad;
+  font-size: 1.6rem;
+  color: $color-h1;
 
-.input:checked ~ .fa-bars {
-  @include mobile{
-  display: none;
-}
-
-.input:not(:checked) ~ .fa-times {
-  @include mobile{
-  display: none;
-}
-}
-}
-}
 }
 }
   }
-}
-  }
-}
+/*
 
-@media (min-width: 768px){
+@media (min-width: 992px){
 
-  .respmenu .fa-bars, .respmenu .fa-times {
+   .fa-bars,.fa-times {
     display: none;
 }
-.respmenu .ciudad{
+ .ciudad{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
  
-}
-  
-}
+ 
+
 .ciudad__listas__reseteo {
   display: flex;
   justify-content: center;
@@ -182,7 +272,6 @@ li {
 a,
 .ciudad__listas__reseteo a:link,
 a:visited,
-
 a:active {
   text-decoration: none;
   color: $color-h1;
@@ -197,7 +286,7 @@ a:active {
 }
 }
 }
-}
+
 .ciudad__nav__img {
   min-width:100vw;
   max-height:100vh;
@@ -257,7 +346,5 @@ a:active {
 
 }
 }
-
-
-
-
+}
+*/
