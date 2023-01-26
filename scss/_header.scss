@@ -1,4 +1,4 @@
-.general {
+.general{
   background-image: linear-gradient(
     90deg,
     #ce9092,
@@ -21,23 +21,25 @@
   grid-area: header;
   @include flexbox(column, center, center);
   width: 100vw;
-  position: relative;
-  
-  @include mobile{
+    @include mobile{
     @include  flexbox2(center, center);
-    height: 350px;
-  }
-  @include mobile{
+    height: 360px;
+    }
+  @include celu{
     @include  flexbox2(center, center);
     height: 380px;
   }
+  @include mobile_otro{
+    @include  flexbox2(center, center);
+    height: 420px;
+  }
+  @include mobile1{
+    @include  flexbox2(center, center);
+    height: 455px;
+  }
   @include mobile2{
     @include  flexbox2(center, center);
-    height: 500px;
-  }
-  @include mobile5{
-    @include  flexbox2(center, center);
-    height: 650px;
+    height: 550px;
   }
   @include mobile3{
     @include  flexbox2(center, center);
@@ -45,16 +47,37 @@
   }
   @include mobile4{
     @include  flexbox2(center, center);
-    height: 780px;
+    height: 760px;
+  }
+  @include mobile5{
+    height: 760px;
   }
 
 .titulo {
-  font-size: 1.6rem;
+  @include flexbox2(center, center);
+  font-size:2rem;
   font-family: $font-ciudad;
   font-weight: bold;
   color: $color-h1;
-  margin: 20px;
-  text-align: center;
+  margin-bottom: 4S0px;
+  @include mobile{
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  @include celu{
+    margin: 0;
+  }
+  @include mobile1{
+    margin-bottom: 20px;
+  }
+  @include mobile2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+  }
+  @include mobile4{
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
 }
 .titulo__expand {
   -webkit-animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
@@ -86,122 +109,91 @@
     opacity: 1;
   }
 }
-.respmenu{
-.input[type="checkbox"]{
-  @include mobile{
-  position: absolute;
-  padding: 10px;
-  margin: 0;
-  bottom: 0;
-  width: 25px;
-  height: 25px;
-  opacity: 0;
-  @include mobile{
-    position: relative;
-    min-height: 25px;
-  }
-}
 
-.fa-bars {
-  display: none;
-  @include mobile{
-    display: flex;
-    pointer-events: none;
-    font-size: 25px;
-    color: #ce9092;
-
-  }
-}
-.fa-times{
-  @extend .fa-bars;
-  @include mobile{
-    display: flex;
-    pointer-events: none;
-    font-size: 25px;
-    color: #ce9092;
-}
-}
-.input{
-  @extend .fa-bars;
-  @include mobile{
-    .input:checked ~ .ciudad__listas__reseteo{
-       display: block;
-       &:checked ~ .fa-bars{
-        display: none;
-       &:not(:checked) ~ .fa-times{
-        display:none;
-       }
-      }
-    }
-  }
-}
-}
-.ciudad__listas__reseteo{
+.ciudad{
+.ciudad__listas{
+.ciudad__listas__reseteo {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin:10px;
   @include mobile{
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
+    @include flexbox(column, center, center);
+    margin: 0;
   }
-
+  @include mobile1{
+    @include flexbox4(row, wrap);
+  }
 li {
   list-style-type: none;
- 
 
 a,
 .ciudad__listas__reseteo a:link,
 a:visited,
 a:active {
   text-decoration: none;
-  color: white;
-  font-size: 1.3rem;
+  color: $color-h1;
+  font-size: 1rem;
   font-weight: bold;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 10px;
-
   @include mobile{
-    text-shadow: 3px 3px black;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-family: $font-ciudad;
+    line-height: 1.2;
   }
-
-&:hover {
-  color: rgb(247, 221, 221);
+  @include celu{
+    font-size: 1.1rem;
+  }
+  @include mobile1{
+    font-size: 1rem;
+     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  @include mobile4{
+     font-size: 1.2rem;
+  }
+  &:hover {
+  color: rgb(222, 169, 169);
   cursor: pointer;
 }
 }
 }
-} 
-.ciudad__nav__img{
+}
+}
+
+
+.ciudad__nav {
+  min-width:100vw;
+  max-height:100vh;
   opacity: 0.8;
   filter: alpha(opacity=80);
   zoom: 1;
-  min-width: 100vw;
-  max-height: 100vh;
-
   @include mobile{
-    width: 50%;
-    height: 150px;
+  width: 60%;
   }
-}
-
+  @include mobile4{
+  height: 590px;
+  }
+}  
 
 .ciudad__subtit {
-  background-color: brown;
   text-align: center;
-  font-size: 2rem;
-  font-family: "Dancing Script", cursive;
-  color: white;
-
+  font-family: $font-ciudad;
+  font-size: 1.6rem;
+  color: $color-h1;
+  background-color: $background-header;
   @include mobile{
-   font-size: 1.3rem;
+    font-size: 1.2rem;
+  }
+  @include mobile2{
+    font-size: 1.5rem;
+  }
+  @include mobile4{
+    font-size: 1.6rem;
   }
 }
 }
 }
 }
-
-
 

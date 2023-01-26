@@ -20,6 +20,9 @@
     font-size: 1.5rem;
     margin: 30px;
   }
+  @include mobile1{
+    font-size: 1.7rem;
+  }
   @include mobile4{
     font-size: 2rem;
     margin: 60px;
@@ -37,6 +40,9 @@ p {
   @include mobile1{
     font-size: 1.3rem;
     }
+  @include mobile4{
+    margin: 45px;
+  }
   }
 a{
   color: $color-h1;
@@ -46,14 +52,17 @@ a{
   grid-area: sectdos;
   .subtitulo{
     font-family: $font-ciudad;
-    padding: 40px;
+    margin:0 0 50px 30px;
     font-size: 1.8rem;
     @include mobile{
       padding: 15px;
       font-size: 1.3rem;
     }
-    @include mobile4{
-      font-size: 2rem;
+    @include mobile1{
+      font-size: 1.5rem;
+    }
+    @include mobile5{
+      font-size: 1.8rem;
     }
   } 
 
@@ -80,19 +89,19 @@ a{
         width: 45%;
         margin: 10px;
       }
-      @include mobile1{
+      @include celu{
         width: 40%;
       }
-      @include mobile2{
-        font-size: 1rem;
+      @include mobile1{
+        font-size: 1.2rem;
         width: 30%;
       }
-      @include mobile5{
-        font-size: 1.1rem;
+      @include mobile2{
+        font-size: 1.2rem;
         width: 25%;
       }
-      @include mobile4{
-        font-size: 1.4rem;
+      @include mobile3{
+        font-size: 1.3rem;
         width: 25%;
       }
   }

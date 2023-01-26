@@ -3,6 +3,11 @@
         @content;
     }
 }
+@mixin celu{
+    @media (min-width: 375px){
+        @content;
+    }
+}
 @mixin mobile_otro{
     @media (min-width: 425px){
         @content;
@@ -18,17 +23,17 @@
         @content;
     }
 }
-@mixin mobile5{
+@mixin mobile3{
     @media (min-width: 992px){
         @content;
     }
 }
-@mixin mobile3{
+@mixin mobile4{
     @media (min-width: 1200px){
         @content;
     }
 }
-@mixin mobile4{
+@mixin mobile5{
     @media (min-width: 1400px){
         @content;
         }

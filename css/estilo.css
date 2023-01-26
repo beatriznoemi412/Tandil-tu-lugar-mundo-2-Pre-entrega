@@ -19,51 +19,79 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    width: 100vw;
-    position: relative; }
+    width: 100vw; }
     @media (min-width: 320px) {
       .general #header {
         display: flex;
         justify-content: center;
         align-content: center;
-        height: 350px; } }
-    @media (min-width: 320px) {
+        height: 360px; } }
+    @media (min-width: 375px) {
       .general #header {
         display: flex;
         justify-content: center;
         align-content: center;
         height: 380px; } }
+    @media (min-width: 425px) {
+      .general #header {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 420px; } }
+    @media (min-width: 576px) {
+      .general #header {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 455px; } }
     @media (min-width: 768px) {
       .general #header {
         display: flex;
         justify-content: center;
         align-content: center;
-        height: 500px; } }
+        height: 550px; } }
     @media (min-width: 992px) {
       .general #header {
         display: flex;
         justify-content: center;
         align-content: center;
-        height: 650px; } }
+        height: 680px; } }
     @media (min-width: 1200px) {
       .general #header {
         display: flex;
         justify-content: center;
         align-content: center;
-        height: 680px; } }
+        height: 760px; } }
     @media (min-width: 1400px) {
       .general #header {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        height: 780px; } }
+        height: 760px; } }
     .general #header .titulo {
-      font-size: 1.6rem;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      font-size: 2rem;
       font-family: "Dancing Script", cursive;
       font-weight: bold;
       color: white;
-      margin: 20px;
-      text-align: center; }
+      margin-bottom: 4S0px; }
+      @media (min-width: 320px) {
+        .general #header .titulo {
+          font-size: 1.4rem;
+          margin-bottom: 20px; } }
+      @media (min-width: 375px) {
+        .general #header .titulo {
+          margin: 0; } }
+      @media (min-width: 576px) {
+        .general #header .titulo {
+          margin-bottom: 20px; } }
+      @media (min-width: 768px) {
+        .general #header .titulo {
+          font-size: 1.7rem;
+          margin-bottom: 10px; } }
+      @media (min-width: 1200px) {
+        .general #header .titulo {
+          font-size: 1.8rem;
+          margin-bottom: 30px; } }
     .general #header .titulo__expand {
       -webkit-animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
       animation: titulo__expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
@@ -85,94 +113,96 @@
     opacity: 0.6; }
   100% {
     opacity: 1; } }
-    @media (min-width: 320px) {
-      .general #header .respmenu .input[type="checkbox"] {
-        position: absolute;
-        padding: 10px;
-        margin: 0;
-        bottom: 0;
-        width: 25px;
-        height: 25px;
-        opacity: 0; } }
-  @media (min-width: 320px) and (min-width: 320px) {
-    .general #header .respmenu .input[type="checkbox"] {
-      position: relative;
-      min-height: 25px; } }
-    .general #header .respmenu .input[type="checkbox"] .fa-bars, .general #header .respmenu .input[type="checkbox"] .fa-times, .general #header .respmenu .input[type="checkbox"] .input {
-      display: none; }
-      @media (min-width: 320px) {
-        .general #header .respmenu .input[type="checkbox"] .fa-bars, .general #header .respmenu .input[type="checkbox"] .fa-times, .general #header .respmenu .input[type="checkbox"] .input {
-          display: flex;
-          pointer-events: none;
-          font-size: 25px;
-          color: #ce9092; } }
-    @media (min-width: 320px) {
-      .general #header .respmenu .input[type="checkbox"] .fa-times {
-        display: flex;
-        pointer-events: none;
-        font-size: 25px;
-        color: #ce9092; } }
-    @media (min-width: 320px) {
-      .general #header .respmenu .input[type="checkbox"] .input .input:checked ~ .ciudad__listas__reseteo {
-        display: block; }
-        .general #header .respmenu .input[type="checkbox"] .input .input:checked ~ .ciudad__listas__reseteo:checked ~ .fa-bars, .general #header .respmenu .input[type="checkbox"] .input .input:checked ~ .ciudad__listas__reseteo:checked ~ .fa-times, .general #header .respmenu .input[type="checkbox"] .input .input:checked ~ .ciudad__listas__reseteo:checked ~ .input {
-          display: none; }
-          .general #header .respmenu .input[type="checkbox"] .input .input:checked ~ .ciudad__listas__reseteo:checked ~ .fa-bars:not(:checked) ~ .fa-times, .general #header .respmenu .input[type="checkbox"] .input .input:checked ~ .ciudad__listas__reseteo:checked ~ .fa-times:not(:checked) ~ .fa-times, .general #header .respmenu .input[type="checkbox"] .input .input:checked ~ .ciudad__listas__reseteo:checked ~ .input:not(:checked) ~ .fa-times {
-            display: none; } }
-    .general #header .respmenu .ciudad__listas__reseteo {
+    .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo {
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      margin: 10px; }
       @media (min-width: 320px) {
-        .general #header .respmenu .ciudad__listas__reseteo {
+        .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo {
+          display: flex;
           flex-direction: column;
-          justify-items: center;
-          align-items: center; } }
-      .general #header .respmenu .ciudad__listas__reseteo li {
+          justify-content: center;
+          align-content: center;
+          margin: 0; } }
+      @media (min-width: 576px) {
+        .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap; } }
+      .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li {
         list-style-type: none; }
-        .general #header .respmenu .ciudad__listas__reseteo li a,
-        .general #header .respmenu .ciudad__listas__reseteo li .ciudad__listas__reseteo a:link,
-        .general #header .respmenu .ciudad__listas__reseteo li a:visited,
-        .general #header .respmenu .ciudad__listas__reseteo li a:active {
+        .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a,
+        .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li .ciudad__listas__reseteo a:link,
+        .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:visited,
+        .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:active {
           text-decoration: none;
           color: white;
-          font-size: 1.3rem;
+          font-size: 1rem;
           font-weight: bold;
           font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
           padding: 10px; }
           @media (min-width: 320px) {
-            .general #header .respmenu .ciudad__listas__reseteo li a,
-            .general #header .respmenu .ciudad__listas__reseteo li .ciudad__listas__reseteo a:link,
-            .general #header .respmenu .ciudad__listas__reseteo li a:visited,
-            .general #header .respmenu .ciudad__listas__reseteo li a:active {
-              text-shadow: 3px 3px black;
-              font-size: 1rem; } }
-          .general #header .respmenu .ciudad__listas__reseteo li a:hover,
-          .general #header .respmenu .ciudad__listas__reseteo li .ciudad__listas__reseteo a:link:hover,
-          .general #header .respmenu .ciudad__listas__reseteo li a:visited:hover,
-          .general #header .respmenu .ciudad__listas__reseteo li a:active:hover {
-            color: #f7dddd;
+            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a,
+            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li .ciudad__listas__reseteo a:link,
+            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:visited,
+            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:active {
+              font-size: 1.1rem;
+              font-family: "Dancing Script", cursive;
+              line-height: 1.2; } }
+          @media (min-width: 375px) {
+            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a,
+            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li .ciudad__listas__reseteo a:link,
+            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:visited,
+            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:active {
+              font-size: 1.1rem; } }
+          @media (min-width: 576px) {
+            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a,
+            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li .ciudad__listas__reseteo a:link,
+            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:visited,
+            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:active {
+              font-size: 1rem;
+              font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; } }
+          @media (min-width: 1200px) {
+            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a,
+            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li .ciudad__listas__reseteo a:link,
+            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:visited,
+            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:active {
+              font-size: 1.2rem; } }
+          .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:hover,
+          .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li .ciudad__listas__reseteo a:link:hover,
+          .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:visited:hover,
+          .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:active:hover {
+            color: #dea9a9;
             cursor: pointer; }
-    .general #header .respmenu .ciudad__nav__img {
+    .general #header .ciudad .ciudad__nav {
+      min-width: 100vw;
+      max-height: 100vh;
       opacity: 0.8;
       filter: alpha(opacity=80);
-      zoom: 1;
-      min-width: 100vw;
-      max-height: 100vh; }
+      zoom: 1; }
       @media (min-width: 320px) {
-        .general #header .respmenu .ciudad__nav__img {
-          width: 50%;
-          height: 150px; } }
-    .general #header .respmenu .ciudad__subtit {
-      background-color: brown;
+        .general #header .ciudad .ciudad__nav {
+          width: 60%; } }
+      @media (min-width: 1200px) {
+        .general #header .ciudad .ciudad__nav {
+          height: 590px; } }
+    .general #header .ciudad .ciudad__subtit {
       text-align: center;
-      font-size: 2rem;
       font-family: "Dancing Script", cursive;
-      color: white; }
+      font-size: 1.6rem;
+      color: white;
+      background-color: brown; }
       @media (min-width: 320px) {
-        .general #header .respmenu .ciudad__subtit {
-          font-size: 1.3rem; } }
+        .general #header .ciudad .ciudad__subtit {
+          font-size: 1.2rem; } }
+      @media (min-width: 768px) {
+        .general #header .ciudad .ciudad__subtit {
+          font-size: 1.5rem; } }
+      @media (min-width: 1200px) {
+        .general #header .ciudad .ciudad__subtit {
+          font-size: 1.6rem; } }
 
 .footer {
   grid-area: footer;
@@ -190,7 +220,7 @@
       flex-direction: column;
       justify-items: center;
       align-items: center; } }
-  @media (min-width: 320px) and (min-width: 992px) {
+  @media (min-width: 320px) and (min-width: 1400px) {
     .footer {
       display: flex;
       flex-direction: row;
@@ -277,7 +307,7 @@
     @media (min-width: 320px) {
       .footer .footer__comunicarse li {
         display: none; } }
-    @media (min-width: 992px) {
+    @media (min-width: 1400px) {
       .footer .footer__comunicarse li {
         display: flex; } }
   @media (min-width: 320px) {
@@ -305,7 +335,7 @@
       .correo .correo__contact, .footer .footer__comunicarse .correo__contact, .correo .correo__mailto, .footer .footer__comunicarse .correo__mailto {
         font-size: 1.5rem;
         align-items: center; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 992px) {
       .correo .correo__contact, .footer .footer__comunicarse .correo__contact, .correo .correo__mailto, .footer .footer__comunicarse .correo__mailto {
         font-size: 2rem; } }
   .correo img, .footer .footer__comunicarse img {
@@ -343,7 +373,10 @@
         .container #sectuno .titulo {
           font-size: 1.5rem;
           margin: 30px; } }
-      @media (min-width: 1400px) {
+      @media (min-width: 576px) {
+        .container #sectuno .titulo {
+          font-size: 1.7rem; } }
+      @media (min-width: 1200px) {
         .container #sectuno .titulo {
           font-size: 2rem;
           margin: 60px; } }
@@ -358,21 +391,27 @@
       @media (min-width: 576px) {
         .container #sectuno p {
           font-size: 1.3rem; } }
+      @media (min-width: 1200px) {
+        .container #sectuno p {
+          margin: 45px; } }
     .container #sectuno a {
       color: white; }
   .container #sectdos {
     grid-area: sectdos; }
     .container #sectdos .subtitulo {
       font-family: "Dancing Script", cursive;
-      padding: 40px;
+      margin: 0 0 50px 30px;
       font-size: 1.8rem; }
       @media (min-width: 320px) {
         .container #sectdos .subtitulo {
           padding: 15px;
           font-size: 1.3rem; } }
+      @media (min-width: 576px) {
+        .container #sectdos .subtitulo {
+          font-size: 1.5rem; } }
       @media (min-width: 1400px) {
         .container #sectdos .subtitulo {
-          font-size: 2rem; } }
+          font-size: 1.8rem; } }
     .container #sectdos .enumera {
       font-size: 1.1rem;
       font-weight: bold;
@@ -394,20 +433,20 @@
             font-size: .9rem;
             width: 45%;
             margin: 10px; } }
-        @media (min-width: 576px) {
+        @media (min-width: 375px) {
           .container #sectdos .enumera .box1, .container #sectdos .enumera .box2, .container #sectdos .enumera .box3, .container #sectdos .enumera .box4, .container #sectdos .enumera .box5 {
             width: 40%; } }
+        @media (min-width: 576px) {
+          .container #sectdos .enumera .box1, .container #sectdos .enumera .box2, .container #sectdos .enumera .box3, .container #sectdos .enumera .box4, .container #sectdos .enumera .box5 {
+            font-size: 1.2rem;
+            width: 30%; } }
         @media (min-width: 768px) {
           .container #sectdos .enumera .box1, .container #sectdos .enumera .box2, .container #sectdos .enumera .box3, .container #sectdos .enumera .box4, .container #sectdos .enumera .box5 {
-            font-size: 1rem;
-            width: 30%; } }
+            font-size: 1.2rem;
+            width: 25%; } }
         @media (min-width: 992px) {
           .container #sectdos .enumera .box1, .container #sectdos .enumera .box2, .container #sectdos .enumera .box3, .container #sectdos .enumera .box4, .container #sectdos .enumera .box5 {
-            font-size: 1.1rem;
-            width: 25%; } }
-        @media (min-width: 1400px) {
-          .container #sectdos .enumera .box1, .container #sectdos .enumera .box2, .container #sectdos .enumera .box3, .container #sectdos .enumera .box4, .container #sectdos .enumera .box5 {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             width: 25%; } }
     .container #sectdos .vistaPanoramica {
       width: 100vw;
@@ -693,7 +732,7 @@
       .container #caja {
         width: 30%;
         border: 15px ridge brown; } }
-    @media (min-width: 1200px) {
+    @media (min-width: 992px) {
       .container #caja {
         display: flex;
         flex-direction: row;
@@ -756,7 +795,7 @@
     @media (min-width: 768px) {
       .container #box {
         width: 40%; } }
-    @media (min-width: 1400px) {
+    @media (min-width: 1200px) {
       .container #box {
         display: flex;
         flex-direction: row;
