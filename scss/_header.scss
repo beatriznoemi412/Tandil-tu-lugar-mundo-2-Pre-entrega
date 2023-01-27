@@ -60,6 +60,10 @@
   font-weight: bold;
   color: $color-h1;
   margin-bottom: 4S0px;
+  @include pequeño{
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
   @include mobile{
     font-size: 1.4rem;
     margin-bottom: 20px;
@@ -138,7 +142,7 @@ a:active {
   font-weight: bold;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 10px;
-  @include mobile{
+  @include pequeño{
     font-size: 1.1rem;
     font-family: $font-ciudad;
     line-height: 1.2;
@@ -169,6 +173,9 @@ a:active {
   opacity: 0.8;
   filter: alpha(opacity=80);
   zoom: 1;
+  @include pequeño{
+    width:10%;
+    }
   @include mobile{
   width: 60%;
   }
@@ -183,6 +190,9 @@ a:active {
   font-size: 1.6rem;
   color: $color-h1;
   background-color: $background-header;
+  @include pequeño{
+    font-size: 1rem;
+  }
   @include mobile{
     font-size: 1.2rem;
   }

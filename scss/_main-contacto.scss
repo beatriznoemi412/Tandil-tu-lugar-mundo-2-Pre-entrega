@@ -1,132 +1,133 @@
 /*CONTACTO*/
-.container{
+.container {
   width: 100vw;
   grid-area: container;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: 
-  "caja box";
+  grid-template-areas: "caja box";
   @include flexbox4(row, wrap);
-   
-  
-    @include mobile{
+
+  @include mobile {
     @include flexbox(column, center, center);
   }
-  @include mobile2{
+  @include mobile2 {
     @include flexbox4(row, wrap);
   }
 
-     #caja{
-        grid-area: caja;
-        border: $border;
-        @include flexbox4(row, wrap);
-        flex-basis: 40vw;
-        flex-grow: 1;
-        padding: 10px;
+  #caja {
+    grid-area: caja;
+    border: $border;
+    @include flexbox4(row, wrap);
+    flex-basis: 40vw;
+    flex-grow: 1;
+    padding: 10px;
 
-          @include mobile{
+    @include mobile {
+      @include flexbox(column, center, center);
+      border: none;
+      margin-left: 30px;
+    
+    }
+    @include mobile1 {
+      @include flexbox(column, center, center);
+      margin: 50px;
+    }
+    @include mobile2 {
+      flex-basis: 30vw;
+      flex-grow: 1;
+      border: 10px ridge brown;
+      margin: 20px;
+    }
+    @include mobile3 {
+      @include flexbox4(row, wrap);
+     }
+
+    .form__datos {
+      @include flexbox3(column, center, center);
+
+      .datos__texto--bold {
+        @include pequeño{
+          border: none;
+        }
+        @include mobile_otro {
           @include flexbox(column, center, center);
-          border:none;
-          margin-left: 30px;
-      
+          margin-left: 50px;
+          font-weight: bold;
+          border: none;
         }
-        @include mobile1{
+        @include mobile2 {
           @include flexbox(column, center, center);
-          margin: 70px;  
         }
-        @include mobile2{
-          width:30%;
-          border: $border;
+        #textarea {
+          width: 90%;
+          height: 150px;
         }
-        @include mobile3{
-          @include flexbox4(row, wrap);
-          flex-basis: 30vw;
-          flex-grow: 1; 
-        }
-         
-        .form__datos{
-        @include flexbox3(column, center, center);
-         
-          .datos__texto--bold {
-          @include mobile_otro{
-           @include flexbox(column, center, center);
-           margin-left: 50px;  
-           font-weight: bold;
-           border: none;
-            }
-          @include mobile2{
-            @include flexbox(column, center, center);  
-          
-          }
-          #textarea{
-           width: 90%;
-           height: 150px;
-          }
-        
-  
-   .datos__texto-label{
-    padding: 20px;
-    line-height: 1;
-   }
-   .datos__texto--medida {
-    border-radius: 0.5em;
-    border: none;
-    line-height: 1;
-    margin-top: 5px;
 
-&:hover {
-  background-color: rgb(230, 197, 197);
+        .datos__texto-label {
+          padding: 20px;
+          line-height: 1;
+        }
+        .datos__texto--medida {
+          border-radius: 0.5em;
+          border: none;
+          line-height: 1;
+          margin-top: 5px;
 
-}  
-}
-   #desplegable{
-    width: 62%;
-    border-radius: .5em;
-   }
-} 
- }
- }  
-#box {
-    grid-area: box; 
+          &:hover {
+            background-color: rgb(230, 197, 197);
+          }
+        }
+        #desplegable {
+          width: 62%;
+          border-radius: 0.5em;
+        }
+      }
+    }
+  }
+  #box {
+    grid-area: box;
     @include flexbox4(row, wrap);
     justify-content: center;
     align-content: center;
     flex-basis: 30vw;
     flex-grow: 1;
 
-    @include mobile{
-    @include flexbox3(column, center, center);
-    width: 50vw;
-    margin-left: 40px;
-  }
-    @include mobile2{
-     width: 40%;
+    @include mobile {
+      @include flexbox3(column, center, center);
+      width: 90%;
+      margin-left: 20px;
     }
-  @include mobile4{
-    @include flexbox4(row, wrap); 
-    flex-basis: 30vw;
-    flex-grow:1;
-  }
+    @include mobile2 {
+      @include flexbox4(row, wrap);
+      flex-basis: 30vw;
+      flex-grow: 1;
+    }
+    
+    @include mobile4 {
+      @include flexbox4(row, wrap);
+      flex-basis: 30vw;
+      flex-grow: 1;
+    }
 
-         
-  #box__content{
-    @include flexbox(column, center, center);
-    width: 80%;
-  
-h2{
-  font-family: $font-ciudad;
-  margin: 20px;
-}
+    #box__content {
+      @include flexbox(column, center, center);
+      width: 80%;
 
-p {
-  font-size: 1.2rem;
-  @include mobile{
-   font-size: .9rem;
+      h2 {
+        font-family: $font-ciudad;
+        margin: 20px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        @include mobile {
+          font-size: 0.9rem;
+        }
+        @include mobile4{
+          font-size: 1.2rem;
+        }
+      }
+    }
   }
 }
-}
-}
-        }    
-       
-           
