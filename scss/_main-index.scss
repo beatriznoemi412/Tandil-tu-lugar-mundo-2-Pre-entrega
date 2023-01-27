@@ -14,8 +14,8 @@
 #sectuno {
   grid-area: sectuno;
 .titulo{
-  margin: 50px;
   font-size: 2rem;
+
   @include mobile{
     font-size: 1.5rem;
     margin: 30px;

@@ -367,7 +367,6 @@
   .container #sectuno {
     grid-area: sectuno; }
     .container #sectuno .titulo {
-      margin: 50px;
       font-size: 2rem; }
       @media (min-width: 320px) {
         .container #sectuno .titulo {
