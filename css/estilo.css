@@ -76,12 +76,13 @@
       margin-bottom: 4S0px; }
       @media (min-width: 250px) {
         .general #header .titulo {
+          top: 0;
           font-size: 1rem;
           margin-bottom: 10px; } }
       @media (min-width: 320px) {
         .general #header .titulo {
           font-size: 1.4rem;
-          margin-bottom: 20px; } }
+          margin-bottom: 200px; } }
       @media (min-width: 375px) {
         .general #header .titulo {
           margin: 0; } }
@@ -117,101 +118,107 @@
     opacity: 0.6; }
   100% {
     opacity: 1; } }
-    .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo {
+    .general #header .abrir-menu {
+      display: inline-block;
+      justify-items: center;
+      font-size: 30px;
+      font-weight: bolder;
+      width: 10%;
+      height: 45px;
+      color: brown;
+      border-radius: .3em;
+      border: 3px brown solid;
+      border-bottom: 200px;
+      visibility: hidden;
+      opacity: 0;
+      bottom: 100px; }
+      @media (min-width: 320px) {
+        .general #header .abrir-menu {
+          visibility: visible;
+          opacity: 1; } }
+    @media (min-width: 320px) {
+      .general #header .ciudad {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-items: end;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 2rem; } }
+    .general #header .ciudad .cerrar-menu {
+      visibility: hidden;
+      opacity: 0; }
+      @media (min-width: 320px) {
+        .general #header .ciudad .cerrar-menu {
+          visibility: visible;
+          opacity: 1; } }
+    .general #header .ciudad .ciudad__listas__reseteo {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
       margin: 10px; }
       @media (min-width: 320px) {
-        .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo {
+        .general #header .ciudad .ciudad__listas__reseteo {
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-content: center;
-          margin: 0; } }
-      @media (min-width: 576px) {
-        .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap; } }
-      .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li {
+          margin: 0;
+          align-items: end; } }
+      .general #header .ciudad .ciudad__listas__reseteo li {
         list-style-type: none; }
-        .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a,
-        .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li .ciudad__listas__reseteo a:link,
-        .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:visited,
-        .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:active {
+        .general #header .ciudad .ciudad__listas__reseteo li a,
+        .general #header .ciudad .ciudad__listas__reseteo li .ciudad__listas__reseteo a:link,
+        .general #header .ciudad .ciudad__listas__reseteo li a:visited,
+        .general #header .ciudad .ciudad__listas__reseteo li a:active {
           text-decoration: none;
           color: white;
           font-size: 1rem;
           font-weight: bold;
-          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
           padding: 10px; }
-          @media (min-width: 250px) {
-            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a,
-            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li .ciudad__listas__reseteo a:link,
-            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:visited,
-            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:active {
-              font-size: 1.1rem;
-              font-family: "Dancing Script", cursive;
-              line-height: 1.2; } }
-          @media (min-width: 375px) {
-            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a,
-            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li .ciudad__listas__reseteo a:link,
-            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:visited,
-            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:active {
-              font-size: 1.1rem; } }
-          @media (min-width: 576px) {
-            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a,
-            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li .ciudad__listas__reseteo a:link,
-            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:visited,
-            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:active {
-              font-size: 1rem;
-              font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; } }
-          @media (min-width: 1200px) {
-            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a,
-            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li .ciudad__listas__reseteo a:link,
-            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:visited,
-            .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:active {
-              font-size: 1.2rem; } }
-          .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:hover,
-          .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li .ciudad__listas__reseteo a:link:hover,
-          .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:visited:hover,
-          .general #header .ciudad .ciudad__listas .ciudad__listas__reseteo li a:active:hover {
-            color: #dea9a9;
-            cursor: pointer; }
-    .general #header .ciudad .ciudad__nav {
+    @media (min-width: 320px) {
+      .general #header .ciudad.visible {
+        opacity: 1;
+        visibility: visible; } }
+    .general #header .ciudad__nav {
       min-width: 100vw;
       max-height: 100vh;
-      opacity: 0.8;
+      opacity: 1;
       filter: alpha(opacity=80);
       zoom: 1; }
       @media (min-width: 250px) {
-        .general #header .ciudad .ciudad__nav {
+        .general #header .ciudad__nav {
           width: 10%; } }
       @media (min-width: 320px) {
-        .general #header .ciudad .ciudad__nav {
+        .general #header .ciudad__nav {
           width: 60%; } }
       @media (min-width: 1200px) {
-        .general #header .ciudad .ciudad__nav {
+        .general #header .ciudad__nav {
           height: 590px; } }
-    .general #header .ciudad .ciudad__subtit {
+    .general #header .ciudad__subtit {
       text-align: center;
       font-family: "Dancing Script", cursive;
       font-size: 1.6rem;
       color: white;
       background-color: brown; }
       @media (min-width: 250px) {
-        .general #header .ciudad .ciudad__subtit {
+        .general #header .ciudad__subtit {
           font-size: 1rem; } }
       @media (min-width: 320px) {
-        .general #header .ciudad .ciudad__subtit {
+        .general #header .ciudad__subtit {
           font-size: 1.2rem; } }
       @media (min-width: 768px) {
-        .general #header .ciudad .ciudad__subtit {
+        .general #header .ciudad__subtit {
           font-size: 1.5rem; } }
       @media (min-width: 1200px) {
-        .general #header .ciudad .ciudad__subtit {
+        .general #header .ciudad__subtit {
           font-size: 1.6rem; } }
 
 .footer {
