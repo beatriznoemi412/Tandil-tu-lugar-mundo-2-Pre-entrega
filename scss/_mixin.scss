@@ -27,4 +27,8 @@
     flex-direction: $orientacion;
     flex-wrap:$flex-wrap;
 }
-
+@mixin flexbox5($justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
