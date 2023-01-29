@@ -9,7 +9,7 @@
   overflow-x: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1fr 0.2fr;
+  grid-template-rows: 0.5fr 1fr 0.1fr;
   grid-template-areas:
     "header header header"
     "container container container"
@@ -22,6 +22,10 @@
     grid-area: header;
     @include flexbox3(column, center, center);
     width: 100vw;
+    @include pequeño{
+    @include flexbox2(center, center); 
+    height: 230px; 
+    }
     @include mobile {
     @include flexbox2(center, center);
     height: 230px;
@@ -29,11 +33,11 @@
     }
     @include celu {
     @include flexbox2(center, center); 
-    height:230px;
+    height:300px;
     }
     @include mobile_otro {
       @include flexbox2(center, center);
-      height: 240px;
+      height:350px;
     
     }
     @include mobile1 {
@@ -58,13 +62,13 @@
       color: $color-h1;
       position: absolute;
       @include pequeño {
-      top: 10px;
+      top: 7px;
       font-size: 1rem;
        
       }
       @include mobile {
         font-size: 1.3rem;
-        top: 10px;
+      
       }
       @include celu {
         @include flexbox5(center, center);
@@ -72,10 +76,11 @@
       }
       @include mobile_otro{
         @include flexbox5(center, center);
-        top:10px;
+        font-size: 1.7rem;
+        top:20px;
       }
       @include mobile1 {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         @include flexbox5(center, center);
         margin-top: 60px;
         font-size: 1.8rem;
@@ -125,17 +130,15 @@
     .abrir-menu {
       visibility: hidden;
       opacity: 0;
-      top: 0;
-      border: 0;
-      font-size: 1.5rem;
+      font-size: 2rem;
       background-color: transparent;
       cursor: pointer;
-      @include mobile {
+      @include pequeño {
       visibility: visible;
       opacity: 1;
-      border: 5px rgb(185, 120, 120) solid;
+      border: 3px rgb(185, 120, 120) solid;
       border-radius: .3em;
-      margin-bottom: 80px;
+      top: 50px;
       
       }
       @include mobile1{
@@ -143,12 +146,20 @@
         visibility:hidden;
       }
     }
+    .abrir-menu.invisiblemenu {
+      @include pequeño {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
 
     
   
     .ciudad {
+      width:100vw;
       @include flexbox5(center, center);
-      @include mobile {
+
+      @include pequeño {
         opacity: 0;
         visibility: hidden;
         @include flexbox3(column, center, center);
@@ -174,11 +185,20 @@
         font-size: 1.5rem;
         background-color: transparent;
         cursor: pointer;
-        text-align:start;
+        text-align:center;
+        border: 3px rgb(185, 120, 120) solid;
+        border-radius: .3em;
 
-        @include mobile {
+        @include pequeño {
           visibility: visible;
           opacity: 1;
+        } 
+        @include mobile{
+          margin-top:15px;
+          
+        }
+        @include mobile_otro {
+          margin: 20px;
         }
         @include mobile1{
           opacity:0;
@@ -190,7 +210,7 @@
         flex-direction: row;
         justify-content: center;
         justify-items: center;
-        @include mobile {
+        @include pequeño{
           @include flexbox(column, start, start);
           margin: 0;
         }
@@ -199,6 +219,16 @@
           flex-direction: row;
           justify-items:center;
           align-content: center;
+        }
+        
+        .lista {
+          -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                  animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+        @for $item from 1 through 5{
+          .lista#{$item} {
+            animation-delay: $item*2s;
+          }
         }
         li {
           list-style-type: none;
@@ -216,11 +246,17 @@
           &:hover{
             color:#ce9092;
           } 
+          @include pequeño{
+           line-height: 1rem;
+          }
           @include mobile{
-           line-height: 1.3rem;
+            line-height: 1.1rem;
+          }
+          @include celu{
+            line-height: 1.5rem;
           }
           @include mobile_otro{
-           line-height: 1rem;
+           line-height: 2rem;
           }
           @include mobile1{
            margin: 10px;
@@ -234,15 +270,15 @@
           @include mobile5{
             font-size: 1.4rem;
           }
+         
           }
-          
           }
-
-        }
+          }
       }
       
+      
     .ciudad.visible {
-      @include mobile {
+      @include pequeño {
         opacity: 1;
         visibility: visible;
       }
@@ -257,6 +293,7 @@
       zoom: 1;
       @include pequeño {
       display: none;
+      border-bottom: solid brown 30px;
       }
       @include mobile {
         display: none;
@@ -271,25 +308,34 @@
         height: 350px;
       }
       @include mobile4 {
-        height: 590px;
+        width: 100vw;
+        height: 550px;
       }
-    }/*
-    .ciudad__subtit {
-      text-align: center;
-      font-family: $font-ciudad;
-      font-size: 1.6rem;
-      color: $color-h1;
-      @include pequeño{
-        display: none;
-      }
-      @include mobile1{
-        display: flex;
-        
-        
-      }
-      @include mobile3 {
-        
-      }
-    }*/
+    }
+  }
+}
+
+ @-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
   }
 }

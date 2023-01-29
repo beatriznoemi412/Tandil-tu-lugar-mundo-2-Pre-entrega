@@ -5,19 +5,20 @@
   height: auto;
   grid-area: footer;
   @include flexbox(row, space-around, center);
-  @include mobile{
+  @include pequeño{
     @include flexbox3(column, center, center);
-    @include mobile5{
-      @include flexbox(row, space-around, center);
-    }
   }
+  @include mobile2{
+    @include flexbox(row, space-around, center);
+    }
+  
   
   .redes{
     display: inline-block;
     line-height: 2.5;
     text-align: center;
     padding: 10px;
-    @include mobile{
+    @include pequeño{
       padding: 0;
     }
   .tit__footer{
@@ -27,26 +28,27 @@
     text-align: center;
     margin-top:25px;
     color: black;
-    @include mobile{
+    @include pequeño{
       font-size: 1.3rem;
       margin-top:0;
     }
     @include mobile2{
-      font-size: 2rem;
+      font-size: 1.4rem;
     }
+    @include mobile4{
+      display: flex;
+      font-size: 2rem;
+      }
   }
-  
-  
     .red1, .red2, .red3{
       width:40px;
       height: 40px;
-      margin:15px;
       -webkit-animation: slide-in-blurred-left 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-              animation: slide-in-blurred-left 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+      animation: slide-in-blurred-left 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
       animation-delay: 3s;
-      @include mobile{
+      
+      @include pequeño{
         margin: 0;
-        margin-right: 10px;
       }
     &:hover{
       background-color: rgb(199, 129, 129);
@@ -54,7 +56,7 @@
       border-top-left-radius: .4em;
       border-top-right-radius: .4em;
     } 
-    
+   
     @-webkit-keyframes slide-in-blurred-left {
       0% {
         -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
@@ -103,24 +105,18 @@
     @extend .correo;
     color: $anchor;
     text-align: center;
-    li{
-    @include mobile{
+    li, img{
+    @include pequeño{
     display: none;
     }
-    @include mobile5{
-    display: flex;
-    }
-    }
-    }
-  
-    .informacion{
-    @include mobile{
-      font-size: 1rem;
-    }
     @include mobile2{
-      font-size: 1.2rem;
-    
+    display: flex;
+    font-size: .9rem;
     }
+    @include mobile4{
+      display: flex;
+      font-size: 1.2rem;
+      }
     }
   }
   .correo {
@@ -129,17 +125,20 @@
     justify-content: baseline;
     align-items: center;
     margin: 60px 30px 0 0;
-    @include mobile{
-      margin:0;
-    }
+   @include pequeño{
+    margin: 0;
+   }
     .correo__contact{
       font-size: 2rem;
       font-family: $font-ciudad;
       font-weight: bold;
       color: $anchor;
-    @include mobile{
-      font-size: 1.5rem;
+    @include pequeño{
+      font-size: 1.2rem;
       align-items: center;
+    }
+    @include mobile2{
+      font-size: 1.7rem;
     }
     @include mobile3{
       font-size: 2rem;
@@ -165,5 +164,5 @@
       }
       }
     }
-   
+  }
 

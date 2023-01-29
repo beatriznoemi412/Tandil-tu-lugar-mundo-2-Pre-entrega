@@ -7,7 +7,7 @@
   grid-template-rows: 1fr;
   grid-template-areas: "caja box";
   @include flexbox4(row, wrap);
-
+  margin-top: 80px;
   @include mobile {
     @include flexbox(column, center, center);
   }
@@ -22,7 +22,7 @@
     flex-basis: 40vw;
     flex-grow: 1;
     padding: 10px;
-
+   
     @include mobile {
       @include flexbox(column, center, center);
       border: none;

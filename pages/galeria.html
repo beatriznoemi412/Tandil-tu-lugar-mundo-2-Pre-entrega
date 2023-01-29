@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Conoce Tandil: paseos turísticos." />
+    <meta name="description" content="Conoce Tandil: carrusel de fotos." />
     <link rel="stylesheet" href="../css/estilo.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=
@@ -16,30 +16,28 @@
   </head>
   <body class="general">
     <header id="header">
+      <div class="logo">
       <h1 class="titulo titulo__expand" id="logo">
         Tandil, tu Lugar en el Mundo
       </h1>
-        <nav class="ciudad">
-          <div class="ciudad__listas">
-            <ul class="ciudad__listas__reseteo">
-              <li><a href="../index.html">Inicio</a></li>
-              <li><a href="galeria.html">Galería</a></li>
-              <li><a href="turismo.html">Turismo</a></li>
-              <li><a href="transporteUrbano.html">Transporte Urbano</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
+      </div> 
+      <button id="abrir" class="abrir-menu">&#9776</button>
+      <nav class="ciudad" id="nav">
+        <button id="cerrar" class="cerrar-menu">X</button>
+            <ul class="ciudad__listas__reseteo lista">
+              <li class="lista"><a href="../index.html">Inicio</a></li>
+              <li class="lista"><a href="galeria.html">Galería</a></li>
+              <li class="lista"><a href="turismo.html">Turismo</a></li>
+              <li class="lista"><a href="transporteUrbano.html">Transporte Urbano</a></li>
+              <li class="lista"><a href="contacto.html">Contacto</a></li>
             </ul>
-          </div>
           <div>
             <img
               class="ciudad__nav"
               src="../assets/img/TandilyDique.jpeg"
-              alt="Lago del Fuerte"
-              title="Lago del Fuerte"
-            />
+              alt="Lago del Fuerte"title="Lago del Fuerte"/>
           </div>
-          <h2 class="ciudad__subtit">Te contamos e informamos sobre la ciudad.</h2>
         </nav>
-      </div>
     </header>
     <main class="container" id="main">
       <section id="sectuno" class="slider">
@@ -133,34 +131,9 @@
               title="Fuerte Parque Independencia"
             />
           </li>
-          <li id="slider_img_12" class="slider__img--li">
-            <img
-              class="slider__img--ancho"
-              src="../assets/img/cumbreParque.jpg"
-              alt="Castillo Morisco en Parque Independencia"
-              title="astillo Morisco en Parque Independencia"
-            />
-          </li>
-          <li id="slider_img_13" class="slider__img--li">
-            <img
-              class="slider__img--ancho"
-              src="../assets/img/QuijoteySancho.jpg"
-              alt="Esculturas de Don Quijote y Sancho"
-              title="Esculturas de Don Quijote y Sancho Panza en el Lago"
-            />
-          </li>
-
-          <li id="slider_img_14" class="slider__img--li">
-            <img
-              class="slider__img--ancho"
-              src="../assets/img/CristoSierra.jpg"
-              alt="Cristo de la Sierra"
-              title="Cristo de la Sierra"
-            />
-          </li>
         </ul>
         </section>
-        <section id="sectos">
+        <section id="sectdos">
         <ul class="menu">
           <li class="menu__numero">
             <a class="id" href="#slider_img_1">1</a>
@@ -194,15 +167,6 @@
           </li>
           <li class="menu__numero">
             <a class="id" href="#slider_img_11">11</a>
-          </li>
-          <li class="menu__numero">
-            <a class="id" href="#slider_img_12">12</a>
-          </li>
-          <li class="menu__numero">
-            <a class="id" href="#slider_img_13">13</a>
-          </li>
-          <li class="menu__numero">
-            <a class="id" href="#slider_img_14">14</a>
           </li>
         </ul>
       </section>
@@ -243,7 +207,7 @@
       </div>
       <div class="correo">
         <h2 class="correo__contact">Ponete en contacto con nosotros</h2>
-        <img src="../assets/img/email.png" alt="icono de email" />
+        <img src="../assets/img/email.svg" alt="icono de email" />
         <a
           class="correo__mailto"
           href="mailto:tandiltulugarenelmundo@gmail.com"
@@ -252,5 +216,6 @@
         >
       </div>
     </footer>
+    <script src="../js/main.js"></script>
   </body>
 </html>

@@ -44,7 +44,7 @@
         }
 }
 @mixin mobile6{
-    @media (min-width: 576)and(orientation: landscape){
+    @media (min-width: 768)and(orientation: landscape){
         @content;
     }
 }

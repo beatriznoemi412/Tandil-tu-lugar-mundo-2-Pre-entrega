@@ -14,23 +14,23 @@
 </head>
 <body class="general">
     <header id="header">
+      <div class="logo">
         <h1 class="titulo titulo__expand" id="logo">Tandil, tu Lugar en el Mundo</h1>
-        <nav class="ciudad">
-            <div class="ciudad__listas">
-            <ul class="ciudad__listas__reseteo">
-            <li class="li"><a href="../index.html">Inicio</a></li>
-            <li class="li"><a href="galeria.html">Galería</a></li>
-            <li class="li"><a href="turismo.html">Turismo</a></li>
-            <li class="li"><a href="transporteUrbano.html">Transporte Urbano</a></li>
-            <li class="li"><a href="contacto.html">Contacto</a></li>
+      </div>
+          <button id="abrir" class="abrir-menu">&#9776</button>  
+        <nav class="ciudad" id="nav">
+          <button id="cerrar" class="cerrar-menu">X</button>
+          <ul class="ciudad__listas__reseteo lista">
+            <li class="lista"><a href="../index.html">Inicio</a></li>
+            <li class="lista"><a href="galeria.html">Galería</a></li>
+            <li class="lista"><a href="turismo.html">Turismo</a></li>
+            <li class="lista"><a href="transporteUrbano.html">Transporte Urbano</a></li>
+            <li class="lista"><a href="contacto.html">Contacto</a></li>
           </ul>
-        </div>
           <div>
             <img class="ciudad__nav" src="../assets/img/TandilyDique.jpeg" alt="Lago del Fuerte" title="Lago del Fuerte">
         </div>
-           <h2 class="ciudad__subtit">Te contamos e informamos sobre la ciudad.</h2>
         </nav>
-      </div>
     </header>
     <main class="container">
       <section id="sectuno">
@@ -122,5 +122,6 @@
   <script>
     AOS.init();
   </script>
+  <script src="../js/main.js"></script>
 </body>
 </html>
